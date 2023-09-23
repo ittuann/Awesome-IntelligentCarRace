@@ -1,0 +1,6 @@
+/site
+/venv
+
+/docs/award/*.csv
+/docs/group/*.csv
+/docs/year/*.csv

@@ -1,0 +1,109 @@
+# Project information
+site_name: Awesome-IntelligentCarRace
+site_description: 智能车竞赛 开源项目收集 | Awesome Intelligent Car Race
+site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
+
+# Repository
+repo_name: ittuann/Awesome-IntelligentCarRace
+repo_url: https://github.com/ittuann/Awesome-IntelligentCarRace
+edit_uri: blob/main/
+
+# Configuration
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - content.code.copy
+    - content.action.view
+    - instant
+    - header.autohide
+    - search.suggest
+    - search.share
+  logo: assets/favicon/favicon.png
+  favicon: assets/favicon/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+    view: material/eye
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+site_author: ittuann
+copyright: MIT License
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.betterem
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - markdown.extensions.def_list
+  - meta
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://unpkg.com/tablesort@latest/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+plugins:
+  - search:
+      lang: ja
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: iso_date
+  - table-reader
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ittuann
+
+# Navigation
+nav:
+  - 首页: index.md
+  - 年份:
+      - 2023: year/2023.md
+      - 2022: year/2022.md
+      - 2021: year/2021.md
+  - 组别:
+      - 智能视觉组: group/智能视觉组.md
+      - 全向行进组: group/全向行进组.md
+  - 获奖:
+      - 国家级一等奖: award/国家级一等奖.md
+      - 省级一等奖: award/省级一等奖.md
+  - 提交指南: contribution.md
