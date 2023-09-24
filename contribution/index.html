@@ -67,7 +67,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple">
   
     
     
@@ -127,7 +127,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="light-green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
@@ -588,7 +588,35 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    添加
+    向表格中增加信息
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    测试添加后的效果
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    提交更改
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    寻求帮助
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    寻求帮助
   </a>
   
 </li>
@@ -629,7 +657,35 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    添加
+    向表格中增加信息
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    测试添加后的效果
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    提交更改
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    寻求帮助
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    寻求帮助
   </a>
   
 </li>
@@ -660,10 +716,49 @@
 <h1 id="_1">提交指南<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">提交前请注意</p>
-<p>请仔细阅读本提交引导文档</p>
+<p>在提交 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/pulls" target="_blank">Pull Request</a> 前，请仔细阅读本提交引导文档。</p>
+<p>请确保您的提交不会引入任何错误，并且已经经过了测试。</p>
 </div>
-<h2 id="_2">添加<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>想要添加内容，请提交 <a href="https://github.com/ittuann/NEFU-CMEE-DebateTeam/pulls">Pull Request</a></p>
+<h2 id="_2">向表格中增加信息<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>确保您已经克隆了最新版本的仓库，并且在正确的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main">main</a> 分支上进行操作。</p>
+<p>想要在表格中添加内容，请直接修改项目根目录的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv">table.csv</a> 。请确保您的数据格式正确并与其他数据条目保持一致。</p>
+<h2 id="_3">测试添加后的效果<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>首先需要安装依赖。在项目的根目录中，运行以下命令来安装必要的环境：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</code></pre></div>
+<p>然后运行脚本，生成筛选后的各个分表</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">python</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">split</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div>
+<p>执行以下命令来在本地运行和测试项目：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdocs<span class="w"> </span>serve
+</code></pre></div>
+<p>如果在运行项目过程中没有出现任何报错，那就代表您成功地完成了增加信息后的测试。您也可以在本地浏览打开<code>http://127.0.0.1:8000/Awesome-IntelligentCarRace/</code>查看效果。</p>
+<h2 id="_4">提交更改<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>在确认所有更改都正常工作后，您可以将更改提交到您的分支，并创建一个 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/pulls" target="_blank">Pull Request</a></p>
+<h2 id="_5">寻求帮助<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>这是一个很好的建议，因为这样可以鼓励那些不熟悉 Git 的用户也能够为项目做出贡献。以下是完善后的文本：</p>
+<hr />
+<h2 id="_6">寻求帮助<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>如果您不熟悉 Git 的操作，但依然希望为项目补充或修改信息，不用担心，我们为您提供了另外一个途径。</p>
+<ol>
+<li>
+<p>提交 Issue:</p>
+</li>
+<li>
+<p>打开项目的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/issues" target="_blank">Github Issues 页面</a>。</p>
+</li>
+<li>点击 "New Issue" 按钮。</li>
+<li>在标题中简短描述您想要补充或修改的内容。</li>
+<li>在详情描述中，详细列出您想要添加或修改的信息，并且请附上信息来源或参考链接。</li>
+<li>
+<p>提交 Issue。</p>
+</li>
+<li>
+<p>等待反馈:
+   一旦您提交了 Issue，我或其他社区成员会在看到后开始处理。我们会不定期检查并将您提供的信息添加到项目中。同时，您也可以在 issue 中追踪到我们对您请求的处理情况。</p>
+</li>
+</ol>
+<p>每一个人都可以为项目做出贡献，不论您是否熟悉技术操作。我们感谢您的参与和支持！</p>
 
 
 
