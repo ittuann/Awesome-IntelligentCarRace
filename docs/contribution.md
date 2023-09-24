@@ -7,4 +7,3 @@
 ## 添加
 
 想要添加内容，请提交 [Pull Request](https://github.com/ittuann/NEFU-CMEE-DebateTeam/pulls)
-
