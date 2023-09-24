@@ -2,13 +2,13 @@
 
 ## 这是什么项目
 
-本仓库意在收集，历年参加[全国大学生智能车竞赛](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B)的全部开源项目。
+本仓库意在收集，历年参加[全国大学生智能车竞赛](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B){:target="\_blank"}的全部开源项目。
 
 在此感谢那些选择开源他们项目的车友们。
 
-同时，我也希望本仓库不仅只是一个项目列表，希望它可以成为大家一起学习、交流的平台。欢迎大家来到本项目的 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)，让我们共同创建和维护智能车竞赛的开源社区。
+同时，我也希望本仓库不仅只是一个项目列表，希望它可以成为大家一起学习、交流的平台。欢迎大家来到本项目的 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"}，或是在 [Gitter](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im){:target="\_blank"} 中进行即时通讯，让我们共同维护和发展智能车竞赛的开源社区！
 
-最后，衷心地希望智能车竞赛越办越好，继续为大家提供展现才华的舞台！
+最后，衷心地祝愿智能车竞赛越办越好，继续为大家提供展现才华的舞台~
 
 ---
 
@@ -32,24 +32,52 @@
 
 {{ read_csv('table.csv') }}
 
+???+ Example "下载表格"
+
+    如果您想要下载当前这份汇总表格，请前往 [Github 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="_blank"} 进行查看和下载。
+
 ## 致谢
 
 感谢选择开源他们项目的所有车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
 同时也感谢大家对于本仓库的贡献，您的参与和付出将帮助更多人了解信息，并接触到这些宝贵的开源项目。
 
-| 仓库                                                                                               |
-| :------------------------------------------------------------------------------------------------- |
-| [ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace/issues) |
+| 仓库                                                                                                           |
+| :------------------------------------------------------------------------------------------------------------- |
+| [ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} |
 
 ## 提出意见
 
-提问、提出意见、或参与本项目的讨论，请使用 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
+提问、提出意见、或参与本项目的讨论，请使用 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"}
 
 ## LICENSE
 
-[MIT License](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE)
+[MIT License](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE){:target="\_blank"}
 
-如遇本仓库错误信息、侵权等，请在 Github 本仓库中提交 [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues) 。
+??? abstract "MIT License"
+
+    MIT License
+
+    Copyright (c) 2023 ittuann
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+
+如遇本仓库错误信息、侵权等，请在 Github 本仓库中提交 [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 。
 
 如有其他情况可以向我发送邮件 [ittuann@outlook.com](mailto:ittuann@outlook.com)

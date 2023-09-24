@@ -1,0 +1,50 @@
+name: 🐞 Bug report
+description: Report an issue
+labels: [pending triage]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Steps to reproduce the behavior. Alternatively, a [Minimal Reproduction](https://stackoverflow.com/help/minimal-reproducible-example) would be more appreciated.
+      placeholder: How To Reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Platform and version and other information that may be helpful.
+      render: Shell
+      placeholder: System information
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the problem here.
+      placeholder: Additional context information
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+          required: true
+        - label: Remember to follow the community guidelines and be friendly.
+          required: true

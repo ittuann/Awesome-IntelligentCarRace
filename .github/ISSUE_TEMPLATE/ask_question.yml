@@ -1,0 +1,44 @@
+name: 🤔 Ask question
+description: Consider using discussions for simple usage questions instead of issues.
+title: "[Ask] "
+labels: [ask]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Kindly note
+
+        We encourage you to use Github discussions instead of asking about usage in issues.
+        It's preferable to issues larger matters here.
+  - type: textarea
+    id: question-description
+    attributes:
+      label: Describe your question
+      description: A clear and concise description is welcome.
+      placeholder: Describe question
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Platform and version and other information that may be helpful.
+      render: Shell
+      placeholder: System information
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the question here.
+      placeholder: Additional context information
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Remember to follow the community guidelines and be friendly.
+          required: true

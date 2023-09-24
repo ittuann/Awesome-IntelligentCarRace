@@ -33,8 +33,8 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: green
-      accent: light green
+      primary: deep purple
+      accent: purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -53,6 +53,7 @@ copyright: MIT License
 markdown_extensions:
   - admonition
   - footnotes
+  - attr_list
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde

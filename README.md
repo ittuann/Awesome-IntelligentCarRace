@@ -9,7 +9,10 @@
 [netlify-url]: https://awesome-intelligentcarrace.netlify.app
 
 请访问网页以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
-网站 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>
+
+网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>
+
+---
 
 本仓库意在收集，历年参加[全国大学生智能车竞赛](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B)的全部开源项目。
 
