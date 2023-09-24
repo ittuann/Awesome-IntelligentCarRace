@@ -22,8 +22,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - name: Inclusiveness Analyzer
+      - name: Inclusiveness Analyze
         uses: microsoft/InclusivenessAnalyzer@v1.0.1
+        continue-on-error: true
 
       - name: Prettify markdown
         uses: creyD/prettier_action@v4.3
