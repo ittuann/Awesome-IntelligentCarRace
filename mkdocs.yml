@@ -6,7 +6,7 @@ site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
 # Repository
 repo_name: ittuann/Awesome-IntelligentCarRace
 repo_url: https://github.com/ittuann/Awesome-IntelligentCarRace
-edit_uri: blob/main/
+edit_uri: blob/main/docs
 
 # Configuration
 theme:
@@ -19,7 +19,7 @@ theme:
     - navigation.footer
     - navigation.tracking
     - content.code.copy
-    - content.action.view
+    - content.action.edit
     - instant
     - header.autohide
     - search.suggest
@@ -28,7 +28,7 @@ theme:
   favicon: assets/favicon/favicon.png
   icon:
     repo: fontawesome/brands/github
-    view: material/eye
+    edit: material/eye
   language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -82,9 +82,6 @@ extra_javascript:
 plugins:
   - search:
       lang: ja
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     type: iso_date
   - table-reader
 
 # Extra

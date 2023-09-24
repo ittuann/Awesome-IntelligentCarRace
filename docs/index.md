@@ -10,6 +10,20 @@
 
 最后，衷心地希望智能车竞赛越办越好，继续为大家提供展现才华的舞台！
 
+---
+
+[![GitHub Pages Status][github-image]][github-url]
+[![Netlify Status][netlify-image]][netlify-url]
+
+项目网页 GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>
+
+项目网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>
+
+[github-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/github-pages?label=GitHub%20Pages&logo=github
+[github-url]: https://ittuann.github.io/Awesome-IntelligentCarRace
+[netlify-image]: https://api.netlify.com/api/v1/badges/a417caa8-be38-4fa6-8426-0d97ff68151b/deploy-status
+[netlify-url]: https://awesome-intelligentcarrace.netlify.app
+
 ## 开源项目总表
 
 !!! abstract "筛选"
