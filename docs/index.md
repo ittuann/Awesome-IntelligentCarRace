@@ -36,6 +36,16 @@
 
     如果您想要下载当前这份汇总表格，请前往 [Github 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="_blank"} 进行查看和下载。
 
+## 参与讨论
+
+参与本项目的讨论，或提问、提出意见等，请使用 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 或 [Gitter](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im){:target="\_blank"}
+
+## 为何发起这个项目
+
+智能车竞赛虽然历史悠久，但开源文化仍稍显薄弱。在少部分传统强校，会持续使用仅供校内的祖传代码，维护学校自身的优势。我尊重各校的选择和传统，但也希望能借助我这个开源项目，逐渐形成并壮大智能车竞赛的开源社区，为更多的同学带去参考和学习的机会。
+
+作为来自非传统强校的学生，也曾是一名在机械自动化专业自学编程和嵌入式开发的同学，我深知开源的重要性和意义。两年前，我选择将自己国一的代码开源，目的就是希望能帮助到更多的同学。而现如今，我创建这个开源仓库，也是希望延续这份初衷，为参加智能车竞赛的同学们搭建一个共享、学习和交流的地方。
+
 ## 致谢
 
 感谢选择开源他们项目的所有车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
@@ -45,10 +55,6 @@
 | 仓库                                                                                                           |
 | :------------------------------------------------------------------------------------------------------------- |
 | [ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} |
-
-## 提出意见
-
-提问、提出意见、或参与本项目的讨论，请使用 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"}
 
 ## LICENSE
 
