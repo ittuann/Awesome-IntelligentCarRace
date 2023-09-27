@@ -50,9 +50,9 @@ a. 提交 Issue:
 
 - 打开项目的 [Github 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 。
 - 点击 [Issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 页面下的 [New issue](https://github.com/ittuann/Awesome-IntelligentCarRace/issues/new/choose){:target="\_blank"} 按钮。
-- 在标题中简短描述您想要补充或修改的内容。
-- 在详情描述中，详细列出您想要添加或修改的信息，并且请附上信息来源或参考链接。
-- 提交 Issue。
+- 在几个 Issues 模板中选择 `✨ 提交信息` 。
+- 根据模板的提示完成信息的录入。
+- 提交 Issue 。
 
 b. 等待反馈:
 

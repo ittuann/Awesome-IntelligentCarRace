@@ -1,0 +1,46 @@
+name: ✨ 提交信息
+description: 提交/更正开源项目信息
+title: "[Submit] "
+labels: [submit]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 致谢
+
+        感谢您对于本仓库信息的补充，您的参与和付出将帮助更多人了解信息，并接触到这些宝贵的开源项目。
+  - type: textarea
+    id: open-source-link
+    attributes:
+      label: 开源链接
+      description: 填入项目的链接
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: open-source-group
+    attributes:
+      label: 组别
+      description: 填入竞赛组别（请填入组别全称）
+    validations:
+      required: true
+  - type: textarea
+    id: open-source-info
+    attributes:
+      label: 项目名称、学校
+      description: 填入项目名称、学校信息
+    validations:
+      required: true
+  - type: textarea
+    id: open-source-award
+    attributes:
+      label: 获奖、年份
+      description: 填入项目获奖、年份信息
+    validations:
+      required: true
+  - type: textarea
+    id: open-source-remark
+    attributes:
+      label: 备注信息
+      description: 可以填入备注信息（非必选）
