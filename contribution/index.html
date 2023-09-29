@@ -812,15 +812,18 @@
 <p>请确保您的提交不会引入任何错误，并且已经经过了测试。</p>
 <p>如果您不熟悉下面的操作，请查看<a href="https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5">帮助通道</a>。</p>
 </div>
+<p>提交信息只需两个步骤：1.<a href="https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_2">向表格中增加信息</a> -&gt; 2.<a href="https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_3">测试添加后的效果</a></p>
+<p>如果您已添加了信息但没有在本地测试添加后的效果，请在 Pull Request 内明确注明。您也可以考虑直接使用<a href="https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5">帮助通道</a>内提交 issue 的方式进行信息的补充。</p>
 <h2 id="_2">向表格中增加信息<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>首先，请登录您的 Github 账号。打开本项目的仓库链接: <a href="https://github.com/ittuann/Awesome-IntelligentCarRace">https://github.com/ittuann/Awesome-IntelligentCarRace</a> ，然后在页面的右上角点击 <code>Fork</code> 按钮，以便将本仓库分支到您的个人账号。</p>
-<p>确保您已经克隆了最新版本的仓库，并且在正确的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main">main</a> 分支上进行操作。</p>
-<p>想要在表格中添加内容，请直接修改项目根目录的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv">table.csv</a> 。请确保您的数据格式正确并与其他数据条目保持一致。</p>
+<p>首先，请登录您的 Github 账号。打开本项目的仓库链接: <a href="https://github.com/ittuann/Awesome-IntelligentCarRace" target="_blank">https://github.com/ittuann/Awesome-IntelligentCarRace</a> ，然后在页面的右上角点击 <code>Fork</code> 按钮，以便将本仓库分支到您的个人账号。</p>
+<p>确保您已经克隆了最新版本的仓库，并且在正确的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main" target="_blank">main</a> 分支上进行操作。</p>
+<p>想要在表格中添加新的内容，请直接修改项目<strong>根目录</strong>的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv" target="_blank">table.csv</a>。</p>
+<p>在 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv" target="_blank">table.csv</a> 表格的最后一行后追加新的一行条目，即可完成信息的添加。请确保您提交的数据格式正确，并与表单内现有条目保持一致。</p>
 <h2 id="_3">测试添加后的效果<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>首先需要安装依赖。在项目的根目录中，运行以下命令来安装必要的环境：</p>
+<p>测试添加信息后的网页效果，则首先需要安装 Python 环境和依赖。在项目的根目录中，运行以下命令来安装必要的依赖：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
-<p>然后运行脚本，生成筛选后的各个分表</p>
+<p>然后运行脚本，生成筛选后的各个分表：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">python</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">split</span><span class="o">.</span><span class="n">py</span>
 </code></pre></div>
 <p>执行以下命令来在本地运行和测试项目：</p>
@@ -835,7 +838,7 @@
 <ul>
 <li>打开项目的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace" target="_blank">Github 仓库页面</a> 。</li>
 <li>点击 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/issues" target="_blank">Issues</a> 页面下的 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/issues/new/choose" target="_blank">New issue</a> 按钮。</li>
-<li>在几个 Issues 模板中选择 <code>✨ 提交信息</code> 。</li>
+<li>在显示的几个 Issues 模板中，选择 <code>✨ 提交信息</code> 。</li>
 <li>根据模板的提示完成信息的录入。</li>
 <li>提交 Issue 。</li>
 </ul>
