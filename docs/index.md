@@ -15,14 +15,16 @@
 [![GitHub Pages Status][github-image]][github-url]
 [![Netlify Status][netlify-image]][netlify-url]
 
-项目网页 GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>
-
-项目网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>
-
 [github-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/github-pages?label=GitHub%20Pages&logo=github
 [github-url]: https://ittuann.github.io/Awesome-IntelligentCarRace
 [netlify-image]: https://api.netlify.com/api/v1/badges/a417caa8-be38-4fa6-8426-0d97ff68151b/deploy-status
 [netlify-url]: https://awesome-intelligentcarrace.netlify.app
+
+项目 GitHub 仓库: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
+
+项目网页 GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
+
+项目网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"}
 
 ## 开源项目总表
 
@@ -52,7 +54,9 @@
 
 同时也感谢大家对于本仓库的贡献，您的参与和付出将帮助更多人了解信息，并接触到这些宝贵的开源项目。
 
-| 仓库                                                                                                           |
+如果您想要增加一条开源项目，请参考侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5){:target="\_blank"}。
+
+| GitHub 仓库                                                                                                    |
 | :------------------------------------------------------------------------------------------------------------- |
 | [ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} |
 
