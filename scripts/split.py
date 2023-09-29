@@ -27,30 +27,47 @@ def awardSort(awards):
     return awards.map(lambda award: (0, awardOrder.index(award)) if award in awardOrder else (1, award))
 
 
-def splitTable(filtration, outputDir, inputFile="./table.csv"):
+def URLModification(inputFile="./table.csv", outputFile="./table-url.csv"):
+    """
+    修饰主表的URL链接
+    :param inputFile: 输入的 CSV 文件路径。默认为 "./table.csv"。
+    :param outputFile: 输出的 CSV 文件路径。默认为 "./table-url.csv"。
+    """
+    if not os.path.exists(inputFile):
+        raise ValueError(f"The specified {inputFile} does not exist.")
+
+    df = pd.read_csv(inputFile, encoding="utf-8")
+    df["链接"] = "<" + df["链接"] + '>{:target="_blank"}'
+    df.to_csv(outputFile, index=False, encoding="utf-8")
+    print(f"Successfully generate sub-table {outputFile}")
+
+
+def splitTable(filtration, outputDir, inputFile="./table-url.csv"):
     """
     根据给定的过滤列将主表拆分，并保存到输出目录。
     :param filtration: 过滤的列名称。
     :param outputDir: 输出目录路径。
-    :param inputFile: 输入的 CSV 文件路径。默认为 "./table.csv"。
+    :param inputFile: 输入的 CSV 文件路径。默认为 "./table-url.csv"。
     """
     if not os.path.exists(outputDir):
         raise ValueError(f"The specified {outputDir} does not exist.")
     if not os.path.exists(inputFile):
         raise ValueError(f"The specified {inputFile} does not exist.")
 
-    df = pd.read_csv(inputFile)
+    df = pd.read_csv(inputFile, encoding="utf-8")
     grouped = df.groupby(filtration)
 
     for filtrate, group in grouped:
         sorted = group.sort_values(by="获奖", key=awardSort, ascending=True)
         filename = os.path.join(outputDir, f"{filtrate}.csv")
-        sorted.to_csv(filename, index=False)
+        sorted.to_csv(filename, index=False, encoding="utf-8")
         print(f"Successfully generate sub-table {filtrate}.csv")
 
 
 if __name__ == "__main__":
     sys.path.append(os.getcwd())
+
+    URLModification()
 
     splitTable("年份", "./docs/year")
     splitTable("组别", "./docs/group")
