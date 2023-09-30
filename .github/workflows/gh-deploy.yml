@@ -3,7 +3,7 @@ name: Deploy to Github Pages
 on:
   workflow_run:
     workflows:
-      - Prettify
+      - Builds
     types:
       - completed
 
