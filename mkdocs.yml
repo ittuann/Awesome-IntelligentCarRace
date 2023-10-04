@@ -11,6 +11,7 @@ edit_uri: blob/main/docs
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: Roboto
     code: Roboto Mono

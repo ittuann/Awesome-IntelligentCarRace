@@ -1,2 +1,2 @@
-mkdocs-material
+mkdocs-material[recommended]
 mkdocs-table-reader-plugin
