@@ -17,13 +17,21 @@ theme:
   features:
     - navigation.top
     - navigation.footer
+    - navigation.expand
     - navigation.tracking
-    - content.code.copy
+    - navigation.indexes
+    - navigation.instant
     - content.action.edit
-    - instant
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
     - header.autohide
     - search.suggest
+    - search.highlight
     - search.share
+    - toc.follow
   logo: assets/favicon/favicon.png
   favicon: assets/favicon/favicon.png
   icon:
@@ -54,12 +62,18 @@ markdown_extensions:
   - admonition
   - footnotes
   - attr_list
+  - def_list
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.betterem
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.highlight:
@@ -70,11 +84,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - markdown.extensions.def_list
   - meta
   - tables
-  - toc:
-      permalink: true
 
 extra_javascript:
   - https://unpkg.com/tablesort@latest/dist/tablesort.min.js
@@ -90,6 +101,11 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ittuann
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<ittuann@outlook.com>
+  analytics:
+    provider: google
+    property: G-8SY1RE8KQW
 
 # Navigation
 nav:

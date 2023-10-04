@@ -6,7 +6,7 @@
 
 在此感谢那些选择开源他们项目的车友们。
 
-同时，我也希望本仓库不仅只是一个项目列表，希望它可以成为大家一起学习、交流的平台。欢迎大家来到本项目的 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"}，或是在 [Gitter](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im){:target="\_blank"} 中进行即时通讯，让我们共同维护和发展智能车竞赛的开源社区！
+同时我也希望本仓库不仅只是一个项目列表，希望它可以成为大家一起学习、交流的平台。欢迎大家来到本项目的 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"}，或是在 [Gitter](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im){:target="\_blank"} 中进行即时通讯，让我们共同维护和发展智能车竞赛的开源社区！
 
 最后，衷心地祝愿智能车竞赛越办越好，继续为大家提供展现才华的舞台~
 
@@ -54,11 +54,9 @@
 
 同时也感谢大家对于本仓库的贡献，您的参与和付出将帮助更多人了解信息，并接触到这些宝贵的开源项目。
 
-如果您想要增加一条开源项目，请参考侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5){:target="\_blank"}。
+如果您也想要增加一条开源项目，请参考侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5){:target="\_blank"}。
 
-| GitHub 仓库                                                                                                    |
-| :------------------------------------------------------------------------------------------------------------- |
-| [ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} |
+[GitHub: ittuann/Awesome-IntelligentCarRace :fontawesome-solid-paper-plane:](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
 
 ## LICENSE
 

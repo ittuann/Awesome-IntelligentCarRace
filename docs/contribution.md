@@ -6,7 +6,7 @@
 
     请确保您的提交不会引入任何错误，并且已经经过了测试。
 
-    如果您不熟悉下面的操作，请查看[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
+    如果您不熟悉下面 Git 等操作，请查看[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
 
 提交信息只需两个步骤：1.[向表格中增加信息](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_2) -> 2.[测试添加后的效果](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_3)
 
@@ -18,7 +18,7 @@
 
 确保您已经克隆了最新版本的仓库，并且在正确的 [main](https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main){:target="\_blank"} 分支上进行操作。
 
-想要在表格中添加新的内容，请直接修改项目**根目录**的 [table.csv](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"}。
+想要在表格中添加新的内容，仅需要直接修改项目**根目录**的 [table.csv](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"}。
 
 在 [table.csv](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"} 表格的最后一行后追加新的一行条目，即可完成信息的添加。请确保您提交的数据格式正确，并与表单内现有条目保持一致。
 
@@ -65,4 +65,4 @@ b. 等待反馈:
 - 一旦您提交了 Issue，我或其他社区成员会在看到后开始处理。我们会不定期检查并将您提供的信息添加到项目中。
 - 同时，您也可以在 Issue 中追踪到我们对您请求的处理情况。
 
-每一个人都可以为项目做出贡献，不论您是否熟悉技术操作。我们感谢您的参与和支持！
+每一个人都可以为项目做出贡献，不论您是否熟悉技术操作。感谢您的参与和支持！
