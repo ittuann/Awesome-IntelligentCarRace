@@ -25,9 +25,9 @@
 
 项目 GitHub 仓库: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-项目网页 GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
+项目 GitHub Pages 网页: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-项目网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & 网页 Vercel 镜像: <https://awesome-intelligent-car-race.vercel.app>{:target="\_blank"}
+项目网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & 网页 Vercel 镜像: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
 
 ## 开源项目总表
 

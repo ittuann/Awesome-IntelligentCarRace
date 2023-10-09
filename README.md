@@ -9,13 +9,13 @@
 [netlify-image]: https://api.netlify.com/api/v1/badges/a417caa8-be38-4fa6-8426-0d97ff68151b/deploy-status
 [netlify-url]: https://awesome-intelligentcarrace.netlify.app
 [vercel-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/Production?label=Vercel&logo=vercel
-[vercel-url]: https://awesome-intelligent-car-race.vercel.app
+[vercel-url]: https://awesome-intelligentcarrace.vercel.app
 
-请访问网页以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
+请访问 GitHub Pages 网页以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
 网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>
 
-网页 Vercel 镜像: <https://awesome-intelligent-car-race.vercel.app>
+网页 Vercel 镜像: <https://awesome-intelligentcarrace.vercel.app>
 
 ## 这是什么项目
 
