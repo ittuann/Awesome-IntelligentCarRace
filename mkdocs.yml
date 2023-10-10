@@ -103,7 +103,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ittuann
-    - icon: fontawesome/solid/paper-plane
+    - icon: fontawesome/solid/envelope
       link: mailto:<ittuann@outlook.com>
   analytics:
     provider: google
