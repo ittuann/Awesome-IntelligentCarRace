@@ -1,2 +1,3 @@
 mkdocs-material[recommended]
 mkdocs-table-reader-plugin
+mkdocs-rss-plugin

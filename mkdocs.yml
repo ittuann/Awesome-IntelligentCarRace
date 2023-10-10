@@ -1,6 +1,6 @@
 # Project information
 site_name: Awesome-IntelligentCarRace
-site_description: 智能车竞赛 开源项目收集 | Awesome Intelligent Car Race
+site_description: 智能车竞赛 开源项目合集 | Awesome Intelligent Car Race
 site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
 
 # Repository
@@ -96,6 +96,7 @@ plugins:
   - search:
       lang: ja
   - table-reader
+  - rss
 
 # Extra
 extra:
