@@ -53,11 +53,13 @@
 
 ## 致谢
 
-感谢选择开源他们项目的所有车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
+感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
-如果您也想要增加一条开源项目，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5){:target="\_blank"}。
+若您也想要增加一条开源项目，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5){:target="\_blank"}。
 
-同时也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触到这些宝贵的开源项目。
+如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库一个 [Star](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"}.
+
+感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。同时也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace" />
@@ -67,7 +69,7 @@
 
 ## LICENSE
 
-[MIT License](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE){:target="\_blank"}
+The project is [MIT Licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE){:target="\_blank"}
 
 ??? abstract "MIT License"
 
@@ -92,6 +94,8 @@
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
+
+The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.0 licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE-docs).
 
 如遇本仓库错误信息、侵权等，请在 Github 本仓库中提交 [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 。
 

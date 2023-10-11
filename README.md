@@ -33,11 +33,13 @@
 
 ## 致谢
 
-感谢选择开源他们项目的所有车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
+感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
-如果您也想要增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace)侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution)，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
+若您也想要增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace)侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution)，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
 
-同时也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触到这些宝贵的开源项目。
+如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库一个免费的 [Star](https://github.com/ittuann/Awesome-IntelligentCarRace).
+
+感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。同时也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace" />

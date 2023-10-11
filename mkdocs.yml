@@ -56,7 +56,7 @@ theme:
         name: Switch to light mode
 
 site_author: ittuann
-copyright: MIT License
+copyright: MIT & CC-BY-4.0 License
 
 # Extensions
 markdown_extensions:
