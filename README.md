@@ -25,6 +25,19 @@
 
 同时，我也希望本仓库不仅只是一个项目列表，希望它可以成为大家一起学习、交流的平台。欢迎大家来到本项目的 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)，或是在 [Gitter](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im) 中进行即时通讯，让我们共同维护和发展智能车竞赛的开源社区。
 
+## 参与讨论
+
+您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions) 进行交流和讨论。这里集中了所有的问题和讨论，更易于追踪和跟进。同时您公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。
+
+您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
+
+[![Github Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
+[![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
+[![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw) 
+[![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
+
+如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个 [Star](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)。同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。感谢您对开源项目的鼓励和支持。
+
 ## 为何发起这个项目
 
 智能车竞赛虽然历史悠久，但开源文化仍稍显薄弱。在少部分传统强校，会持续使用仅供校内的祖传代码，维护学校自身的优势。我尊重各校的选择和传统，但也希望能借助我这个开源项目，逐渐形成并壮大智能车竞赛的开源社区，为更多的同学带去参考和学习的机会。
@@ -36,8 +49,6 @@
 感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
 若您也想要增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace)侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution)，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
-
-如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库一个免费的 [Star](https://github.com/ittuann/Awesome-IntelligentCarRace).
 
 感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。同时也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
