@@ -21,9 +21,9 @@
 
 本仓库意在收集，历年参加[全国大学生智能车竞赛](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B)的全部开源项目。
 
-在此感谢那些选择开源他们项目的车友们。
+特此向选择开源的车友们表示深深的感谢。
 
-同时，我也希望本仓库不仅只是一个项目列表，希望它可以成为大家一起学习、交流的平台。欢迎大家来到本项目的 [Github Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)，或是在 [Gitter](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im) 中进行即时通讯，让我们共同维护和发展智能车竞赛的开源社区。
+同时也期望本仓库不只作为一个项目列表，更希望它能够成为大家开源学习、交流和分享的平台。让我们一起维护和推进智能车竞赛的开源社区与文化，欢迎各位的交流和参与！
 
 ## 参与讨论
 
@@ -34,7 +34,9 @@
 [![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
 [![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
 
-如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)！同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
+如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)！
+
+同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
 ## 为何发起这个项目
 
