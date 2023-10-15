@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
+          persist-credentials: false
 
       - name: Inclusiveness Analyze
         uses: microsoft/InclusivenessAnalyzer@v1.0.1
@@ -31,6 +32,8 @@ jobs:
         with:
           prettier_options: --write **/*.{yml,md}
           commit_message: "Automatically Prettified Markdown"
+          dry: True
+        continue-on-error: true
 
   build:
     runs-on: ubuntu-latest

@@ -27,16 +27,14 @@
 
 ## 参与讨论
 
-您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions) 进行交流和讨论。这里集中了所有的问题和讨论，更易于追踪和跟进。同时您公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。
-
-您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
+您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions) 进行交流和讨论。这里集中了仓库所有的问题和讨论，更易于追踪和跟进。同时您公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
 
 [![Github Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
 [![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
-[![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw) 
+[![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
 [![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
 
-如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个 [Star](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)。同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。感谢您对开源项目的鼓励和支持。
+如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)！同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
 ## 为何发起这个项目
 
