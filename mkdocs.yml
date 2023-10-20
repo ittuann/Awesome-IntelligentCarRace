@@ -101,6 +101,8 @@ plugins:
 # Extra
 extra:
   social:
+    - icon: octicons/globe-16
+      link: https://ittuann.github.io/Awesome-IntelligentCarRace/
     - icon: fontawesome/brands/github
       link: https://github.com/ittuann
     - icon: fontawesome/solid/envelope
