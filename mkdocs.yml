@@ -28,7 +28,6 @@ theme:
     - content.code.select
     - content.tabs.link
     - content.tooltips
-    - header.autohide
     - search.suggest
     - search.highlight
     - search.share
