@@ -81,9 +81,7 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji
   - meta
   - tables
 
@@ -113,20 +111,20 @@ extra:
 # Navigation
 nav:
   - 首页: index.md
-  - 年份:
-      - 2023: year/2023.md
-      - 2022: year/2022.md
-      - 2021: year/2021.md
-  - 组别:
-      - 摄像头四轮组: group/摄像头四轮组.md
-      - 智能视觉组: group/智能视觉组.md
-      - 多车编队组: group/多车编队组.md
-      - 负压电磁组: group/负压电磁组.md
-      - 全向行进组: group/全向行进组.md
   - 获奖:
       - 国家级一等奖: award/国家级一等奖.md
       - 国家级二等奖: award/国家级二等奖.md
       - 省级一等奖: award/省级一等奖.md
       - 省级二等奖: award/省级二等奖.md
       - 省级三等奖: award/省级三等奖.md
+  - 组别:
+      - 摄像头四轮组: group/摄像头四轮组.md
+      - 智能视觉组: group/智能视觉组.md
+      - 多车编队组: group/多车编队组.md
+      - 负压电磁组: group/负压电磁组.md
+      - 全向行进组: group/全向行进组.md
+  - 年份:
+      - 2023: year/2023.md
+      - 2022: year/2022.md
+      - 2021: year/2021.md
   - 提交指南: contribution.md
