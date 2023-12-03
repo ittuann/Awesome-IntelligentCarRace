@@ -3,7 +3,6 @@
 [![GitHub Pages Status][github-image]][github-url]
 [![Netlify Status][netlify-image]][netlify-url]
 [![Vercel Status][vercel-image]][vercel-url]
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_shield)
 
 [github-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/github-pages?label=GitHub%20Pages&logo=github
 [github-url]: https://ittuann.github.io/Awesome-IntelligentCarRace
@@ -60,4 +59,9 @@
 
 
 ## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large)
+
+The project is [MIT Licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE)
+
+The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.0 licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE-docs)
+
+[![FOSSA License Compliance Scan Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large&issueType=license)

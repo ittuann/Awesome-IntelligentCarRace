@@ -72,7 +72,7 @@
 
 [GitHub: ittuann/Awesome-IntelligentCarRace :fontawesome-solid-paper-plane:](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
 
-## LICENSE
+## License
 
 The project is [MIT Licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE){:target="\_blank"}
 
@@ -100,8 +100,10 @@ The project is [MIT Licensed](https://github.com/ittuann/Awesome-IntelligentCarR
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.0 licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE-docs).
+The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.0 licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE-docs){:target="\_blank"}.
+
+[![FOSSA License Compliance Scan Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large&issueType=license){:target="\_blank"}
 
 如遇本仓库错误信息、侵权等，请在 Github 本仓库中提交 [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 。
 
-如有其他情况可以向我发送邮件 [ittuann@outlook.com](mailto:ittuann@outlook.com)
+若有其他情况可以向我发送邮件 [ittuann@outlook.com](mailto:ittuann@outlook.com)
