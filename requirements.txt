@@ -4,3 +4,4 @@ mkdocs-rss-plugin
 
 pytest
 pytest-cov
+coverage

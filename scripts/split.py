@@ -74,9 +74,9 @@ def splitTable(filtration, outputDir, inputFile=None):
     grouped = df.groupby(filtration)
 
     for filtrate, group in grouped:
-        sorted = group.sort_values(by="获奖", key=awardSort, ascending=True)
+        sorted_group = group.sort_values(by="获奖", key=awardSort, ascending=True)
         filename = Path(outputDir) / f"{filtrate}.csv"
-        sorted.to_csv(filename, index=False, encoding="utf-8")
+        sorted_group.to_csv(filename, index=False, encoding="utf-8")
         print(f"Successfully generate sub-table {filtrate}.csv")
 
 

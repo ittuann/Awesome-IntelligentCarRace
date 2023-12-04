@@ -64,8 +64,21 @@ jobs:
       - name: Generate sub-tables
         run: python ./scripts/split.py
 
-      - name: Pytest
-        run: pytest --cov=split
+      - name: Coverage test
+        run: |
+          pytest --cov=split
+          coverage run -m pytest
+          coverage report
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Upload coverage reports to Codacy
+        run: |
+          export CODACY_PROJECT_TOKEN=${{ secrets.CODACY_PROJECT_TOKEN }}
+          bash <(curl -Ls https://coverage.codacy.com/get.sh)
 
       - name: Build
         run: mkdocs build
