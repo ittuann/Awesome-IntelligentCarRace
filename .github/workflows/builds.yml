@@ -69,6 +69,7 @@ jobs:
           pytest --cov=split
           coverage run -m pytest
           coverage report
+          coverage xml
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
@@ -79,6 +80,12 @@ jobs:
         run: |
           export CODACY_PROJECT_TOKEN=${{ secrets.CODACY_PROJECT_TOKEN }}
           bash <(curl -Ls https://coverage.codacy.com/get.sh)
+
+      - name: Run Codacy-Coverage-Reporter
+        uses: codacy/codacy-coverage-reporter-action@v1
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: coverage.xml
 
       - name: Build
         run: mkdocs build

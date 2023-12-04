@@ -11,6 +11,9 @@
 [vercel-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/Production?label=Vercel&logo=vercel
 [vercel-url]: https://awesome-intelligentcarrace.vercel.app
 
+[![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 请访问 GitHub Pages 网页以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
 网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>
