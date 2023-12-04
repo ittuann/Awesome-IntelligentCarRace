@@ -64,5 +64,8 @@ jobs:
       - name: Generate sub-tables
         run: python ./scripts/split.py
 
+      - name: Pytest
+        run: pytest --cov=split
+
       - name: Build
         run: mkdocs build
