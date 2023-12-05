@@ -14,8 +14,8 @@ Date          Author                            Notes
 
 from pathlib import Path
 import pytest
-from split import awardSort, URLModification, splitTable
 import pandas as pd
+from split import awardSort, URLModification, splitTable
 
 
 def test_awardSort():

@@ -1,12 +1,13 @@
 __pycache__
-/site
 /.venv
 
+/site
 /table-url.csv
 /docs/award/*.csv
 /docs/group/*.csv
 /docs/year/*.csv
 
+/.vscode
 /htmlcov
 /.pytest_cache
 .coverage
