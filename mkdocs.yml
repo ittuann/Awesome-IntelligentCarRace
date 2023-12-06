@@ -94,6 +94,8 @@ plugins:
       lang: ja
   - table-reader
   - rss
+  - mkdocstrings:
+      default_handler: python
 
 # Extra
 extra:
@@ -127,4 +129,4 @@ nav:
       - 2023: year/2023.md
       - 2022: year/2022.md
       - 2021: year/2021.md
-  - 提交指南: contribution.md
+  - 提交指南: contribution/contribution.md

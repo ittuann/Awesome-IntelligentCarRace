@@ -65,6 +65,14 @@ jobs:
       - name: Generate sub-tables
         run: python ./scripts/split.py
 
+      - name: Code formatter check
+        run: black --diff ./scripts/
+        continue-on-error: true
+
+      - name: Code linter check
+        run: ruff check .
+        continue-on-error: true
+
       - name: Coverage test
         run: |
           pytest --cov=split
@@ -76,6 +84,7 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        continue-on-error: true
 
       - name: Upload Codacy coverage reporter
         uses: codacy/codacy-coverage-reporter-action@v1

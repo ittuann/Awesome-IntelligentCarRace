@@ -1,27 +1,34 @@
 # -*- coding: utf-8 -*-
-
-"""
-File   : split.py
-Author : Baiqi.Lu <ittuann@outlook.com>
-License: MIT License
+"""Split Scripts.
 
 This module provides functionalities to split a table based on the award filter column.
 
-Main Change Logs:
-Date          Author                            Notes
-2023-09-22    Baiqi.Lu <ittuann@outlook.com>    Create file
+Note:
+    File   : split.py
+    Author : Baiqi.Lu <ittuann@outlook.com>
+    License: MIT License.
+
+Example:
+    $ python ./scripts/split.py
 """
 
 import sys
 from pathlib import Path
+from typing import Optional
+
 import pandas as pd
 
 
-def awardSort(awards):
-    """
-    根据指定的顺序对奖项进行排序。
-    :param awards: 包含奖项名称的系列。
-    :return: 根据奖项优先级的排序值的系列。
+def awardSort(awards: pd.Series) -> pd.Series:
+    """奖项排序.
+
+    根据指定的中文顺序对奖项进行排序。
+
+    Args:
+        awards (pd.Series): 包含奖项名称的系列
+
+    Returns:
+        pd.Series: 排序后的系列
     """
     awardOrder = ["国家级一等奖", "国家级二等奖", "国家级三等奖", "省级一等奖", "省级二等奖", "省级三等奖"]
     return awards.map(
@@ -31,11 +38,20 @@ def awardSort(awards):
     )
 
 
-def URLModification(inputFile=None, outputFile=None):
-    """
-    修饰主表的URL链接
-    :param inputFile: 输入的 CSV 文件路径。默认为 None ，将使用路径"./table.csv"。
-    :param outputFile: 输出的 CSV 文件路径。默认为 None ，将使用路径"./table-url.csv"。
+def urlModification(
+    inputFile: Optional[Path] = None, outputFile: Optional[Path] = None
+):
+    """修饰主表的URL链接.
+
+    Args:
+        inputFile (Path, optional): 输入的 CSV 文件路径。默认为 None ，将使用路径"./table.csv"
+        outputFile (Path, optional): 输出的 CSV 文件路径。默认为 None ，将使用路径"./table.csv"
+
+    Raises:
+        ValueError: 如果输入的文件不存在，则抛出异常
+
+    Examples:
+        >>> urlModification()
     """
     if inputFile is None:
         inputFile = Path("./table.csv")
@@ -51,12 +67,27 @@ def URLModification(inputFile=None, outputFile=None):
     print(f"Successfully generate url modification table {outputFile}")
 
 
-def splitTable(filtration, outputDir, inputFile=None):
-    """
-    根据给定的过滤列将主表拆分，并保存到输出目录。
-    :param filtration: 过滤的列名称。
-    :param outputDir: 输出目录路径。
-    :param inputFile: 输入的 CSV 文件路径。默认为 None ，将使用路径"./table-url.csv"
+def splitTable(filtration: str, outputDir: Path, inputFile: Optional[Path] = None):
+    """根据给定的过滤列将主表拆分.
+
+    根据给定的过滤列将主表拆分为多个子表，并将子表保存在指定的输出目录中。
+    每个子表的名称为过滤列的值，例如，如果过滤列为"年份"，则将生成多个子表，分别为"2022.csv"、"2021.csv"等。
+
+    Note:
+        应首先运行 urlModification() 以获得修饰后的主表
+
+    Args:
+        filtration (str): 过滤的列名称
+        outputDir (Path): 输出目录路径
+        inputFile (Path, optional): 输入的 CSV 文件路径。默认为 None ，将使用路径"./table-url.csv"
+
+    Raises:
+        ValueError: 如果输入的文件不存在，则抛出异常
+        ValueError: 如果输出的目录不存在，则抛出异常
+        ValueError: 如果指定的过滤列不是表的列，则抛出异常
+
+    Examples:
+        >>> splitTable("年份", Path(".") / "docs" / "year")
     """
     if inputFile is None:
         inputFile = Path("./table-url.csv")
@@ -83,9 +114,8 @@ def splitTable(filtration, outputDir, inputFile=None):
 if __name__ == "__main__":
     sys.path.append(str(Path.cwd()))
 
-    URLModification()
+    urlModification()
 
     splitTable("年份", Path(".") / "docs" / "year")
     splitTable("组别", Path(".") / "docs" / "group")
     splitTable("获奖", Path(".") / "docs" / "award")
-

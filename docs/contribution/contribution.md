@@ -46,7 +46,15 @@ mkdocs serve
 
 ## 提交更改
 
-在确认所有更改都正常工作后，您可以将更改提交到您的分支，并创建一个 [Pull Request](https://github.com/ittuann/Awesome-IntelligentCarRace/pulls){:target="\_blank"}
+在确认所有更改都正常工作后，您可以将更改提交到您的分支，并创建一个 [Pull Request](https://github.com/ittuann/Awesome-IntelligentCarRace/pulls){:target="\_blank"}，即可完成信息的补充。
+
+## 项目代码文档
+
+项目采用 CI/CD 流程自动完成构建和部署。如果您想了解完整的工作流，可以查看本仓库的 [Github Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"}。这里包含了整个自动化流程详细的步骤和运行记录。
+
+项目代码覆盖率测试报告可在此查看: [Codecov](https://app.codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} [![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} ; 项目代码质量分析报告请访问: [Codacy](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"}
+
+同时项目提供了详尽的项目代码文档，您可以通过以下链接查看：<https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/scripts>{:target="\_blank"}。该文档由源代码内的信息自动生成，确保了随代码的更新同步保持最新状态。
 
 ## 帮助通道
 

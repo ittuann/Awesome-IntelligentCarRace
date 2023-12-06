@@ -21,8 +21,8 @@
 [vercel-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/Production?label=Vercel&logo=vercel
 [vercel-url]: https://awesome-intelligent-car-race.vercel.app
 
-[![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"}
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"}
 
 项目 GitHub 仓库: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
 
@@ -73,7 +73,7 @@
   <img src="https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace" />
 </a>
 
-[GitHub: ittuann/Awesome-IntelligentCarRace :fontawesome-solid-paper-plane:](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
+[GitHub: ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
 
 ## License
 

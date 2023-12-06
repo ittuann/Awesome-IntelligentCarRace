@@ -1,0 +1,35 @@
+[tool.coverage.report]
+exclude_lines = [
+  "if 0:",
+  "if __name__ == .__main__.:",
+]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+]
+extend-select = [
+  # pydocstyle
+  "D",
+]
+ignore = ["F401", "UP009"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

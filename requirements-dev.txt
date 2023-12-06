@@ -1,5 +1,5 @@
 black
-isort
+ruff
 pytest
 pytest-cov
 coverage

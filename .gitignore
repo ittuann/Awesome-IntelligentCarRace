@@ -8,6 +8,7 @@ __pycache__
 /docs/year/*.csv
 
 /.vscode
+/.ruff_cache
 /htmlcov
 /.pytest_cache
 .coverage
