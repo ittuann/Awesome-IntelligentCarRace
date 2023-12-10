@@ -1,30 +1,30 @@
 # 提交指南
 
+如果您想要向这份表格中提交新的内容，请参考本提交指南的内容。
+
 !!! note "提交前请注意"
 
     在提交 [Pull Request](https://github.com/ittuann/Awesome-IntelligentCarRace/pulls){:target="\_blank"} 前，请仔细阅读本提交引导文档。
-
-    请确保您的提交不会引入任何错误，并且已经经过了测试。
 
     如果您不熟悉下面 Git 等操作，请查看[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
 
 提交信息只需两个步骤：1.[向表格中增加信息](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_2) -> 2.[测试添加后的效果](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_3)
 
-如果您已添加了信息但没有在本地测试添加后的效果，请在 Pull Request 内明确注明。您也可以考虑直接使用[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)内提交 issue 的方式进行信息的补充。
+如果您已增加了信息但没有在本地测试添加后的效果，请在 Pull Request 内**明确注明**。您也可以考虑直接使用[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)内提交 issue 的方式进行信息的补充。
 
 ## 向表格中增加信息
 
 首先，请登录您的 Github 账号。打开本项目的仓库链接: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"} ，然后在页面的右上角点击 `Fork` 按钮，以便将本仓库分支到您的个人账号。
 
-确保您已经克隆了最新版本的仓库，并且在正确的 [main](https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main){:target="\_blank"} 分支上进行操作。
+确保您已经克隆了最新版本的仓库，并且在正确的 [`main`](https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main){:target="\_blank"} 分支上进行操作。
 
-想要在表格中添加新的内容，仅需要直接修改项目**根目录**的 [table.csv](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"}。
+想要在表格中添加新的内容，仅需要直接修改项目**根目录**的 [`table.csv`](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"}。
 
-在 [table.csv](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"} 表格的最后一行后追加新的一行条目，即可完成信息的添加。请确保您提交的数据格式正确，并与表单内现有条目保持一致。
+在 [`table.csv`](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"} 表格的最后一行后追加新的一行条目，即可完成信息的添加。请确保您提交的数据格式正确，并与表单内现有条目保持一致。
 
 ## 测试添加后的效果
 
-测试添加信息后的网页效果，则首先需要安装 Python 环境和依赖。在项目的根目录中，运行以下命令来安装必要的依赖：
+为了保提交不会引入任何错误，在本地测试添加信息后的网页效果时，首先需要安装 Python 环境和依赖。在项目的根目录中，运行以下命令来安装必要的依赖：
 
 ```python
 pip install -r requirements.txt
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 python ./scripts/split.py
 ```
 
-执行以下命令来在本地运行和测试项目：
+执行以下命令来在本地查看修改后的运行效果：
 
 ```shell
 mkdocs serve

@@ -54,7 +54,7 @@
 
 ???+ Example "下载表格"
 
-    如果您想要下载当前这份汇总表格，请前往 [Github 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="_blank"} 进行查看和下载。
+    如果您想要下载当前版本的汇总表格，请前往 [Github Releases 页面](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 进行下载。
 
 ## 为何发起这个项目
 
