@@ -1,0 +1,62 @@
+name: Auto Release
+
+on:
+  workflow_run:
+    workflows:
+      - Builds
+    types:
+      - completed
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    if: >
+      github.ref == 'refs/heads/main' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.conclusion == 'success' &&
+      github.repository == 'ittuann/Awesome-IntelligentCarRace'
+
+    steps:
+      - name: Checking Out
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for data changes
+        id: check_changes
+        run: |
+          if [ "$(git rev-list --count HEAD)" -gt 1 ]; then
+            if git diff --name-only HEAD^ HEAD | grep -q "table.csv"; then
+              echo "DATA_FILE_CHANGED=true" >> $GITHUB_ENV
+            else
+              echo "Date file has not changed in the last commit."
+            fi
+            DATA_FILE_SHA=$(sha256sum table.csv | awk '{print $1}')
+            echo "DATA_FILE_SHA=$DATA_FILE_SHA" >> $GITHUB_ENV
+            echo "Data file SHA: $DATA_FILE_SHA"
+            echo "COMMIT_TIME=$(git log -1 --format=%cd --date=format:%Y%m%dT%H%M%S)" >> $GITHUB_ENV
+          fi
+
+      - name: Upload new date artifact
+        if: env.DATA_FILE_CHANGED == 'true'
+        uses: actions/upload-artifact@v3
+        with:
+          name: date.csv
+          path: table.csv
+
+      - name: Auto create new date release
+        if: env.DATA_FILE_CHANGED == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: table.csv
+          tag_name: ${{ env.COMMIT_TIME }}
+          name: Auto Release ${{ env.COMMIT_TIME }}
+          body: |
+            Automatically release the data table in `${{ env.COMMIT_TIME }}`, UTC+08:00, Time Zone: Asia/Shanghai
+
+            Commit SHA: ${{ github.sha }}
+
+            File SHA: `${{ env.DATA_FILE_SHA }}`
+          draft: false
+          prerelease: false
