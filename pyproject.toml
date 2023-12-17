@@ -8,7 +8,7 @@ exclude_lines = [
 line-length = 88
 
 [tool.ruff]
-line-length = 120
+line-length = 88
 
 [tool.ruff.lint]
 select = [
@@ -33,3 +33,6 @@ ignore = ["F401", "UP009"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.pytest.ini_options]
+addopts = "-ra --timeout=10 --reruns 2 --reruns-delay 1"

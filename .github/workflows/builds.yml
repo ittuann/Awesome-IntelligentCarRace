@@ -75,10 +75,9 @@ jobs:
 
       - name: Coverage test
         run: |
-          pytest --cov=split
           coverage run -m pytest
           coverage report
-          coverage xml
+          coverage xml && coverage html
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3

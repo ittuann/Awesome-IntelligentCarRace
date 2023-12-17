@@ -1,5 +1,6 @@
 black
 ruff
 pytest
-pytest-cov
+pytest-timeout
+pytest-rerunfailures
 coverage

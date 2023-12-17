@@ -2,7 +2,7 @@
 
 ## 这是什么项目
 
-本仓库意在汇集，历年参加[全国大学生智能车竞赛](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B){:target="\_blank"}的全部开源项目。
+本仓库意在汇集，历年参加[全国大学生智能车竞赛（恩智浦杯/飞思卡尔杯）](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B){:target="\_blank"}的全部开源项目。
 
 特此向选择开源的车友们表示深深的感谢。
 
