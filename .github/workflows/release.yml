@@ -40,7 +40,7 @@ jobs:
 
       - name: Upload new date artifact
         if: env.DATA_FILE_CHANGED == 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: date.csv
           path: table.csv
