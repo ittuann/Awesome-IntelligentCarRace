@@ -29,7 +29,9 @@
 
 项目 GitHub Pages 网页: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-项目网页 Netlify 镜像: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & 网页 Vercel 镜像: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
+项目 Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
+
+> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
 
 ## 参与讨论
 
@@ -62,13 +64,15 @@
 
 作为来自非传统强校的学生，也曾是一名在机械自动化专业自学编程和嵌入式开发的同学，我深知开源的重要性和意义。两年前，我选择将自己国一的代码开源，目的就是希望能帮助到更多的同学。而现如今，我创建这个开源仓库，也是希望延续这份初衷，为参加智能车竞赛的同学们搭建一个共享、学习和交流的地方。
 
+## 参与协作
+
+若您也想要为这个项目增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="_blank"}侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="_blank"}。
+
 ## 致谢
 
 感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
-若您也想要增加一条开源项目，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}侧边栏内的[完整提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5){:target="\_blank"}。
-
-感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。同时也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
+同时感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 <a href="https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace" />

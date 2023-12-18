@@ -8,7 +8,6 @@ Note:
     License: MIT License.
 """
 
-import shutil
 from pathlib import Path
 
 import pandas as pd
@@ -83,8 +82,8 @@ def test_build_docs():
 
     assert SITE_PATH.exists(), "SITE_PATH should be created"
 
-    for config_file in DOCS_PATH.glob("mkdocs-*.yml"):
-        language_code = config_file.stem.split("-")[1]
+    for config_file in DOCS_PATH.glob("mkdocs.*.yml"):
+        language_code = config_file.stem.split(".")[1]
         expected_dir = SITE_PATH / language_code
         # 验证对应的文件夹是否存在
         assert expected_dir.exists(), f"Expected directory for {language_code} does not exist"

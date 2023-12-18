@@ -146,3 +146,6 @@ nav:
       - 2022: year/2022.md
       - 2021: year/2021.md
   - 提交指南: contribution/contribution.md
+  - Multilingual:
+      - zh Chinese: https://ittuann.github.io/Awesome-IntelligentCarRace/
+      - en English: https://ittuann.github.io/Awesome-IntelligentCarRace/en/

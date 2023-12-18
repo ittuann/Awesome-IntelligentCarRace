@@ -10,12 +10,6 @@ jobs:
   prettify:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
-    strategy:
-      fail-fast: true
-
     steps:
       - name: Checking Out
         uses: actions/checkout@v4
@@ -41,6 +35,7 @@ jobs:
     needs: prettify
 
     strategy:
+      fail-fast: true
       matrix:
         python-version: ["3.11"]
 
@@ -83,12 +78,14 @@ jobs:
           coverage xml && coverage html
 
       - name: Upload coverage reports to Codecov
+        if: github.repository == 'ittuann/Awesome-IntelligentCarRace' && github.ref == 'refs/heads/main'
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         continue-on-error: true
 
       - name: Upload coverage reporter to Codacy
+        if: github.repository == 'ittuann/Awesome-IntelligentCarRace' && github.ref == 'refs/heads/main'
         uses: codacy/codacy-coverage-reporter-action@v1
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}

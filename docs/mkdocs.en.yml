@@ -133,3 +133,6 @@ extra:
 # Navigation
 nav:
   - index: index.md
+  - Multilingual:
+      - zh Chinese: https://ittuann.github.io/Awesome-IntelligentCarRace/
+      - en English: https://ittuann.github.io/Awesome-IntelligentCarRace/en/

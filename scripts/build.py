@@ -33,8 +33,8 @@ def build_docs():
     print(f"Main site successfully built at: {SITE_PATH}")
 
     # Build other localized documentations
-    for file in DOCS_PATH.glob("mkdocs-*.yml"):
-        language_code = file.stem.split("-")[1]
+    for file in DOCS_PATH.glob("mkdocs.*.yml"):
+        language_code = file.stem.split(".")[1]
         print(f"Building the {language_code} site with configuration file: {file}")
         subprocess.run(["mkdocs", "build", "-f", str(file)], check=True)
     print(f"Sub site successfully built at: {SITE_PATH}")

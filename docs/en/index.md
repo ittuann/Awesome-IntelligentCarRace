@@ -1,6 +1,8 @@
-# Intelligent Car Racing Competition (NXP Cup)
+# Intelligent Car Racing Competition(NXP Cup)
 
 Awesome Intelligent Car Racing Competition (NXP Cup) / Autonomous Race Car Challenge
+
+Open source project collection website.
 
 ---
 
@@ -19,7 +21,13 @@ Awesome Intelligent Car Racing Competition (NXP Cup) / Autonomous Race Car Chall
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"}
 [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_shield&issueType=license){:target="\_blank"}
 
----
+Project GitHub Repository: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
+
+Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
+
+Project Netlify mirror pages: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel mirror pages: <https://awesome-intelligentcarrace. vercel.app>{:target="\_blank"}
+
+For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
 
 ## TODO
 
