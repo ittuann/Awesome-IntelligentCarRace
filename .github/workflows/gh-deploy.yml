@@ -43,15 +43,12 @@ jobs:
       - name: Build multi-language site
         run: python ./scripts/build.py
 
-      - name: Setup Git User actions-user
+      - name: Prepare github pages
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-
-      - name: GitHub Pages Website deploy
-        run: |
-          git clone https://github.com/ittuann/Awesome-IntelligentCarRace.git gh
-          cd gh
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone https://github.com/ittuann/Awesome-IntelligentCarRace.git pages
+          cd pages
           git checkout gh-pages
           git rm -rf .
           git clean -fxd
@@ -59,4 +56,10 @@ jobs:
           git add .
           LATEST_HASH=$(git rev-parse --short=7 HEAD)
           git commit -m "Update GitHub Pages - $LATEST_HASH'"
-          git push https://github.com/ittuann/Awesome-IntelligentCarRace.git gh-pages
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          directory: pages
