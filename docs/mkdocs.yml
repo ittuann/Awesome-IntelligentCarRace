@@ -1,19 +1,23 @@
 # Project information
 site_name: Awesome-IntelligentCarRace
 site_description: 智能车竞赛 开源项目合集 | Awesome Intelligent Car Race
-site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
+site_url: https://ittuann.github.io/Awesome-IntelligentCarRace
 
 # Repository
 repo_name: ittuann/Awesome-IntelligentCarRace
 repo_url: https://github.com/ittuann/Awesome-IntelligentCarRace
-edit_uri: blob/main/docs
+
+docs_dir: zh
+site_dir: ../site
+edit_uri: blob/main/docs/zh
 
 # Configuration
 theme:
   name: material
+  language: zh
   custom_dir: overrides
   font:
-    text: Roboto
+    text: Helvetica
     code: Roboto Mono
   features:
     - navigation.top
@@ -37,18 +41,17 @@ theme:
   icon:
     repo: fontawesome/brands/github
     edit: material/eye
-  language: zh
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: deep purple
-      accent: purple
+      accent: deep orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: blue grey
       accent: deep purple
       toggle:
         icon: material/brightness-4
@@ -91,11 +94,16 @@ extra_javascript:
 
 plugins:
   - search:
-      lang: ja
+      lang: zh
   - table-reader
   - rss
   - mkdocstrings:
+      enabled: true
       default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
 
 # Extra
 extra:
@@ -106,9 +114,17 @@ extra:
       link: https://github.com/ittuann
     - icon: fontawesome/solid/envelope
       link: mailto:<ittuann@outlook.com>
+  robots: robots.txt
   analytics:
     provider: google
     property: G-8SY1RE8KQW
+  alternate:
+    - name: Chinese
+      link: /
+      lang: zh
+    - name: English
+      link: /en/
+      lang: en
 
 # Navigation
 nav:

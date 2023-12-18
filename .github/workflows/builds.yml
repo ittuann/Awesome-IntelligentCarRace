@@ -65,6 +65,9 @@ jobs:
       - name: Generate sub-tables
         run: python ./scripts/split.py
 
+      - name: Build
+        run: python ./scripts/build.py
+
       - name: Code formatter check
         run: black --diff ./scripts/
         continue-on-error: true
@@ -85,12 +88,9 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         continue-on-error: true
 
-      - name: Upload Codacy coverage reporter
+      - name: Upload coverage reporter to Codacy
         uses: codacy/codacy-coverage-reporter-action@v1
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: coverage.xml
         continue-on-error: true
-
-      - name: Build
-        run: mkdocs build

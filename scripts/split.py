@@ -12,11 +12,10 @@ Example:
     $ python ./scripts/split.py
 """
 
-import sys
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
+from config import DOCS_PATH, TABLE_PATH, TABLE_URL_PATH
 
 
 def awardSort(awards: pd.Series) -> pd.Series:
@@ -30,22 +29,23 @@ def awardSort(awards: pd.Series) -> pd.Series:
     Returns:
         pd.Series: 排序后的系列
     """
-    awardOrder = ["国家级一等奖", "国家级二等奖", "国家级三等奖", "省级一等奖", "省级二等奖", "省级三等奖"]
-    return awards.map(
-        lambda award: (0, awardOrder.index(award))
-        if award in awardOrder
-        else (1, award)
-    )
+    awardOrder = [
+        "国家级一等奖",
+        "国家级二等奖",
+        "国家级三等奖",
+        "省级一等奖",
+        "省级二等奖",
+        "省级三等奖",
+    ]
+    return awards.map(lambda award: (0, awardOrder.index(award)) if award in awardOrder else (1, award))
 
 
-def urlModification(
-    inputFile: Optional[Path] = None, outputFile: Optional[Path] = None
-):
+def urlModification(inputFile: Path = TABLE_PATH, outputFile: Path = TABLE_URL_PATH):
     """修饰主表的URL链接.
 
     Args:
-        inputFile (Path, optional): 输入的 CSV 文件路径。默认为 None ，将使用路径"./table.csv"
-        outputFile (Path, optional): 输出的 CSV 文件路径。默认为 None ，将使用路径"./table.csv"
+        inputFile (Path, optional): 输入的 CSV 文件路径。默认为将使用路径"./table.csv"
+        outputFile (Path, optional): 输出的 CSV 文件路径。默认为将使用路径"./table.csv"
 
     Raises:
         ValueError: 如果输入的文件不存在，则抛出异常
@@ -53,11 +53,6 @@ def urlModification(
     Examples:
         >>> urlModification()
     """
-    if inputFile is None:
-        inputFile = Path("./table.csv")
-    if outputFile is None:
-        outputFile = Path("./table-url.csv")
-
     if not inputFile.exists():
         raise ValueError(f"The specified {inputFile} does not exist.")
 
@@ -67,7 +62,7 @@ def urlModification(
     print(f"Successfully generate url modification table {outputFile}")
 
 
-def splitTable(filtration: str, outputDir: Path, inputFile: Optional[Path] = None):
+def splitTable(filtration: str, outputDir: Path, inputFile: Path = TABLE_URL_PATH):
     """根据给定的过滤列将主表拆分.
 
     根据给定的过滤列将主表拆分为多个子表，并将子表保存在指定的输出目录中。
@@ -79,7 +74,7 @@ def splitTable(filtration: str, outputDir: Path, inputFile: Optional[Path] = Non
     Args:
         filtration (str): 过滤的列名称
         outputDir (Path): 输出目录路径
-        inputFile (Path, optional): 输入的 CSV 文件路径。默认为 None ，将使用路径"./table-url.csv"
+        inputFile (Path, optional): 输入的 CSV 文件路径。默认为将使用路径"./table-url.csv"
 
     Raises:
         ValueError: 如果输入的文件不存在，则抛出异常
@@ -87,11 +82,8 @@ def splitTable(filtration: str, outputDir: Path, inputFile: Optional[Path] = Non
         ValueError: 如果指定的过滤列不是表的列，则抛出异常
 
     Examples:
-        >>> splitTable("年份", Path(".") / "docs" / "year")
+        >>> splitTable("年份", DOCS_PATH / "zh" / "year")
     """
-    if inputFile is None:
-        inputFile = Path("./table-url.csv")
-
     if not inputFile.exists():
         raise ValueError(f"The specified input file {inputFile} does not exist.")
     if not outputDir.exists():
@@ -99,9 +91,7 @@ def splitTable(filtration: str, outputDir: Path, inputFile: Optional[Path] = Non
 
     df = pd.read_csv(inputFile, encoding="utf-8")
     if filtration not in df.columns:
-        raise ValueError(
-            f"The specified filtration {filtration} is not a column of the table."
-        )
+        raise ValueError(f"The specified filtration {filtration} is not a column of the table.")
     grouped = df.groupby(filtration)
 
     for filtrate, group in grouped:
@@ -112,10 +102,8 @@ def splitTable(filtration: str, outputDir: Path, inputFile: Optional[Path] = Non
 
 
 if __name__ == "__main__":
-    sys.path.append(str(Path.cwd()))
-
     urlModification()
 
-    splitTable("年份", Path(".") / "docs" / "year")
-    splitTable("组别", Path(".") / "docs" / "group")
-    splitTable("获奖", Path(".") / "docs" / "award")
+    splitTable("年份", DOCS_PATH / "zh" / "year")
+    splitTable("组别", DOCS_PATH / "zh" / "group")
+    splitTable("获奖", DOCS_PATH / "zh" / "award")

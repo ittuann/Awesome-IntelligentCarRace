@@ -50,7 +50,7 @@
 
     您也可以在侧边栏中，查看按照年份/组别/获奖进行分类筛选的表格。
 
-{{ read_csv('table-url.csv') }}
+{{ read_csv('../table-url.csv') }}
 
 ???+ Example "下载表格"
 

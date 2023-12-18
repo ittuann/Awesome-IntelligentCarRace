@@ -8,10 +8,13 @@ Note:
     License: MIT License.
 """
 
+import shutil
 from pathlib import Path
 
 import pandas as pd
 import pytest
+from build import build_docs, update_404page_title
+from config import DOCS_PATH, SITE_PATH, TABLE_PATH
 from split import awardSort, splitTable, urlModification
 
 
@@ -25,13 +28,13 @@ def test_awardSort():
 
 def test_urlModification_success():
     """Test case for the URLModification function with successful execution."""
-    output_file = Path(__file__).parent / "test_output.csv"
+    output_file = DOCS_PATH / "test_output.csv"
 
     urlModification(outputFile=output_file)
 
     df_output = pd.read_csv(output_file)
     for url in df_output["链接"]:
-        assert url.startswith("<") and url.endswith('>{:target="_blank"}')
+        assert url.startswith("<") and url.endswith('>{:target="_blank"}'), f"URL {url} is not modified"
     output_file.unlink()
 
 
@@ -44,7 +47,7 @@ def test_urlModification_fail():
 def test_splitTable_success():
     """Test case for the splitTable function with successful execution."""
     # 读取输入文件以确定预期年份
-    df_input = pd.read_csv(Path("./table.csv"))
+    df_input = pd.read_csv(TABLE_PATH)
     for column_header in ["年份", "组别", "获奖"]:
         expected_categories = sorted(set(df_input[column_header].astype(str)))
 
@@ -53,12 +56,14 @@ def test_splitTable_success():
         for category in expected_categories:
             output_file = Path(__file__).parent / f"{category}.csv"
             # 验证文件成功生成
-            assert output_file.exists()
+            assert output_file.exists(), f"Output file {output_file} not found"
             # 验证每个输出文件内容
             df_output = pd.read_csv(output_file)
             expected_columns = ["名称", "链接", "学校", "组别", "获奖", "年份", "备注"]
-            assert list(df_output.columns) == expected_columns
-            assert all(df_output[column_header].astype(str) == category)
+            assert list(df_output.columns) == expected_columns, f"Columns in {output_file} do not match"
+            assert all(
+                df_output[column_header].astype(str) == category
+            ), f"Category {category} not found in {output_file}"
             output_file.unlink()
 
 
@@ -67,6 +72,38 @@ def test_splitTable_fail():
     with pytest.raises(ValueError):
         splitTable("获奖", Path(__file__).parent, Path("non_existent.csv"))
     with pytest.raises(ValueError):
-        splitTable("获奖", Path("non_existent_dir"), Path("./table.csv"))
+        splitTable("获奖", Path("non_existent_dir"), TABLE_PATH)
     with pytest.raises(ValueError):
-        splitTable("不存在的列标题", Path(__file__).parent, Path("./table.csv"))
+        splitTable("不存在的列标题", Path(__file__).parent, TABLE_PATH)
+
+
+def test_build_docs():
+    """Test case for the build_docs function."""
+    build_docs()
+
+    assert SITE_PATH.exists(), "SITE_PATH should be created"
+
+    for config_file in DOCS_PATH.glob("mkdocs-*.yml"):
+        language_code = config_file.stem.split("-")[1]
+        expected_dir = SITE_PATH / language_code
+        # 验证对应的文件夹是否存在
+        assert expected_dir.exists(), f"Expected directory for {language_code} does not exist"
+
+
+def test_update_404page_title():
+    """Test case for the test_update_404page_title function. Need run build_docs() first."""
+    test_file_path = SITE_PATH / "404.html"
+    update_404page_title()
+
+    with open(test_file_path, encoding="utf-8") as file:
+        updated_content = file.read()
+
+    assert "<title>Awesome Intelligent Car Race - 404 Page Not Found</title>" in updated_content, "New title not found"
+    assert "<title>Awesome-IntelligentCarRace</title>" not in updated_content, "Old title should be removed"
+
+
+def test_update_404page_title_fail():
+    """Test case for the test_update_404page_title function with failure."""
+    update_404page_title()
+    with pytest.raises(FileNotFoundError):
+        update_404page_title(Path("non_existent_dir"))

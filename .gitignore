@@ -3,13 +3,11 @@ __pycache__
 
 /site
 /table-url.csv
-/docs/award/*.csv
-/docs/group/*.csv
-/docs/year/*.csv
+/docs/**/*.csv
 
 /.vscode
 /.ruff_cache
 /htmlcov
 /.pytest_cache
-.coverage
-coverage.xml
+/.coverage
+/coverage.xml

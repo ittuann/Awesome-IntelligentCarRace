@@ -40,10 +40,23 @@ jobs:
       - name: Generate sub-tables
         run: python ./scripts/split.py
 
+      - name: Build multi-language site
+        run: python ./scripts/build.py
+
       - name: Setup Git User actions-user
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-      - name: gh-deploy
-        run: mkdocs gh-deploy
+      - name: GitHub Pages Website deploy
+        run: |
+          git clone https://github.com/ittuann/Awesome-IntelligentCarRace.git gh
+          cd gh
+          git checkout gh-pages
+          git rm -rf .
+          git clean -fxd
+          cp -r ../site/* .
+          git add .
+          LATEST_HASH=$(git rev-parse --short=7 HEAD)
+          git commit -m "Update GitHub Pages - $LATEST_HASH'"
+          git push https://github.com/ittuann/Awesome-IntelligentCarRace.git gh-pages
