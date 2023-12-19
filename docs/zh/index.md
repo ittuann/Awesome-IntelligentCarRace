@@ -35,7 +35,9 @@
 
 ## 参与讨论
 
-您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 进行交流和讨论。这里集中了仓库所有的问题和讨论，更易于追踪和跟进。同时您公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
+您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 进行交流和讨论。这里集中了仓库所有的问题和讨论，同时公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。
+
+您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
 
 [![Github Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
 [![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
