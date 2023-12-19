@@ -1,4 +1,5 @@
 mkdocs-material[recommended]
+mkdocs-redirects
 mkdocs-table-reader-plugin
 mkdocs-rss-plugin
 mkdocstrings[python]

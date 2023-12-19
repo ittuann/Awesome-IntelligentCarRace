@@ -1,7 +1,7 @@
 # Project information
 site_name: Awesome-IntelligentCarRace
 site_description: Awesome Intelligent Car Race
-site_url: https://ittuann.github.io/Awesome-IntelligentCarRace
+site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
 
 # Repository
 repo_name: ittuann/Awesome-IntelligentCarRace
@@ -42,24 +42,20 @@ theme:
     repo: fontawesome/brands/github
     edit: material/eye
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
-      accent: indigo
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 site_author: ittuann
 copyright: MIT & CC-BY-4.0 License
