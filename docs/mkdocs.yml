@@ -1,100 +1,21 @@
+# Configuration inheritance
+INHERIT: mkdocs-base.yml
+
 # Project information
 site_name: Awesome-IntelligentCarRace
 site_description: 智能车竞赛 开源项目合集 | Awesome Intelligent Car Race
-site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
 
-# Repository
-repo_name: ittuann/Awesome-IntelligentCarRace
-repo_url: https://github.com/ittuann/Awesome-IntelligentCarRace
-
+# Build information
 docs_dir: zh
 site_dir: ../site
 edit_uri: blob/main/docs/zh
 
 # Configuration
 theme:
-  name: material
   language: zh
-  custom_dir: overrides
-  font:
-    text: Helvetica
-    code: Roboto Mono
-  features:
-    - navigation.top
-    - navigation.footer
-    - navigation.expand
-    - navigation.tracking
-    - navigation.indexes
-    - navigation.instant
-    - content.action.edit
-    - content.code.copy
-    - content.code.annotate
-    - content.code.select
-    - content.tabs.link
-    - content.tooltips
-    - search.suggest
-    - search.highlight
-    - search.share
-    - toc.follow
-  logo: assets/favicon/favicon.png
-  favicon: assets/favicon/favicon.png
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/eye
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: deep orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: deep purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
 
-site_author: ittuann
-copyright: MIT & CC-BY-4.0 License
-
-# Extensions
-markdown_extensions:
-  - admonition
-  - footnotes
-  - attr_list
-  - def_list
-  - md_in_html
-  - toc:
-      permalink: true
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.betterem
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.superfences
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji
-  - meta
-  - tables
-
-extra_javascript:
-  - https://unpkg.com/tablesort@latest/dist/tablesort.min.js
-  - javascripts/tablesort.js
-
+# Plugins
 plugins:
-  - search:
-      lang: zh
   - table-reader
   - rss
   - mkdocstrings:
@@ -104,29 +25,12 @@ plugins:
         python:
           options:
             docstring_style: google
+  - search:
+      lang: zh
+      separator: '[\s\u200b\-]'
   - redirects:
       redirect_maps:
         contribution.md: contribution/contribution.md
-# Extra
-extra:
-  social:
-    - icon: octicons/globe-16
-      link: https://ittuann.github.io/Awesome-IntelligentCarRace/
-    - icon: fontawesome/brands/github
-      link: https://github.com/ittuann
-    - icon: fontawesome/solid/envelope
-      link: mailto:<ittuann@outlook.com>
-  robots: robots.txt
-  analytics:
-    provider: google
-    property: G-8SY1RE8KQW
-  alternate:
-    - name: Chinese
-      link: /
-      lang: zh
-    - name: English
-      link: /en/
-      lang: en
 
 # Navigation
 nav:

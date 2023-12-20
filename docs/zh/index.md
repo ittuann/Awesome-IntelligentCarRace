@@ -31,7 +31,7 @@
 
 项目 Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
 
-> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
+> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
 
 ## 参与讨论
 

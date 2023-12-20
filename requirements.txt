@@ -1,5 +1,6 @@
 mkdocs-material[recommended]
 mkdocs-redirects
+jieba
 mkdocs-table-reader-plugin
 mkdocs-rss-plugin
 mkdocstrings[python]

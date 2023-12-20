@@ -1,6 +1,6 @@
 # Intelligent Car Racing Competition(NXP Cup)
 
-Awesome Intelligent Car Racing Competition (NXP Cup) / Autonomous Race Car Challenge
+Awesome Intelligent Car Racing Competition ( NXP Cup ) / Autonomous Race Car Challenge
 
 Open source project collection website ✨
 
