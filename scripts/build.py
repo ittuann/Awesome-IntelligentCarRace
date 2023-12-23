@@ -17,30 +17,30 @@ import shutil
 import subprocess
 from pathlib import Path
 
-from config import DOCS_PATH, SITE_PATH
+from config import cfg
 
 
-def build_docs():
+def build_docs() -> None:
     """Build Multi-Language Documentation."""
-    if SITE_PATH.exists():
-        print(f"Removing existing site dir: {SITE_PATH}")
-        shutil.rmtree(SITE_PATH)
+    if cfg.SITE_PATH.exists():
+        print(f"Removing existing site dir: {cfg.SITE_PATH}")
+        shutil.rmtree(cfg.SITE_PATH)
 
     # Build the main documentation
-    file = DOCS_PATH / "mkdocs.yml"
+    file = cfg.DOCS_PATH / "mkdocs.yml"
     print(f"Building the main documentation, with configuration file: {file}")
     subprocess.run(["mkdocs", "build", "-f", str(file)], check=True)
-    print(f"Main site successfully built at: {SITE_PATH}")
+    print(f"Main site successfully built at: {cfg.SITE_PATH}")
 
     # Build other localized documentations
-    for file in DOCS_PATH.glob("mkdocs.*.yml"):
+    for file in cfg.DOCS_PATH.glob("mkdocs.*.yml"):
         language_code = file.stem.split(".")[1]
         print(f"Building the {language_code} site with configuration file: {file}")
         subprocess.run(["mkdocs", "build", "-f", str(file)], check=True)
-    print(f"Sub site successfully built at: {SITE_PATH}")
+    print(f"Sub site successfully built at: {cfg.SITE_PATH}")
 
 
-def update_404page_title(file_path: Path = SITE_PATH / "404.html"):
+def update_404page_title(file_path: Path = cfg.SITE_PATH / "404.html") -> None:
     """Update the title of the 404 page."""
     new_title = "Awesome Intelligent Car Race - 404 Page Not Found"
 
@@ -69,6 +69,6 @@ if __name__ == "__main__":
     print(
         """
         Serve multi-language site at http://localhost:8000 with:
-        'python -m http.server --directory site 8000 --bind localhost'
+            python -m http.server --directory site 8000 --bind localhost
         """
     )

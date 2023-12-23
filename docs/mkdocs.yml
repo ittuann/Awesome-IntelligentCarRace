@@ -1,5 +1,8 @@
 # Configuration inheritance
 INHERIT: mkdocs-base.yml
+watch:
+  - mkdocs-base.yml
+  - overrides
 
 # Project information
 site_name: Awesome-IntelligentCarRace

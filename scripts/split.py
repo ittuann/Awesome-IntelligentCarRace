@@ -15,7 +15,7 @@ Example:
 from pathlib import Path
 
 import pandas as pd
-from config import DOCS_PATH, TABLE_PATH, TABLE_URL_PATH
+from config import cfg
 
 
 def awardSort(awards: pd.Series) -> pd.Series:
@@ -40,7 +40,7 @@ def awardSort(awards: pd.Series) -> pd.Series:
     return awards.map(lambda award: (0, awardOrder.index(award)) if award in awardOrder else (1, award))
 
 
-def urlModification(inputFile: Path = TABLE_PATH, outputFile: Path = TABLE_URL_PATH):
+def urlModification(inputFile: Path = cfg.TABLE_PATH, outputFile: Path = cfg.TABLE_URL_PATH) -> None:
     """修饰主表的URL链接.
 
     Args:
@@ -62,7 +62,7 @@ def urlModification(inputFile: Path = TABLE_PATH, outputFile: Path = TABLE_URL_P
     print(f"Successfully generate url modification table {outputFile}")
 
 
-def splitTable(filtration: str, outputDir: Path, inputFile: Path = TABLE_URL_PATH):
+def splitTable(filtration: str, outputDir: Path, inputFile: Path = cfg.TABLE_URL_PATH) -> None:
     """根据给定的过滤列将主表拆分.
 
     根据给定的过滤列将主表拆分为多个子表，并将子表保存在指定的输出目录中。
@@ -82,7 +82,7 @@ def splitTable(filtration: str, outputDir: Path, inputFile: Path = TABLE_URL_PAT
         ValueError: 如果指定的过滤列不是表的列，则抛出异常
 
     Examples:
-        >>> splitTable("年份", DOCS_PATH / "zh" / "year")
+        >>> splitTable("年份", cfg.DOCS_PATH / "zh" / "year")
     """
     if not inputFile.exists():
         raise ValueError(f"The specified input file {inputFile} does not exist.")
@@ -104,6 +104,6 @@ def splitTable(filtration: str, outputDir: Path, inputFile: Path = TABLE_URL_PAT
 if __name__ == "__main__":
     urlModification()
 
-    splitTable("年份", DOCS_PATH / "zh" / "year")
-    splitTable("组别", DOCS_PATH / "zh" / "group")
-    splitTable("获奖", DOCS_PATH / "zh" / "award")
+    splitTable("年份", cfg.DOCS_PATH / "zh" / "year")
+    splitTable("组别", cfg.DOCS_PATH / "zh" / "group")
+    splitTable("获奖", cfg.DOCS_PATH / "zh" / "award")
