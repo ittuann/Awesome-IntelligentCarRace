@@ -32,9 +32,9 @@ jobs:
             else
               echo "Date file has not changed in the last commit."
             fi
-            DATA_FILE_SHA=$(sha256sum table.csv | awk '{print $1}')
-            echo "DATA_FILE_SHA=$DATA_FILE_SHA" >> $GITHUB_ENV
-            echo "Data file SHA: $DATA_FILE_SHA"
+            DATA_FILE_SHA256=$(sha256sum table.csv | awk '{print $1}')
+            echo "DATA_FILE_SHA256=$DATA_FILE_SHA256" >> $GITHUB_ENV
+            echo "Data file SHA: $DATA_FILE_SHA256"
             echo "COMMIT_TIME=$(git log -1 --format=%cd --date=format:%Y%m%dT%H%M%S)" >> $GITHUB_ENV
           fi
 
@@ -57,6 +57,6 @@ jobs:
 
             Commit SHA: ${{ github.sha }}
 
-            File SHA: `${{ env.DATA_FILE_SHA }}`
+            File SHA256: `${{ env.DATA_FILE_SHA256 }}`
           draft: false
           prerelease: false

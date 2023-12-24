@@ -1,7 +1,4 @@
 # Configuration inheritance: https://www.mkdocs.org/user-guide/configuration/#configuration-inheritance
-# Project information
-site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/
-
 # Repository
 repo_name: ittuann/Awesome-IntelligentCarRace
 repo_url: https://github.com/ittuann/Awesome-IntelligentCarRace

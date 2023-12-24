@@ -6,7 +6,8 @@ watch:
 
 # Project information
 site_name: Awesome-IntelligentCarRace
-site_description: Awesome Intelligent Car Race
+site_description: Awesome Intelligent Car Racing Competition
+site_url: https://ittuann.github.io/Awesome-IntelligentCarRace/en/
 
 # Build information
 docs_dir: en
@@ -33,7 +34,7 @@ plugins:
 
 # Navigation
 nav:
-  - index: index.md
-  - Multilingual:
+  - ✨index: index.md
+  - 🖨️Multilingual:
       - zh Chinese: https://ittuann.github.io/Awesome-IntelligentCarRace/
       - en English: https://ittuann.github.io/Awesome-IntelligentCarRace/en/
