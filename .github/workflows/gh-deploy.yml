@@ -55,8 +55,7 @@ jobs:
           git rm -rf .
           git clean -fxd
           cp -r ../site/* .
-          git add .
-          git commit -m "Deployed GitHub Pages - $LATEST_HASH"
+          git commit -am "Deployed GitHub Pages - $LATEST_HASH"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
