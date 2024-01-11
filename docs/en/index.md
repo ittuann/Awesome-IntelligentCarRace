@@ -27,8 +27,6 @@ Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:ta
 
 Project Netlify mirror pages: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel mirror pages: <https://awesome-intelligentcarrace. vercel.app>{:target="\_blank"}
 
-For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
-
 ## TODO
 
 {{ read_csv('../table-url.csv') }}
