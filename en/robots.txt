@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://ittuann.github.io/Awesome-IntelligentCarRace/sitemap.xml
-Sitemap: https://ittuann.github.io/Awesome-IntelligentCarRace/en/sitemap.xml
