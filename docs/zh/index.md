@@ -31,11 +31,15 @@
 
 项目 Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
 
+???- question "FAQ：访问 GitHub 存在问题?"
+
+    这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"}，主网站通过 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"} 服务提供。当您在访问 Github 存在问题时可以尝试使用如 [GitHub Hosts](https://github.com/ineo6/hosts?tab=readme-ov-file#windows-1){:target="\_blank"} 等方式加速访问。此外，我也在 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 服务上配置了内容完全相同的镜像站点以供访问。
+
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
 
 ## 参与讨论
 
-您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 进行交流和讨论。这里集中了仓库所有的问题和讨论，同时公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。
+推荐您直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 进行交流和讨论。这里汇集了仓库所有相关的问题和讨论，并且公开可见的讨论内容也能被搜索引擎收录，从而帮助到更多有着相似疑问或需求的人。
 
 您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
 
@@ -44,9 +48,9 @@
 [![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
 [![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
 
-> 如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} (点赞)！
+> 支持这个项目: 如果您认为这个项目对您有所帮助，请考虑在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} (点赞)以示支持！
 >
-> 同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
+> 同时，如果您在本项目的合集中发现任何对您有价值的仓库，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
 ## 开源项目合集总表
 
@@ -56,7 +60,7 @@
 
 {{ read_csv('../table-url.csv') }}
 
-???+ Example "下载表格"
+???+ example "下载表格"
 
     如果您想要下载当前版本的汇总表格，请前往 [Github Releases 页面](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 进行下载。
 
@@ -68,7 +72,7 @@
 
 ## 参与协作
 
-若您也想要为这个项目增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="_blank"}侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="_blank"}。
+若您也想要为这个项目增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="\_blank"}。
 
 ## 致谢
 
