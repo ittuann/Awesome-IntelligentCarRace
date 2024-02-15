@@ -33,7 +33,7 @@
 
 ???- question "FAQ：访问 GitHub 存在问题?"
 
-    这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"}，主网站通过 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"} 服务提供。当您在访问 Github 存在问题时可以尝试使用如 [GitHub Hosts](https://github.com/ineo6/hosts?tab=readme-ov-file#windows-1){:target="\_blank"} 等方式加速访问。此外，我也在 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 服务上配置了内容完全相同的镜像站点以供访问。
+    这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 服务，主网站通过 Github Action 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。当您在访问 Github 存在问题时可以尝试使用如 [GitHub Hosts](https://github.com/ineo6/hosts?tab=readme-ov-file#windows-1){:target="\_blank"} 等方式加速访问。此外，我也在 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 服务上配置了内容完全相同的镜像站点以供访问。
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.vercel.app/en>{:target="\_blank"}
 
@@ -72,7 +72,9 @@
 
 ## 参与协作
 
-若您也想要为这个项目增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="\_blank"}，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="\_blank"}。
+如果您也想要为这个项目增加一条内容，欢迎查看侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="\_blank"}以了解如何开始。便捷的提交方式，您也可以直接查看[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="\_blank"}。
+
+如果您对参与本项目的开发感兴趣，请参考[提交指南-项目代码文档](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="\_blank"}以了解项目的完整流程。欢迎并感谢社区的任何贡献！
 
 ## 致谢
 

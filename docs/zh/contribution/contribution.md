@@ -58,7 +58,9 @@ mkdocs serve -f docs/mkdocs.yml
 
 项目代码覆盖率测试可在此查看: [Codecov](https://app.codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} [![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} ; 项目代码质量分析请访问: [Codacy](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"} ; 仓库许可证合规性扫描请查看: [FOSSA](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace){:target="\_blank"} [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_small){:target="\_blank"}
 
-同时项目提供了详尽的项目代码文档，您可以通过以下链接查看：<https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/scripts>{:target="\_blank"} 该文档由源代码内的信息自动生成，确保了随代码的更新同步保持最新状态。
+项目也提供了代码文档，您可以通过以下链接查看：<https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/scripts>{:target="\_blank"}
+
+该代码文档由源代码内的信息自动生成，确保了文档随代码的更新同步保持最新状态。
 
 ## 帮助通道
 
