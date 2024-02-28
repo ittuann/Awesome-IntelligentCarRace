@@ -17,11 +17,13 @@
 
 请访问 GitHub Pages 网页以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
-Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>
+如果您的网络环境在访问 [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像:
 
-Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>
+- Cloudflare Pages 镜像网页: <https://awesome-intelligentcarrace.pages.dev>
+- Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>
+- Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>
 
-> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or <https://awesome-intelligentcarrace.vercel.app/en>
+> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or <https://awesome-intelligentcarrace.pages.dev/en>
 
 ## 这是什么项目
 

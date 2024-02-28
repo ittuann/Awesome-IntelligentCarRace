@@ -25,7 +25,13 @@ Project GitHub Repository: <https://github.com/ittuann/Awesome-IntelligentCarRac
 
 Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-Project Netlify mirror pages: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel mirror pages: <https://awesome-intelligentcarrace. vercel.app>{:target="\_blank"}
+???+ question " FAQ: Network Issues"
+
+    If you encounter instability in your network environment while accessing [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}, you can switch to one of the following mirror sites hosted on different platforms. Choose any mirror that you can access smoothly:
+
+    - Cloudflare Pages mirror site: <https://awesome-intelligentcarrace.pages.dev>{:target="\_blank"}
+    - Netlify mirror site: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"}
+    - Vercel mirror site: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
 
 ## TODO
 
