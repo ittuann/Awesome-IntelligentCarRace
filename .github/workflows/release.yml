@@ -47,7 +47,7 @@ jobs:
 
       - name: Auto create new date release
         if: env.DATA_FILE_CHANGED == 'true'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: table.csv
           tag_name: ${{ env.COMMIT_TIME }}
