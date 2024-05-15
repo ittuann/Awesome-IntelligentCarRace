@@ -15,6 +15,7 @@ Example:
 import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 from config import cfg
@@ -25,6 +26,9 @@ def build_docs() -> None:
     if cfg.SITE_PATH.exists():
         print(f"Removing existing site dir: {cfg.SITE_PATH}")
         shutil.rmtree(cfg.SITE_PATH)
+
+    # Add scripts path to the sys.path for mkdocstrings
+    sys.path.append(str(cfg.SITE_PATH / "scripts"))
 
     # Build the main documentation
     file = cfg.DOCS_PATH / "mkdocs.yml"
