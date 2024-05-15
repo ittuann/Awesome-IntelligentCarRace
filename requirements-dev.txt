@@ -1,5 +1,9 @@
 black
 ruff
+mypy
+pandas-stubs
+autoflake
+pyupgrade
 pytest
 pytest-timeout
 pytest-rerunfailures

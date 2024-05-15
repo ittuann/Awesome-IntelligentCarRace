@@ -71,6 +71,10 @@ jobs:
         run: ruff check .
         continue-on-error: true
 
+      - name: Code static typing check
+        run: mypy ./scripts/
+        continue-on-error: true
+
       - name: Coverage test
         run: |
           coverage run -m pytest

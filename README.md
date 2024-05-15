@@ -15,9 +15,12 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_shield&issueType=license)
 
-请访问 GitHub Pages 网页以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
+> [!NOTE]
+> 请访问 GitHub Pages 链接以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
-如果您的网络环境在访问 [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像:
+如果您的网络环境在访问主站 [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可以考虑配置 [github hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 等方式以缓解网络问题。
+
+您也可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像:
 
 - Cloudflare Pages 镜像网页: <https://awesome-intelligentcarrace.pages.dev>
 - Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>
@@ -44,7 +47,7 @@
 [![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
 [![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
 
-> [!NOTE]
+> [!TIP]
 > 如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)！
 >
 > 同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！

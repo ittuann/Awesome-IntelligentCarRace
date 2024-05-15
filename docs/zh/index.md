@@ -27,16 +27,15 @@
 
 项目 GitHub 仓库: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-项目 GitHub Pages 网页: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
+项目 GitHub Pages 主站链接: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-如果您的网络环境在访问 [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"} 时遇到不稳定的情况，可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像:
+???+ question "FAQ: 访问 GitHub 存在问题?"
 
-- Cloudflare Pages 镜像网页: <https://awesome-intelligentcarrace.pages.dev>{:target="\_blank"}
-- Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"} & Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>{:target="\_blank"}
+    当您的环境在访问 Github 时存在网络不稳定等受限情况，可以尝试使用如 [GitHub Hosts](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 等第三方方式加速访问。
 
-???- question "FAQ: 访问 GitHub 存在问题?"
+    此外，我也在 [Cloudflare Pages](https://awesome-intelligentcarrace.pages.dev/) 以及 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 平台上配置了内容完全相同的镜像站点服务以供备用访问。
 
-    这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 服务，主网站通过 Github Action 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。当您在访问 Github 存在网络问题时可以尝试使用如 [GitHub Hosts](https://github.com/ineo6/hosts?tab=readme-ov-file#windows-1){:target="\_blank"} 等第三方方式加速访问。此外，我也在 [Cloudflare Pages](https://awesome-intelligentcarrace.pages.dev/) 以及 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 平台上配置了内容完全相同的镜像站点服务以供备用访问。
+    这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 服务，主网站通过 [Github Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"} 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.pages.dev/en>{:target="\_blank"}
 
