@@ -3,4 +3,5 @@ mkdocs-redirects
 jieba
 mkdocs-table-reader-plugin
 mkdocs-rss-plugin
-mkdocstrings[python]
+mkdocstrings==0.24
+mkdocstrings-python==1.75
