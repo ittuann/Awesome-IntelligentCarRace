@@ -27,9 +27,6 @@ def build_docs() -> None:
         print(f"Removing existing site dir: {cfg.SITE_PATH}")
         shutil.rmtree(cfg.SITE_PATH)
 
-    # Add scripts path to the sys.path for mkdocstrings
-    sys.path.append(str(cfg.SITE_PATH / "scripts"))
-
     # Build the main documentation
     file = cfg.DOCS_PATH / "mkdocs.yml"
     print(f"Building the main documentation, with configuration file: {file}")
