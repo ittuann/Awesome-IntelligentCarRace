@@ -28,7 +28,7 @@ def build_docs() -> None:
         shutil.rmtree(cfg.SITE_PATH)
 
     # Add scripts path to the sys.path for mkdocstrings
-    sys.path.append(str(cfg.SITE_PATH / "scripts"))
+    sys.path.append(str(cfg.PROJECT_PATH / "scripts"))
 
     # Build the main documentation
     file = cfg.DOCS_PATH / "mkdocs.yml"
