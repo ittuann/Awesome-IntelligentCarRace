@@ -23,4 +23,6 @@ lint:
 	autoflake --remove-all-unused-imports --remove-unused-variables --recursive ./scripts
 
 unit-tests:
-	pytest
+	coverage run -m pytest
+	coverage report
+	coverage xml && coverage html

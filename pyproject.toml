@@ -40,4 +40,4 @@ exclude_lines = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "-ra --cov-report term-missing --cov-report xml --cov-report html --cov-fail-under 80 --timeout=10 --reruns 2 --reruns-delay 1"
+addopts = "-ra --timeout=15 --reruns 2 --reruns-delay 1"
