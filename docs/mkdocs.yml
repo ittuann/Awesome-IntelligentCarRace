@@ -32,6 +32,9 @@ plugins:
   - search:
       lang: zh
       separator: '[\s\u200b\-]'
+  - git-committers:
+      repository: ittuann/Awesome-IntelligentCarRace
+      branch: main
   - redirects:
       redirect_maps:
         contribution.md: contribution/contribution.md

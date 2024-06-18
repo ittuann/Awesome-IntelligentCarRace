@@ -1,20 +1,20 @@
 # 提交指南
 
-参与本项目的协作**需要**一个 GitHub 账号（可以前往 [GitHub 账号注册页面](https://github.com/signup) 页面注册），**并不需要**高超的 GitHub 技巧。
+参与本项目的协作**需要**一个 GitHub 账号（可以前往 [GitHub 账号注册页面](https://github.com/signup) 进行注册），但**并不需要**高超的 GitHub 技巧。
 
 如果您想要向这份表格中提交新的内容，请参考本提交指南的内容。
 
 !!! note "提交前请注意"
 
-    在提交 [Pull Request](https://github.com/ittuann/Awesome-IntelligentCarRace/pulls){:target="\_blank"} 前，请仔细阅读本提交引导文档。
+    在提交 [Pull Request](https://github.com/ittuann/Awesome-IntelligentCarRace/pulls){:target="\_blank"} 前，请先阅读本提交引导文档。
 
-    如果您不熟悉下面 Git 操作等，请查看[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)。
+    如果您不熟悉 Git 等操作，可以直接查看[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)来在 GitHub 网页内提交 issue 补充信息。
 
-提交信息最多只需两个步骤：1.[向表格中增加信息](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_2) -> 2.[测试添加后的效果](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_3)(非必须但推荐)
+常规的提交信息最少仅需 2 步：1.[向表格中增加信息](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_2) -> 2.(非必须但推荐)[测试添加后的效果](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_3) -> 3.[提交 Pull Request 更改](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_4)。
 
-您也可以考虑直接使用[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)内提交 issue 的方式进行信息的补充。
+您也可以考虑直接使用[帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/#_5)，免去不熟悉的 Git 操作直接在 GitHub 网页界面中提交 issue，以此进行信息的补充。
 
-## 向表格中增加信息
+## 1. 向表格中增加信息
 
 首先，请登录您的 Github 账号。打开本项目的仓库链接: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"} ，然后在页面的右上角点击 `Fork` 按钮，以便将本仓库分支到您的个人账号。
 
@@ -26,17 +26,46 @@
 
 如果您已增加了信息但没有执行下一步在本地测试添加后的效果，请在 Pull Request 内**明确注明**。
 
-## 测试添加后的效果
+## 2. 测试添加后的效果
 
-为了保提交不会引入任何错误，在本地测试添加信息后的网页效果时，首先需要安装 Python 环境和依赖。在项目的根目录中，运行以下命令来安装必要的依赖：
+为了保提交不会引入任何错误，在本地测试添加信息后的网页效果时，首先需要安装 Python 环境和依赖。
 
-```python
+如果您的环境中能够使用 make 命令，可以直接运行以下命令来安装必要的依赖：
+
+```shell
+make install
+```
+
+在安装依赖后，即可在本地构建站点：
+
+```shell
+make
+```
+
+在构建完成后，您可以在本地查看修改后的网站效果：
+
+```shell
+make serve
+```
+
+最后即可运行以下命令来进行代码风格检查和单元测试，即可完成提交 PR 前的全部测试：
+
+```shell
+make lint
+make unit-tests
+```
+
+如果您无法使用 make 命令，也可以依次手动运行以下命令实现相近的效果：
+
+安装必要的依赖：
+
+```shell
 pip install -r requirements.txt
 ```
 
 然后运行脚本，生成筛选后的各个分表：
 
-```python
+```shell
 python scripts/split.py
 ```
 
@@ -48,7 +77,7 @@ mkdocs serve -f docs/mkdocs.yml
 
 如果在运行项目过程中没有出现任何报错，那就代表您成功地完成了增加信息后的测试。您也可以在本地浏览打开`http://127.0.0.1:8000/Awesome-IntelligentCarRace/`查看效果。
 
-## 提交更改
+## 3. 提交 Pull Request 更改
 
 在确认所有更改都正常工作后，您可以将更改提交到您的分支，并创建一个 [Pull Request](https://github.com/ittuann/Awesome-IntelligentCarRace/pulls){:target="\_blank"}，即可完成信息的补充。
 
@@ -62,17 +91,19 @@ mkdocs serve -f docs/mkdocs.yml
 
 该代码文档由源代码内的信息自动生成，确保了文档随代码的更新同步保持最新状态。
 
+此外，项目也提供了 RSS 订阅的方式，分别是默认以内容更新日期排序的[RSS](https://ittuann.github.io/Awesome-IntelligentCarRace/feed_rss_created.xml){:target="\_blank"}，和以文档创建日期排序的 [feed_rss_created](https://ittuann.github.io/Awesome-IntelligentCarRace/feed_rss_created.xml){:target="\_blank"}。您可以通过订阅 [RSS](https://ittuann.github.io/Awesome-IntelligentCarRace/feed_rss_created.xml){:target="\_blank"} 来获取项目的最新动态。
+
 ## 帮助通道
 
-如果您不熟悉上述 Git 等操作，但依然希望为项目补充或修改信息，不用担心，我们为您提供了另外一个途径。
+如果您不熟悉上述 Git 等操作，但依然希望为项目补充或修改信息，不用担心，我们为您提供了另外一个途径，即直接在 GitHub 网页界面中提交。
 
 a. 提交 Issue:
 
 - 打开项目的 [Github 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 。
-- 点击 [Issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 页面下的 [New issue](https://github.com/ittuann/Awesome-IntelligentCarRace/issues/new/choose){:target="\_blank"} 按钮。
+- 转到 [Issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 栏，点击的 [New issue](https://github.com/ittuann/Awesome-IntelligentCarRace/issues/new/choose){:target="\_blank"} 按钮。
 - 在显示的几个 Issues 模板中，选择 `✨ 提交信息` 。
 - 根据模板的提示完成信息的录入。
-- 提交 Issue 。
+- 提交 Issue 即可完成！
 
 b. 等待反馈:
 

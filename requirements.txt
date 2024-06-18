@@ -1,7 +1,8 @@
 mkdocs-material[recommended]
-mkdocs-redirects
 jieba
-mkdocs-table-reader-plugin
+mkdocs-git-committers-plugin-2
 mkdocs-rss-plugin
+mkdocs-table-reader-plugin
+mkdocs-redirects
 mkdocstrings==0.24
 mkdocstrings-python==1.7.5

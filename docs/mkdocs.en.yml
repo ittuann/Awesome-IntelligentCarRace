@@ -31,10 +31,13 @@ plugins:
             docstring_style: google
   - search:
       lang: en
+  - git-committers:
+      repository: ittuann/Awesome-IntelligentCarRace
+      branch: main
 
 # Navigation
 nav:
-  - ✨index: index.md
+  - ✨Index: index.md
   - 🖨️Multilingual:
       - zh Chinese: https://ittuann.github.io/Awesome-IntelligentCarRace/
       - en English: https://ittuann.github.io/Awesome-IntelligentCarRace/en/
