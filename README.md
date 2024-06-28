@@ -68,9 +68,9 @@
 
 同时感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
-<a href="https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace" />
-</a>
+[![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
+
+[![Star History](https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date)](https://github.com/ittuann/Awesome-IntelligentCarRace)
 
 ## License
 
