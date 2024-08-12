@@ -1159,7 +1159,8 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/build.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-23">23</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
 <span class="normal"><a href="#__codelineno-0-24">24</a></span>
 <span class="normal"><a href="#__codelineno-0-25">25</a></span>
 <span class="normal"><a href="#__codelineno-0-26">26</a></span>
@@ -1175,25 +1176,24 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-36">36</a></span>
 <span class="normal"><a href="#__codelineno-0-37">37</a></span>
 <span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="k">def</span> <span class="nf">build_docs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Build Multi-Language Documentation.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Removing existing site dir: </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a>        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="p">)</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a>    <span class="c1"># Build the main documentation</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="n">file</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span> <span class="o">/</span> <span class="s2">&quot;mkdocs.yml&quot;</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Building the main documentation, with configuration file: </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;mkdocs&quot;</span><span class="p">,</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">file</span><span class="p">)],</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Main site successfully built at: </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="c1"># Build other localized documentations</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;mkdocs.*.yml&quot;</span><span class="p">):</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>        <span class="n">language_code</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">stem</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Building the </span><span class="si">{</span><span class="n">language_code</span><span class="si">}</span><span class="s2"> site with configuration file: </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a>        <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;mkdocs&quot;</span><span class="p">,</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">file</span><span class="p">)],</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sub site successfully built at: </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="k">def</span> <span class="nf">build_docs</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Build Multi-Language Documentation.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Removing existing site dir: </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a>        <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="p">)</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>    <span class="c1"># Build the main documentation</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a>    <span class="n">file</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span> <span class="o">/</span> <span class="s2">&quot;mkdocs.yml&quot;</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Building the main documentation, with configuration file: </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a>    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;mkdocs&quot;</span><span class="p">,</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">file</span><span class="p">)],</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Main site successfully built at: </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="c1"># Build other localized documentations</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;mkdocs.*.yml&quot;</span><span class="p">):</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>        <span class="n">language_code</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">stem</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Building the </span><span class="si">{</span><span class="n">language_code</span><span class="si">}</span><span class="s2"> site with configuration file: </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>        <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s2">&quot;mkdocs&quot;</span><span class="p">,</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span> <span class="s2">&quot;-f&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">file</span><span class="p">)],</span> <span class="n">check</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sub site successfully built at: </span><span class="si">{</span><span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1218,7 +1218,8 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/build.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-43">43</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
 <span class="normal"><a href="#__codelineno-0-44">44</a></span>
 <span class="normal"><a href="#__codelineno-0-45">45</a></span>
 <span class="normal"><a href="#__codelineno-0-46">46</a></span>
@@ -1236,27 +1237,26 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-58">58</a></span>
 <span class="normal"><a href="#__codelineno-0-59">59</a></span>
 <span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="k">def</span> <span class="nf">update_404page_title</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span> <span class="o">/</span> <span class="s2">&quot;404.html&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Update the title of the 404 page.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a>    <span class="n">new_title</span> <span class="o">=</span> <span class="s2">&quot;Awesome Intelligent Car Race - 404 Page Not Found&quot;</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">file_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a>        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified 404.html </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a>        <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a>    <span class="k">if</span> <span class="n">new_title</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The title of the 404 page is already up-to-date.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a>    <span class="c1"># Replace the existing title with the new title</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>    <span class="n">updated_content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;title&gt;.*?&lt;/title&gt;&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;&lt;title&gt;</span><span class="si">{</span><span class="n">new_title</span><span class="si">}</span><span class="s2">&lt;/title&gt;&quot;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="c1"># Write the updated content back to the file</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">updated_content</span><span class="p">)</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Successfully updated the title of the 404 page&quot;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-61">61</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="k">def</span> <span class="nf">update_404page_title</span><span class="p">(</span><span class="n">file_path</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span> <span class="o">/</span> <span class="s2">&quot;404.html&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Update the title of the 404 page.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>    <span class="n">new_title</span> <span class="o">=</span> <span class="s2">&quot;Awesome Intelligent Car Race - 404 Page Not Found&quot;</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">file_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>        <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified 404.html </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>        <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>    <span class="k">if</span> <span class="n">new_title</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The title of the 404 page is already up-to-date.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="c1"># Replace the existing title with the new title</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>    <span class="n">updated_content</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;title&gt;.*?&lt;/title&gt;&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;&lt;title&gt;</span><span class="si">{</span><span class="n">new_title</span><span class="si">}</span><span class="s2">&lt;/title&gt;&quot;</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>    <span class="c1"># Write the updated content back to the file</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">updated_content</span><span class="p">)</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Successfully updated the title of the 404 page&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1383,7 +1383,8 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/split.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-21">21</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
 <span class="normal"><a href="#__codelineno-0-22">22</a></span>
 <span class="normal"><a href="#__codelineno-0-23">23</a></span>
 <span class="normal"><a href="#__codelineno-0-24">24</a></span>
@@ -1401,27 +1402,26 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-36">36</a></span>
 <span class="normal"><a href="#__codelineno-0-37">37</a></span>
 <span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="k">def</span> <span class="nf">awardSort</span><span class="p">(</span><span class="n">awards</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">:</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;奖项排序.</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="sd">    根据指定的中文顺序对奖项进行排序。</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="sd">    Args:</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="sd">        awards (pd.Series): 包含奖项名称的系列</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="sd">    Returns:</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="sd">        pd.Series: 排序后的系列</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="n">awardOrder</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a>        <span class="s2">&quot;国家级一等奖&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a>        <span class="s2">&quot;国家级二等奖&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a>        <span class="s2">&quot;国家级三等奖&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>        <span class="s2">&quot;省级一等奖&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>        <span class="s2">&quot;省级二等奖&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>        <span class="s2">&quot;省级三等奖&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="p">]</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>    <span class="k">return</span> <span class="n">awards</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">award</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">awardOrder</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">award</span><span class="p">))</span> <span class="k">if</span> <span class="n">award</span> <span class="ow">in</span> <span class="n">awardOrder</span> <span class="k">else</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">award</span><span class="p">))</span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="k">def</span> <span class="nf">awardSort</span><span class="p">(</span><span class="n">awards</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">:</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;奖项排序.</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">    根据指定的中文顺序对奖项进行排序。</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="sd">    Args:</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="sd">        awards (pd.Series): 包含奖项名称的系列</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="sd">        pd.Series: 排序后的系列</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a>    <span class="n">awardOrder</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>        <span class="s2">&quot;国家级一等奖&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a>        <span class="s2">&quot;国家级二等奖&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>        <span class="s2">&quot;国家级三等奖&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>        <span class="s2">&quot;省级一等奖&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>        <span class="s2">&quot;省级二等奖&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>        <span class="s2">&quot;省级三等奖&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="p">]</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="k">return</span> <span class="n">awards</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">award</span><span class="p">:</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">awardOrder</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">award</span><span class="p">))</span> <span class="k">if</span> <span class="n">award</span> <span class="ow">in</span> <span class="n">awardOrder</span> <span class="k">else</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">award</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1560,7 +1560,8 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/split.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-65"> 65</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-0-65"> 65</a></span>
 <span class="normal"><a href="#__codelineno-0-66"> 66</a></span>
 <span class="normal"><a href="#__codelineno-0-67"> 67</a></span>
 <span class="normal"><a href="#__codelineno-0-68"> 68</a></span>
@@ -1595,44 +1596,43 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-97"> 97</a></span>
 <span class="normal"><a href="#__codelineno-0-98"> 98</a></span>
 <span class="normal"><a href="#__codelineno-0-99"> 99</a></span>
-<span class="normal"><a href="#__codelineno-0-100">100</a></span>
-<span class="normal"><a href="#__codelineno-0-101">101</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="k">def</span> <span class="nf">splitTable</span><span class="p">(</span><span class="n">filtration</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">outputDir</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">inputFile</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_URL_PATH</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;根据给定的过滤列将主表拆分.</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a>
-<a id="__codelineno-0-68" name="__codelineno-0-68"></a><span class="sd">    根据给定的过滤列将主表拆分为多个子表，并将子表保存在指定的输出目录中。</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="sd">    每个子表的名称为过滤列的值，例如，如果过滤列为&quot;年份&quot;，则将生成多个子表，分别为&quot;2022.csv&quot;、&quot;2021.csv&quot;等。</span>
-<a id="__codelineno-0-70" name="__codelineno-0-70"></a>
-<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="sd">    Note:</span>
-<a id="__codelineno-0-72" name="__codelineno-0-72"></a><span class="sd">        应首先运行 urlModification() 以获得修饰后的主表</span>
-<a id="__codelineno-0-73" name="__codelineno-0-73"></a>
-<a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="sd">    Args:</span>
-<a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="sd">        filtration (str): 过滤的列名称</span>
-<a id="__codelineno-0-76" name="__codelineno-0-76"></a><span class="sd">        outputDir (Path): 输出目录路径</span>
-<a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="sd">        inputFile (Path, optional): 输入的 CSV 文件路径。默认为将使用路径&quot;./table-url.csv&quot;</span>
-<a id="__codelineno-0-78" name="__codelineno-0-78"></a>
-<a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="sd">    Raises:</span>
-<a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="sd">        ValueError: 如果输入的文件不存在，则抛出异常</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="sd">        ValueError: 如果输出的目录不存在，则抛出异常</span>
-<a id="__codelineno-0-82" name="__codelineno-0-82"></a><span class="sd">        ValueError: 如果指定的过滤列不是表的列，则抛出异常</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83"></a>
-<a id="__codelineno-0-84" name="__codelineno-0-84"></a><span class="sd">    Examples:</span>
-<a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="sd">        &gt;&gt;&gt; splitTable(&quot;年份&quot;, cfg.DOCS_PATH / &quot;zh&quot; / &quot;year&quot;)</span>
-<a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-87" name="__codelineno-0-87"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-<a id="__codelineno-0-88" name="__codelineno-0-88"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified input file </span><span class="si">{</span><span class="n">inputFile</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-89" name="__codelineno-0-89"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">outputDir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-<a id="__codelineno-0-90" name="__codelineno-0-90"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified output directory </span><span class="si">{</span><span class="n">outputDir</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-91" name="__codelineno-0-91"></a>
-<a id="__codelineno-0-92" name="__codelineno-0-92"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-93" name="__codelineno-0-93"></a>    <span class="k">if</span> <span class="n">filtration</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-<a id="__codelineno-0-94" name="__codelineno-0-94"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified filtration </span><span class="si">{</span><span class="n">filtration</span><span class="si">}</span><span class="s2"> is not a column of the table.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-95" name="__codelineno-0-95"></a>    <span class="n">grouped</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">filtration</span><span class="p">)</span>
-<a id="__codelineno-0-96" name="__codelineno-0-96"></a>
-<a id="__codelineno-0-97" name="__codelineno-0-97"></a>    <span class="k">for</span> <span class="n">filtrate</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">grouped</span><span class="p">:</span>
-<a id="__codelineno-0-98" name="__codelineno-0-98"></a>        <span class="n">sorted_group</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;获奖&quot;</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">awardSort</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-0-99" name="__codelineno-0-99"></a>        <span class="n">filename</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">outputDir</span><span class="p">)</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">filtrate</span><span class="si">}</span><span class="s2">.csv&quot;</span>
-<a id="__codelineno-0-100" name="__codelineno-0-100"></a>        <span class="n">sorted_group</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-101" name="__codelineno-0-101"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Successfully generate sub-table </span><span class="si">{</span><span class="n">filtrate</span><span class="si">}</span><span class="s2">.csv&quot;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-100">100</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="k">def</span> <span class="nf">splitTable</span><span class="p">(</span><span class="n">filtration</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">outputDir</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">inputFile</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_URL_PATH</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;根据给定的过滤列将主表拆分.</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">    根据给定的过滤列将主表拆分为多个子表，并将子表保存在指定的输出目录中。</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68"></a><span class="sd">    每个子表的名称为过滤列的值，例如，如果过滤列为&quot;年份&quot;，则将生成多个子表，分别为&quot;2022.csv&quot;、&quot;2021.csv&quot;等。</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="sd">    Note:</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="sd">        应首先运行 urlModification() 以获得修饰后的主表</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a><span class="sd">    Args:</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="sd">        filtration (str): 过滤的列名称</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="sd">        outputDir (Path): 输出目录路径</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76"></a><span class="sd">        inputFile (Path, optional): 输入的 CSV 文件路径。默认为将使用路径&quot;./table-url.csv&quot;</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77"></a>
+<a id="__codelineno-0-78" name="__codelineno-0-78"></a><span class="sd">    Raises:</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="sd">        ValueError: 如果输入的文件不存在，则抛出异常</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="sd">        ValueError: 如果输出的目录不存在，则抛出异常</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="sd">        ValueError: 如果指定的过滤列不是表的列，则抛出异常</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a>
+<a id="__codelineno-0-83" name="__codelineno-0-83"></a><span class="sd">    Examples:</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84"></a><span class="sd">        &gt;&gt;&gt; splitTable(&quot;年份&quot;, cfg.DOCS_PATH / &quot;zh&quot; / &quot;year&quot;)</span>
+<a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified input file </span><span class="si">{</span><span class="n">inputFile</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-88" name="__codelineno-0-88"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">outputDir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified output directory </span><span class="si">{</span><span class="n">outputDir</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a>
+<a id="__codelineno-0-91" name="__codelineno-0-91"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92"></a>    <span class="k">if</span> <span class="n">filtration</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified filtration </span><span class="si">{</span><span class="n">filtration</span><span class="si">}</span><span class="s2"> is not a column of the table.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a>    <span class="n">grouped</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">filtration</span><span class="p">)</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>    <span class="k">for</span> <span class="n">filtrate</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">grouped</span><span class="p">:</span>
+<a id="__codelineno-0-97" name="__codelineno-0-97"></a>        <span class="n">sorted_group</span> <span class="o">=</span> <span class="n">group</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;获奖&quot;</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">awardSort</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-0-98" name="__codelineno-0-98"></a>        <span class="n">filename</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">outputDir</span><span class="p">)</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">filtrate</span><span class="si">}</span><span class="s2">.csv&quot;</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99"></a>        <span class="n">sorted_group</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Successfully generate sub-table </span><span class="si">{</span><span class="n">filtrate</span><span class="si">}</span><span class="s2">.csv&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1731,7 +1731,8 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/split.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-43">43</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
 <span class="normal"><a href="#__codelineno-0-44">44</a></span>
 <span class="normal"><a href="#__codelineno-0-45">45</a></span>
 <span class="normal"><a href="#__codelineno-0-46">46</a></span>
@@ -1749,27 +1750,26 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-58">58</a></span>
 <span class="normal"><a href="#__codelineno-0-59">59</a></span>
 <span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="k">def</span> <span class="nf">urlModification</span><span class="p">(</span><span class="n">inputFile</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">,</span> <span class="n">outputFile</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_URL_PATH</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;修饰主表的URL链接.</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">    Args:</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="sd">        inputFile (Path, optional): 输入的 CSV 文件路径。默认为将使用路径&quot;./table.csv&quot;</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="sd">        outputFile (Path, optional): 输出的 CSV 文件路径。默认为将使用路径&quot;./table.csv&quot;</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="sd">    Raises:</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="sd">        ValueError: 如果输入的文件不存在，则抛出异常</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="sd">    Examples:</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="sd">        &gt;&gt;&gt; urlModification()</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified </span><span class="si">{</span><span class="n">inputFile</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a>    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;链接&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&lt;&quot;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;链接&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&gt;{:target=&quot;_blank&quot;}&#39;</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">outputFile</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Successfully generate url modification table </span><span class="si">{</span><span class="n">outputFile</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-61">61</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="k">def</span> <span class="nf">urlModification</span><span class="p">(</span><span class="n">inputFile</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">,</span> <span class="n">outputFile</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_URL_PATH</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;修饰主表的URL链接.</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="sd">    Args:</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">        inputFile (Path, optional): 输入的 CSV 文件路径。默认为将使用路径&quot;./table.csv&quot;</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="sd">        outputFile (Path, optional): 输出的 CSV 文件路径。默认为将使用路径&quot;./table.csv&quot;</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="sd">    Raises:</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="sd">        ValueError: 如果输入的文件不存在，则抛出异常</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="sd">    Examples:</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="sd">        &gt;&gt;&gt; urlModification()</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The specified </span><span class="si">{</span><span class="n">inputFile</span><span class="si">}</span><span class="s2"> does not exist.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;链接&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;&lt;&quot;</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;链接&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&gt;{:target=&quot;_blank&quot;}&#39;</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">outputFile</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Successfully generate url modification table </span><span class="si">{</span><span class="n">outputFile</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1836,17 +1836,17 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-20">20</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
 <span class="normal"><a href="#__codelineno-0-21">21</a></span>
 <span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span>
-<span class="normal"><a href="#__codelineno-0-24">24</a></span>
-<span class="normal"><a href="#__codelineno-0-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="k">def</span> <span class="nf">test_awardSort</span><span class="p">():</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the awardSort function.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">awards</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;国家级一等奖&quot;</span><span class="p">,</span> <span class="s2">&quot;省级三等奖&quot;</span><span class="p">,</span> <span class="s2">&quot;国家级二等奖&quot;</span><span class="p">])</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">sorted_awards</span> <span class="o">=</span> <span class="n">awardSort</span><span class="p">(</span><span class="n">awards</span><span class="p">)</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="n">expected</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">pd</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_series_equal</span><span class="p">(</span><span class="n">sorted_awards</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="k">def</span> <span class="nf">test_awardSort</span><span class="p">():</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the awardSort function.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="n">awards</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;国家级一等奖&quot;</span><span class="p">,</span> <span class="s2">&quot;省级三等奖&quot;</span><span class="p">,</span> <span class="s2">&quot;国家级二等奖&quot;</span><span class="p">])</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">sorted_awards</span> <span class="o">=</span> <span class="n">awardSort</span><span class="p">(</span><span class="n">awards</span><span class="p">)</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">expected</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)])</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">pd</span><span class="o">.</span><span class="n">testing</span><span class="o">.</span><span class="n">assert_series_equal</span><span class="p">(</span><span class="n">sorted_awards</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1871,7 +1871,9 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-95"> 95</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-0-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-0-95"> 95</a></span>
 <span class="normal"><a href="#__codelineno-0-96"> 96</a></span>
 <span class="normal"><a href="#__codelineno-0-97"> 97</a></span>
 <span class="normal"><a href="#__codelineno-0-98"> 98</a></span>
@@ -1879,19 +1881,17 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-100">100</a></span>
 <span class="normal"><a href="#__codelineno-0-101">101</a></span>
 <span class="normal"><a href="#__codelineno-0-102">102</a></span>
-<span class="normal"><a href="#__codelineno-0-103">103</a></span>
-<span class="normal"><a href="#__codelineno-0-104">104</a></span>
-<span class="normal"><a href="#__codelineno-0-105">105</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-95" name="__codelineno-0-95"></a><span class="k">def</span> <span class="nf">test_build_docs</span><span class="p">():</span>
-<a id="__codelineno-0-96" name="__codelineno-0-96"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the build_docs function.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-97" name="__codelineno-0-97"></a>    <span class="n">build_docs</span><span class="p">()</span>
+<span class="normal"><a href="#__codelineno-0-103">103</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-93" name="__codelineno-0-93"></a><span class="k">def</span> <span class="nf">test_build_docs</span><span class="p">():</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the build_docs function.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>    <span class="n">build_docs</span><span class="p">()</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>
+<a id="__codelineno-0-97" name="__codelineno-0-97"></a>    <span class="k">assert</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="s2">&quot;cfg.SITE_PATH should be created&quot;</span>
 <a id="__codelineno-0-98" name="__codelineno-0-98"></a>
-<a id="__codelineno-0-99" name="__codelineno-0-99"></a>    <span class="k">assert</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="s2">&quot;cfg.SITE_PATH should be created&quot;</span>
-<a id="__codelineno-0-100" name="__codelineno-0-100"></a>
-<a id="__codelineno-0-101" name="__codelineno-0-101"></a>    <span class="k">for</span> <span class="n">config_file</span> <span class="ow">in</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;mkdocs.*.yml&quot;</span><span class="p">):</span>
-<a id="__codelineno-0-102" name="__codelineno-0-102"></a>        <span class="n">language_code</span> <span class="o">=</span> <span class="n">config_file</span><span class="o">.</span><span class="n">stem</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-<a id="__codelineno-0-103" name="__codelineno-0-103"></a>        <span class="n">expected_dir</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span> <span class="o">/</span> <span class="n">language_code</span>
-<a id="__codelineno-0-104" name="__codelineno-0-104"></a>        <span class="c1"># 验证对应的文件夹是否存在</span>
-<a id="__codelineno-0-105" name="__codelineno-0-105"></a>        <span class="k">assert</span> <span class="n">expected_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="sa">f</span><span class="s2">&quot;Expected directory for </span><span class="si">{</span><span class="n">language_code</span><span class="si">}</span><span class="s2"> does not exist&quot;</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99"></a>    <span class="k">for</span> <span class="n">config_file</span> <span class="ow">in</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;mkdocs.*.yml&quot;</span><span class="p">):</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100"></a>        <span class="n">language_code</span> <span class="o">=</span> <span class="n">config_file</span><span class="o">.</span><span class="n">stem</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-0-101" name="__codelineno-0-101"></a>        <span class="n">expected_dir</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span> <span class="o">/</span> <span class="n">language_code</span>
+<a id="__codelineno-0-102" name="__codelineno-0-102"></a>        <span class="c1"># 验证对应的文件夹是否存在</span>
+<a id="__codelineno-0-103" name="__codelineno-0-103"></a>        <span class="k">assert</span> <span class="n">expected_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="sa">f</span><span class="s2">&quot;Expected directory for </span><span class="si">{</span><span class="n">language_code</span><span class="si">}</span><span class="s2"> does not exist&quot;</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1916,15 +1916,15 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-80">80</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-78">78</a></span>
+<span class="normal"><a href="#__codelineno-0-79">79</a></span>
+<span class="normal"><a href="#__codelineno-0-80">80</a></span>
 <span class="normal"><a href="#__codelineno-0-81">81</a></span>
-<span class="normal"><a href="#__codelineno-0-82">82</a></span>
-<span class="normal"><a href="#__codelineno-0-83">83</a></span>
-<span class="normal"><a href="#__codelineno-0-84">84</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="k">def</span> <span class="nf">test_config_initialization</span><span class="p">():</span>
-<a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the initialization of the Config class.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-82" name="__codelineno-0-82"></a>    <span class="n">cfg_test</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
-<a id="__codelineno-0-83" name="__codelineno-0-83"></a>    <span class="k">assert</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">PROJECT_PATH</span><span class="o">.</span><span class="n">is_dir</span><span class="p">(),</span> <span class="s2">&quot;PROJECT_PATH should be a directory&quot;</span>
-<a id="__codelineno-0-84" name="__codelineno-0-84"></a>    <span class="k">assert</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="o">.</span><span class="n">is_file</span><span class="p">(),</span> <span class="s2">&quot;TABLE_PATH should be a file&quot;</span>
+<span class="normal"><a href="#__codelineno-0-82">82</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-78" name="__codelineno-0-78"></a><span class="k">def</span> <span class="nf">test_config_initialization</span><span class="p">():</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the initialization of the Config class.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80"></a>    <span class="n">cfg_test</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81"></a>    <span class="k">assert</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">PROJECT_PATH</span><span class="o">.</span><span class="n">is_dir</span><span class="p">(),</span> <span class="s2">&quot;PROJECT_PATH should be a directory&quot;</span>
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a>    <span class="k">assert</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="o">.</span><span class="n">is_file</span><span class="p">(),</span> <span class="s2">&quot;TABLE_PATH should be a file&quot;</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1949,17 +1949,17 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-87">87</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-85">85</a></span>
+<span class="normal"><a href="#__codelineno-0-86">86</a></span>
+<span class="normal"><a href="#__codelineno-0-87">87</a></span>
 <span class="normal"><a href="#__codelineno-0-88">88</a></span>
 <span class="normal"><a href="#__codelineno-0-89">89</a></span>
-<span class="normal"><a href="#__codelineno-0-90">90</a></span>
-<span class="normal"><a href="#__codelineno-0-91">91</a></span>
-<span class="normal"><a href="#__codelineno-0-92">92</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-87" name="__codelineno-0-87"></a><span class="k">def</span> <span class="nf">test_config_update_site_path</span><span class="p">():</span>
-<a id="__codelineno-0-88" name="__codelineno-0-88"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the update_site_path function.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-89" name="__codelineno-0-89"></a>    <span class="n">cfg_test</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
-<a id="__codelineno-0-90" name="__codelineno-0-90"></a>    <span class="n">old_path</span> <span class="o">=</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">SITE_PATH</span>
-<a id="__codelineno-0-91" name="__codelineno-0-91"></a>    <span class="n">cfg_test</span><span class="o">.</span><span class="n">update_site_path</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;new_site&quot;</span><span class="p">))</span>
-<a id="__codelineno-0-92" name="__codelineno-0-92"></a>    <span class="k">assert</span> <span class="n">old_path</span> <span class="o">/</span> <span class="s2">&quot;new_site&quot;</span> <span class="o">==</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="p">,</span> <span class="s2">&quot;SITE_PATH should be updated to new path&quot;</span>
+<span class="normal"><a href="#__codelineno-0-90">90</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="k">def</span> <span class="nf">test_config_update_site_path</span><span class="p">():</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the update_site_path function.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>    <span class="n">cfg_test</span> <span class="o">=</span> <span class="n">Config</span><span class="p">()</span>
+<a id="__codelineno-0-88" name="__codelineno-0-88"></a>    <span class="n">old_path</span> <span class="o">=</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">SITE_PATH</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89"></a>    <span class="n">cfg_test</span><span class="o">.</span><span class="n">update_site_path</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;new_site&quot;</span><span class="p">))</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a>    <span class="k">assert</span> <span class="n">old_path</span> <span class="o">/</span> <span class="s2">&quot;new_site&quot;</span> <span class="o">==</span> <span class="n">cfg_test</span><span class="o">.</span><span class="n">SITE_PATH</span><span class="p">,</span> <span class="s2">&quot;SITE_PATH should be updated to new path&quot;</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -1984,21 +1984,21 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-70">70</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-68">68</a></span>
+<span class="normal"><a href="#__codelineno-0-69">69</a></span>
+<span class="normal"><a href="#__codelineno-0-70">70</a></span>
 <span class="normal"><a href="#__codelineno-0-71">71</a></span>
 <span class="normal"><a href="#__codelineno-0-72">72</a></span>
 <span class="normal"><a href="#__codelineno-0-73">73</a></span>
 <span class="normal"><a href="#__codelineno-0-74">74</a></span>
-<span class="normal"><a href="#__codelineno-0-75">75</a></span>
-<span class="normal"><a href="#__codelineno-0-76">76</a></span>
-<span class="normal"><a href="#__codelineno-0-77">77</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="k">def</span> <span class="nf">test_splitTable_fail</span><span class="p">():</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the splitTable function with failure.&quot;&quot;&quot;</span>
+<span class="normal"><a href="#__codelineno-0-75">75</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-68" name="__codelineno-0-68"></a><span class="k">def</span> <span class="nf">test_splitTable_fail</span><span class="p">():</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the splitTable function with failure.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="s2">&quot;获奖&quot;</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent.csv&quot;</span><span class="p">))</span>
 <a id="__codelineno-0-72" name="__codelineno-0-72"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
-<a id="__codelineno-0-73" name="__codelineno-0-73"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="s2">&quot;获奖&quot;</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent.csv&quot;</span><span class="p">))</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="s2">&quot;获奖&quot;</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent_dir&quot;</span><span class="p">),</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">)</span>
 <a id="__codelineno-0-74" name="__codelineno-0-74"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
-<a id="__codelineno-0-75" name="__codelineno-0-75"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="s2">&quot;获奖&quot;</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent_dir&quot;</span><span class="p">),</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">)</span>
-<a id="__codelineno-0-76" name="__codelineno-0-76"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
-<a id="__codelineno-0-77" name="__codelineno-0-77"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="s2">&quot;不存在的列标题&quot;</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">,</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">)</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="s2">&quot;不存在的列标题&quot;</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">,</span> <span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -2023,7 +2023,9 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-46">46</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
 <span class="normal"><a href="#__codelineno-0-47">47</a></span>
 <span class="normal"><a href="#__codelineno-0-48">48</a></span>
 <span class="normal"><a href="#__codelineno-0-49">49</a></span>
@@ -2042,30 +2044,28 @@ License: MIT License.</p>
 <span class="normal"><a href="#__codelineno-0-62">62</a></span>
 <span class="normal"><a href="#__codelineno-0-63">63</a></span>
 <span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span>
-<span class="normal"><a href="#__codelineno-0-67">67</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="k">def</span> <span class="nf">test_splitTable_success</span><span class="p">():</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the splitTable function with successful execution.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a>    <span class="c1"># 读取输入文件以确定预期年份</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="n">df_input</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">)</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a>    <span class="k">for</span> <span class="n">column_header</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;年份&quot;</span><span class="p">,</span> <span class="s2">&quot;组别&quot;</span><span class="p">,</span> <span class="s2">&quot;获奖&quot;</span><span class="p">]:</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a>        <span class="n">expected_categories</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df_input</span><span class="p">[</span><span class="n">column_header</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)))</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a>        <span class="n">expected_columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_input</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-65">65</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="k">def</span> <span class="nf">test_splitTable_success</span><span class="p">():</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the splitTable function with successful execution.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>    <span class="c1"># 读取输入文件以确定预期年份</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>    <span class="n">df_input</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">TABLE_PATH</span><span class="p">)</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="k">for</span> <span class="n">column_header</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;年份&quot;</span><span class="p">,</span> <span class="s2">&quot;组别&quot;</span><span class="p">,</span> <span class="s2">&quot;获奖&quot;</span><span class="p">]:</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>        <span class="n">expected_categories</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df_input</span><span class="p">[</span><span class="n">column_header</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)))</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>        <span class="n">expected_columns</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_input</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="n">column_header</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
 <a id="__codelineno-0-54" name="__codelineno-0-54"></a>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a>        <span class="n">splitTable</span><span class="p">(</span><span class="n">column_header</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span><span class="p">)</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>        <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">expected_categories</span><span class="p">:</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a>            <span class="n">output_file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">.csv&quot;</span>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a>            <span class="c1"># 验证文件成功生成</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a>            <span class="k">assert</span> <span class="n">output_file</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="sa">f</span><span class="s2">&quot;Output file </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2"> not found&quot;</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>            <span class="c1"># 验证每个输出文件内容</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a>            <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a>            <span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_output</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected_columns</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Columns in </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2"> do not match&quot;</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a>            <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a>                <span class="n">df_output</span><span class="p">[</span><span class="n">column_header</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">==</span> <span class="n">category</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a>            <span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;Category </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2"> not found in </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a>            <span class="n">output_file</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>        <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">expected_categories</span><span class="p">:</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>            <span class="n">output_file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">.csv&quot;</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>            <span class="c1"># 验证文件成功生成</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>            <span class="k">assert</span> <span class="n">output_file</span><span class="o">.</span><span class="n">exists</span><span class="p">(),</span> <span class="sa">f</span><span class="s2">&quot;Output file </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2"> not found&quot;</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>            <span class="c1"># 验证每个输出文件内容</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>            <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>            <span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_output</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected_columns</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Columns in </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2"> do not match&quot;</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a>            <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a>                <span class="n">df_output</span><span class="p">[</span><span class="n">column_header</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">==</span> <span class="n">category</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a>            <span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;Category </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2"> not found in </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a>            <span class="n">output_file</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -2090,25 +2090,25 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-108">108</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-106">106</a></span>
+<span class="normal"><a href="#__codelineno-0-107">107</a></span>
+<span class="normal"><a href="#__codelineno-0-108">108</a></span>
 <span class="normal"><a href="#__codelineno-0-109">109</a></span>
 <span class="normal"><a href="#__codelineno-0-110">110</a></span>
 <span class="normal"><a href="#__codelineno-0-111">111</a></span>
 <span class="normal"><a href="#__codelineno-0-112">112</a></span>
 <span class="normal"><a href="#__codelineno-0-113">113</a></span>
 <span class="normal"><a href="#__codelineno-0-114">114</a></span>
-<span class="normal"><a href="#__codelineno-0-115">115</a></span>
-<span class="normal"><a href="#__codelineno-0-116">116</a></span>
-<span class="normal"><a href="#__codelineno-0-117">117</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-108" name="__codelineno-0-108"></a><span class="k">def</span> <span class="nf">test_update_404page_title</span><span class="p">():</span>
-<a id="__codelineno-0-109" name="__codelineno-0-109"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the test_update_404page_title function. Need run build_docs() first.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-110" name="__codelineno-0-110"></a>    <span class="n">test_file_path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span> <span class="o">/</span> <span class="s2">&quot;404.html&quot;</span>
-<a id="__codelineno-0-111" name="__codelineno-0-111"></a>    <span class="n">update_404page_title</span><span class="p">()</span>
-<a id="__codelineno-0-112" name="__codelineno-0-112"></a>
-<a id="__codelineno-0-113" name="__codelineno-0-113"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">test_file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-<a id="__codelineno-0-114" name="__codelineno-0-114"></a>        <span class="n">updated_content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<a id="__codelineno-0-115" name="__codelineno-0-115"></a>
-<a id="__codelineno-0-116" name="__codelineno-0-116"></a>    <span class="k">assert</span> <span class="s2">&quot;&lt;title&gt;Awesome Intelligent Car Race - 404 Page Not Found&lt;/title&gt;&quot;</span> <span class="ow">in</span> <span class="n">updated_content</span><span class="p">,</span> <span class="s2">&quot;New title not found&quot;</span>
-<a id="__codelineno-0-117" name="__codelineno-0-117"></a>    <span class="k">assert</span> <span class="s2">&quot;&lt;title&gt;Awesome-IntelligentCarRace&lt;/title&gt;&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">updated_content</span><span class="p">,</span> <span class="s2">&quot;Old title should be removed&quot;</span>
+<span class="normal"><a href="#__codelineno-0-115">115</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-106" name="__codelineno-0-106"></a><span class="k">def</span> <span class="nf">test_update_404page_title</span><span class="p">():</span>
+<a id="__codelineno-0-107" name="__codelineno-0-107"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the test_update_404page_title function. Need run build_docs() first.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-108" name="__codelineno-0-108"></a>    <span class="n">test_file_path</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">SITE_PATH</span> <span class="o">/</span> <span class="s2">&quot;404.html&quot;</span>
+<a id="__codelineno-0-109" name="__codelineno-0-109"></a>    <span class="n">update_404page_title</span><span class="p">()</span>
+<a id="__codelineno-0-110" name="__codelineno-0-110"></a>
+<a id="__codelineno-0-111" name="__codelineno-0-111"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">test_file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<a id="__codelineno-0-112" name="__codelineno-0-112"></a>        <span class="n">updated_content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-0-113" name="__codelineno-0-113"></a>
+<a id="__codelineno-0-114" name="__codelineno-0-114"></a>    <span class="k">assert</span> <span class="s2">&quot;&lt;title&gt;Awesome Intelligent Car Race - 404 Page Not Found&lt;/title&gt;&quot;</span> <span class="ow">in</span> <span class="n">updated_content</span><span class="p">,</span> <span class="s2">&quot;New title not found&quot;</span>
+<a id="__codelineno-0-115" name="__codelineno-0-115"></a>    <span class="k">assert</span> <span class="s2">&quot;&lt;title&gt;Awesome-IntelligentCarRace&lt;/title&gt;&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">updated_content</span><span class="p">,</span> <span class="s2">&quot;Old title should be removed&quot;</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -2133,15 +2133,15 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-120">120</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-118">118</a></span>
+<span class="normal"><a href="#__codelineno-0-119">119</a></span>
+<span class="normal"><a href="#__codelineno-0-120">120</a></span>
 <span class="normal"><a href="#__codelineno-0-121">121</a></span>
-<span class="normal"><a href="#__codelineno-0-122">122</a></span>
-<span class="normal"><a href="#__codelineno-0-123">123</a></span>
-<span class="normal"><a href="#__codelineno-0-124">124</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-120" name="__codelineno-0-120"></a><span class="k">def</span> <span class="nf">test_update_404page_title_fail</span><span class="p">():</span>
-<a id="__codelineno-0-121" name="__codelineno-0-121"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the test_update_404page_title function with failure.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-122" name="__codelineno-0-122"></a>    <span class="n">update_404page_title</span><span class="p">()</span>
-<a id="__codelineno-0-123" name="__codelineno-0-123"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">FileNotFoundError</span><span class="p">):</span>
-<a id="__codelineno-0-124" name="__codelineno-0-124"></a>        <span class="n">update_404page_title</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent_dir&quot;</span><span class="p">))</span>
+<span class="normal"><a href="#__codelineno-0-122">122</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-118" name="__codelineno-0-118"></a><span class="k">def</span> <span class="nf">test_update_404page_title_fail</span><span class="p">():</span>
+<a id="__codelineno-0-119" name="__codelineno-0-119"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the test_update_404page_title function with failure.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-120" name="__codelineno-0-120"></a>    <span class="n">update_404page_title</span><span class="p">()</span>
+<a id="__codelineno-0-121" name="__codelineno-0-121"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">FileNotFoundError</span><span class="p">):</span>
+<a id="__codelineno-0-122" name="__codelineno-0-122"></a>        <span class="n">update_404page_title</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent_dir&quot;</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -2166,13 +2166,13 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="k">def</span> <span class="nf">test_urlModification_fail</span><span class="p">():</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the URLModification function with failure.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a>        <span class="n">urlModification</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent.csv&quot;</span><span class="p">))</span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="k">def</span> <span class="nf">test_urlModification_fail</span><span class="p">():</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the URLModification function with failure.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a>    <span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>        <span class="n">urlModification</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;non_existent.csv&quot;</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
@@ -2197,25 +2197,25 @@ License: MIT License.</p>
 
           <details class="quote">
             <summary>Source code in <code>scripts/tests/test_functions.py</code></summary>
-            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-28">28</a></span>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
 <span class="normal"><a href="#__codelineno-0-29">29</a></span>
 <span class="normal"><a href="#__codelineno-0-30">30</a></span>
 <span class="normal"><a href="#__codelineno-0-31">31</a></span>
 <span class="normal"><a href="#__codelineno-0-32">32</a></span>
 <span class="normal"><a href="#__codelineno-0-33">33</a></span>
 <span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="k">def</span> <span class="nf">test_urlModification_success</span><span class="p">():</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the URLModification function with successful execution.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="n">output_file</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span> <span class="o">/</span> <span class="s2">&quot;test_output.csv&quot;</span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="k">def</span> <span class="nf">test_urlModification_success</span><span class="p">():</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Test case for the URLModification function with successful execution.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>    <span class="n">output_file</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">DOCS_PATH</span> <span class="o">/</span> <span class="s2">&quot;test_output.csv&quot;</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="n">urlModification</span><span class="p">(</span><span class="n">outputFile</span><span class="o">=</span><span class="n">output_file</span><span class="p">)</span>
 <a id="__codelineno-0-31" name="__codelineno-0-31"></a>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="n">urlModification</span><span class="p">(</span><span class="n">outputFile</span><span class="o">=</span><span class="n">output_file</span><span class="p">)</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">df_output</span><span class="p">[</span><span class="s2">&quot;链接&quot;</span><span class="p">]:</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>        <span class="k">assert</span> <span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;&lt;&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">url</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;&gt;{:target=&quot;_blank&quot;}&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;URL </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2"> is not modified&quot;</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>    <span class="n">output_file</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="n">df_output</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">df_output</span><span class="p">[</span><span class="s2">&quot;链接&quot;</span><span class="p">]:</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>        <span class="k">assert</span> <span class="n">url</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;&lt;&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">url</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;&gt;{:target=&quot;_blank&quot;}&#39;</span><span class="p">),</span> <span class="sa">f</span><span class="s2">&quot;URL </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s2"> is not modified&quot;</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="n">output_file</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
           </details>
   </div>
