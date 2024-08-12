@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Awesome Intelligent Car Race.
 
 Note:

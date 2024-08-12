@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Split Scripts.
 
 This module provides functionalities to split a table based on the award filter column.

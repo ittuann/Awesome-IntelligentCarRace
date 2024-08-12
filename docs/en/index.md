@@ -18,6 +18,7 @@ Open source project collection website ✨
 [vercel-url]: https://awesome-intelligent-car-race.vercel.app
 
 [![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"}
+[![pre-commit.ci Status](https://results.pre-commit.ci/badge/github/ittuann/Awesome-IntelligentCarRace/main.svg)](https://results.pre-commit.ci/latest/github/ittuann/Awesome-IntelligentCarRace/main){:target="\_blank"}
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"}
 [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_shield&issueType=license){:target="\_blank"}
 

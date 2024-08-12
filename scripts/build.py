@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """This script is used to build the documentation.
 
 Build multi-language documentation site.

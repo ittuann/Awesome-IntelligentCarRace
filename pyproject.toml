@@ -31,7 +31,6 @@ convention = "google"
 [tool.mypy]
 pretty = true
 warn_redundant_casts = true
-warn_unused_ignores = true
 
 [tool.coverage.report]
 exclude_lines = [
