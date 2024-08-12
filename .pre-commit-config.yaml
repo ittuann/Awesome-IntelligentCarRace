@@ -16,35 +16,27 @@ repos:
       - id: detect-private-key
       - id: check-docstring-first
 
-  - repo: local
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
     hooks:
       - id: black
-        name: black format
-        entry: black --color
-        language: system
-        types: [python]
 
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.3.1
+    hooks:
       - id: autoflake
-        name: autoflake format
-        entry: autoflake --remove-all-unused-imports --remove-unused-variables
-        language: system
-        types: [python]
 
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.5.7
+    hooks:
       - id: ruff
-        name: ruff lint
-        entry: ruff check --fix
-        language: system
-        types: [python]
 
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.11.1
+    hooks:
       - id: mypy
-        name: mypy static type check lint
-        entry: mypy
-        language: system
-        types: [python]
-        verbose: true
 
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.17.0
+    hooks:
       - id: pyupgrade
-        name: pyupgrade
-        entry: pyupgrade --py311-plus
-        language: system
-        types: [python]
