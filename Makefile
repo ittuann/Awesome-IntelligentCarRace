@@ -18,9 +18,10 @@ install:
 
 lint:
 	black --color --diff ./scripts
+	autoflake --remove-all-unused-imports --remove-unused-variables --recursive ./scripts
 	ruff check --fix .
 	mypy ./scripts
-	autoflake --remove-all-unused-imports --remove-unused-variables --recursive ./scripts
+	pyupgrade --py311-plus ./scripts/build.py
 
 unit-tests:
 	coverage run -m pytest

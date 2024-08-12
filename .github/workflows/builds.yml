@@ -5,6 +5,7 @@ on:
     branches: [main, dev]
   pull_request:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   prettify:
@@ -63,16 +64,12 @@ jobs:
       - name: Build
         run: python ./scripts/build.py
 
-      - name: Code formatter check
-        run: black --diff ./scripts/
+      - name: Lint & Format
+        run: make lint
         continue-on-error: true
 
-      - name: Code linter check
-        run: ruff check .
-        continue-on-error: true
-
-      - name: Code static typing check
-        run: mypy ./scripts/
+      - name: pre-commit
+        run: pre-commit run --verbose --all-files
         continue-on-error: true
 
       - name: Coverage test

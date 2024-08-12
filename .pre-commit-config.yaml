@@ -1,0 +1,50 @@
+default_language_version:
+  python: python3.11
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: check-toml
+      - id: check-xml
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: check-merge-conflict
+      - id: check-added-large-files
+      - id: detect-private-key
+      - id: check-docstring-first
+
+  - repo: local
+    hooks:
+      - id: black
+        name: black format
+        entry: black --color
+        language: system
+        types: [python]
+
+      - id: autoflake
+        name: autoflake format
+        entry: autoflake --remove-all-unused-imports --remove-unused-variables
+        language: system
+        types: [python]
+
+      - id: ruff
+        name: ruff lint
+        entry: ruff check --fix
+        language: system
+        types: [python]
+
+      - id: mypy
+        name: mypy static type check lint
+        entry: mypy
+        language: system
+        types: [python]
+        verbose: true
+
+      - id: pyupgrade
+        name: pyupgrade
+        entry: pyupgrade --py311-plus
+        language: system
+        types: [python]

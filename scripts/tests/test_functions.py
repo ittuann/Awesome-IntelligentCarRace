@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 """Code Coverage Test.
 
 Note:

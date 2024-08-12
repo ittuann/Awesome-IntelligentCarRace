@@ -6,6 +6,7 @@ on:
       - Builds
     types:
       - completed
+  workflow_dispatch:
 
 jobs:
   gh-deploy:
