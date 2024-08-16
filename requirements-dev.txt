@@ -6,6 +6,6 @@ autoflake
 pyupgrade
 pre-commit
 pytest
+pytest-cov
 pytest-timeout
 pytest-rerunfailures
-coverage

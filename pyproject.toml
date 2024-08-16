@@ -1,6 +1,13 @@
 [tool.black]
 line-length = 120
 
+[tool.autoflake]
+check-diff = true
+
+[tool.mypy]
+pretty = true
+warn_redundant_casts = true
+
 [tool.ruff]
 line-length = 120
 
@@ -28,10 +35,6 @@ ignore = ["F401", "UP009", "D415"]
 [tool.ruff.lint.pydocstyle]
 convention = "google"
 
-[tool.mypy]
-pretty = true
-warn_redundant_casts = true
-
 [tool.coverage.report]
 exclude_lines = [
   "if 0:",
@@ -39,4 +42,4 @@ exclude_lines = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "-ra --timeout=15 --reruns 2 --reruns-delay 1"
+addopts = "-ra --cov=./scripts --cov-report=term --cov-report=xml --cov-report=html --timeout=15 --reruns 2 --reruns-delay 1"
