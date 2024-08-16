@@ -48,7 +48,7 @@ jobs:
         run: |
           mkdocs --version
           git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git clone https://github.com/ittuann/Awesome-IntelligentCarRace.git pages
           LATEST_HASH=$(git rev-parse --short=7 HEAD)
           cd pages
@@ -57,7 +57,7 @@ jobs:
           git clean -fxd
           cp -r ../site/* .
           git add .
-          git commit -am "Deployed GitHub Pages - $LATEST_HASH"
+          git commit -a -s -m "Deployed GitHub Pages - $LATEST_HASH"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
