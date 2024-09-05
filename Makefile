@@ -1,7 +1,7 @@
 MAKEFLAGS = --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-.PHONY: build serve install lint unit-tests
+.PHONY: build serve live-serve install lint unit-tests
 
 .DEFAULT_GOAL := build
 
