@@ -19,23 +19,24 @@
 > [!NOTE]
 > 请访问 GitHub Pages 链接以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
-如果您的网络环境在访问主站 [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可以考虑配置 [github hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 等方式以缓解网络问题。
+如果您的网络环境在访问主站 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可以尝试配置 [GitHub hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 或其他方式以缓解网络问题。
 
-您也可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像:
-
-- Cloudflare Pages 镜像网页: <https://awesome-intelligentcarrace.pages.dev>
-- Netlify 镜像网页: <https://awesome-intelligentcarrace.netlify.app>
-- Vercel 镜像网页: <https://awesome-intelligentcarrace.vercel.app>
+若您依然无法访问主站，您还可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像: [Cloudflare Pages 镜像](https://awesome-intelligentcarrace.pages.dev)、[Netlify 镜像](https://awesome-intelligentcarrace.netlify.app)、[Vercel 镜像](https://awesome-intelligentcarrace.vercel.app)。
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or <https://awesome-intelligentcarrace.pages.dev/en>
 
 ## 这是什么项目
 
-本仓库意在收集，历年参加[全国大学生智能车竞赛（恩智浦杯/飞思卡尔杯）](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B)的全部开源项目。
+本仓库意在收集并整理，历年参加 [全国大学生智能车竞赛（恩智浦杯/飞思卡尔杯）](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B) 的全部开源项目。
 
 特此向选择开源的车友们表示深深的感谢。
 
 同时也期望本仓库不只作为一个项目列表，更希望它能够成为大家开源学习、交流和分享的平台。让我们一起维护和推进智能车竞赛的开源社区与文化，欢迎各位的交流和参与！
+
+> [!TIP]
+> **Star 🌟** 这个仓库，您将能在第一时间收到所有的更新和动态~
+>
+> 同时，如果您觉得这个项目对您有所帮助，想要支持我们，或是在本合集中发现一些仓库对您有参考价值，也希望您能为其点上免费的 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
 ## 参与讨论
 
@@ -43,15 +44,10 @@
 
 您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
 
-[![Github Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
+[![GitHub Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
 [![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
 [![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
 [![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
-
-> [!TIP]
-> 如果您觉得这个项目对您有所帮助，请在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace) (点赞)！
->
-> 同时，若是您在本项目的合集中发现某些仓库对您有参考价值，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
 ## 为何发起这个项目
 
@@ -67,11 +63,17 @@
 
 感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
-同时感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
+同时感谢所有在 GitHub 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
 
-[![Star History](https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date)](https://github.com/ittuann/Awesome-IntelligentCarRace)
+<details>
+  <summary><kbd>Star History</kbd></summary>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&theme=dark&type=Date">
+    <img width="100%" src="https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date">
+  </picture>
+</details>
 
 ## License
 

@@ -8,6 +8,10 @@
 
 同时也期望本仓库不只作为一个项目列表，更希望它能够成为大家开源学习、交流和分享的平台。让我们一起维护和推进智能车竞赛的开源社区与文化，欢迎各位的交流和参与！
 
+> **Star 🌟** 这个仓库，您将能在第一时间收到所有的更新和动态~
+>
+> 同时，如果您觉得这个项目对您有所帮助，想要支持我们，或是在本合集中发现一些仓库对您有参考价值，也希望您能为其点上免费的 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
+
 ---
 
 [![GitHub Pages Status][github-image]][github-url]
@@ -30,13 +34,13 @@
 
 项目 GitHub Pages 主站链接: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
+这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 服务，主网站通过 [GitHub Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"} 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。
+
 ???+ question "FAQ: 访问 GitHub 存在问题?"
 
-    当您的环境在访问 Github 时存在网络不稳定等受限情况，可以尝试使用如 [GitHub Hosts](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 等第三方方式加速访问。
+    当您的环境在访问 GitHub 时存在网络不稳定等受限情况，可以尝试配置 [GitHub Hosts](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 或其他方式以加速访问。
 
     此外，我也在 [Cloudflare Pages](https://awesome-intelligentcarrace.pages.dev/) 以及 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 平台上配置了内容完全相同的镜像站点服务以供备用访问。
-
-    这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 服务，主网站通过 [Github Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"} 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.pages.dev/en>{:target="\_blank"}
 
@@ -46,14 +50,10 @@
 
 您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
 
-[![Github Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
+[![GitHub Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
 [![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
 [![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
 [![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
-
-> 支持这个项目: 如果您认为这个项目对您有所帮助，请考虑在 GitHub 上给本仓库点一个免费的 [Star 🌟](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} (点赞)以示支持！
->
-> 同时，如果您在本项目的合集中发现任何对您有价值的仓库，也希望您能为其 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
 ## 开源项目合集总表
 
@@ -65,7 +65,7 @@
 
 ???+ example "下载表格"
 
-    如果您想要下载当前版本的汇总表格，请前往 [Github Releases 页面](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 进行下载。
+    如果您想要下载当前版本的汇总表格，请前往 [GitHub Releases 页面](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 进行下载。
 
 ## 为何发起这个项目
 
@@ -83,13 +83,11 @@
 
 感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
 
-同时感谢所有在 Github 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
+同时感谢所有在 GitHub 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
 
 [GitHub: ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
-
-[![Star History](https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date)](https://github.com/ittuann/Awesome-IntelligentCarRace)
 
 ## License
 
@@ -123,6 +121,6 @@ The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.
 
 [![FOSSA License Compliance Scan Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large&issueType=license){:target="\_blank"}
 
-如遇本仓库错误信息、侵权等，请在 Github 本仓库中提交 [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 。
+如遇本仓库错误信息、侵权等，请在 GitHub 本仓库中提交 [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 。
 
 若有其他情况可以向我发送邮件 [ittuann@outlook.com](mailto:ittuann@outlook.com)

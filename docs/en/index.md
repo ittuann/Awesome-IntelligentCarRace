@@ -26,6 +26,8 @@ Project GitHub Repository: <https://github.com/ittuann/Awesome-IntelligentCarRac
 
 Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
+> **Star Us 🌟**, You will receive all release notifications from GitHub without any delay~
+
 ???+ question " FAQ: Network Issues"
 
     If you encounter instability in your network environment while accessing [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}, you can switch to one of the following mirror sites hosted on different platforms. Choose any mirror that you can access smoothly:
@@ -47,8 +49,6 @@ Thanks also to all of you who have submitted issues, made suggestions, and helpe
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome- IntelligentCarRace/graphs/contributors)
 
 [GitHub: ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
-
-[![Star History](https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date)](https://github.com/ittuann/ Awesome-IntelligentCarRace)
 
 ## License
 

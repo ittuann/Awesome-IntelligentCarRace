@@ -12,6 +12,9 @@ build:
 serve:
 	python -m http.server --directory site 8000 --bind localhost
 
+live-serve:
+	mkdocs serve -f ./docs/mkdocs.yml
+
 install:
 	pip install -r requirements.txt
 	pip install -r requirements-dev.txt
