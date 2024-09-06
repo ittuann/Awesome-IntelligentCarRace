@@ -10,9 +10,10 @@ from pathlib import Path
 
 import pandas as pd
 import pytest
-from build import build_docs, update_404page_title
-from config import Config, cfg
-from split import awardSort, splitTable, urlModification
+
+from scripts.build import build_docs, update_404page_title
+from scripts.config import Config, cfg
+from scripts.split import awardSort, splitTable, urlModification
 
 
 def test_awardSort():

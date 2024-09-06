@@ -18,7 +18,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from config import cfg
+from scripts.config import cfg
 
 
 def build_docs() -> None:

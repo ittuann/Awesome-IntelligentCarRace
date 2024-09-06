@@ -15,6 +15,6 @@
 
 ---
 
-::: scripts.tests.test_functions
+::: tests.test_functions
     options:
       show_root_heading: true
