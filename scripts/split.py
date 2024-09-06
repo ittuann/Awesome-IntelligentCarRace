@@ -14,7 +14,8 @@ Example:
 from pathlib import Path
 
 import pandas as pd
-from config import cfg
+
+from scripts.config import cfg
 
 
 def awardSort(awards: pd.Series) -> pd.Series:

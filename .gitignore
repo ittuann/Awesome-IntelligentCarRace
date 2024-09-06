@@ -1,14 +1,15 @@
-__pycache__
+__pycache__/
 /.venv
 
 /site
 /table-url.csv
 /docs/**/*.csv
 
-/.vscode
+/.cache
+/.pytest_cache
 /.ruff_cache
 /.mypy_cache
-/htmlcov
-/.pytest_cache
 /.coverage
+/htmlcov
 /coverage.xml
+/.vscode
