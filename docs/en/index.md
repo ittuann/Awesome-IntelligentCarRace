@@ -82,6 +82,6 @@ The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.
 
 [![FOSSA License Compliance Scan Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large&issueType=license){:target="\_blank"}
 
-For error messages, copyright infringement, etc. on this repository, please submit [issues] (https://github.com/ittuann/Awesome-IntelligentCarRace/issues) {:target="\_blank"} in Github.
+For error messages, copyright infringement, etc. on this repository, please submit [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} in Github.
 
 If there is anything else you can email me [ittuann@outlook.com](mailto:ittuann@outlook.com)

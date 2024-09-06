@@ -73,12 +73,6 @@ jobs:
           name: Awesome-IntelligentCarRace-Site
           path: site/
 
-      - name: publish site as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Awesome-IntelligentCarRace-Site
-          path: site/
-
       - name: Coverage test
         run: make unit-tests
 
