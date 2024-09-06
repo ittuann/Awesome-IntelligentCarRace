@@ -11,7 +11,6 @@ Example:
     $ python ./scripts/build.py
 """
 
-import os
 import re
 import shutil
 import subprocess
@@ -23,8 +22,8 @@ from scripts.config import cfg
 
 def build_docs() -> None:
     """Build Multi-Language Documentation."""
-    # Add the current directory "./scripts" to sys.path
-    sys.path.append(os.path.dirname(__file__))
+    # Print information about current environment
+    print(f"sys.path = {sys.path}")
 
     if cfg.SITE_PATH.exists():
         print(f"Removing existing site dir: {cfg.SITE_PATH}")
