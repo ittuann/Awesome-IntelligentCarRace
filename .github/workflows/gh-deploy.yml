@@ -38,11 +38,8 @@ jobs:
           python -m pip install --upgrade pip
           if [[ -f requirements.txt ]]; then pip install -r requirements.txt; fi
 
-      - name: Generate sub-tables
-        run: python ./scripts/split.py
-
-      - name: Build multi-language site
-        run: python ./scripts/build.py
+      - name: Generate sub-tables & Build
+        run: make
 
       - name: Prepare github pages
         run: |

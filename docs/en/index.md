@@ -26,6 +26,8 @@ Project GitHub Repository: <https://github.com/ittuann/Awesome-IntelligentCarRac
 
 Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
+> **Star Us 🌟**, You will receive all release notifications from GitHub without any delay~
+
 ???+ question " FAQ: Network Issues"
 
     If you encounter instability in your network environment while accessing [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}, you can switch to one of the following mirror sites hosted on different platforms. Choose any mirror that you can access smoothly:
@@ -47,8 +49,6 @@ Thanks also to all of you who have submitted issues, made suggestions, and helpe
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome- IntelligentCarRace/graphs/contributors)
 
 [GitHub: ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
-
-[![Star History](https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date)](https://github.com/ittuann/ Awesome-IntelligentCarRace)
 
 ## License
 
@@ -82,6 +82,6 @@ The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.
 
 [![FOSSA License Compliance Scan Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large&issueType=license){:target="\_blank"}
 
-For error messages, copyright infringement, etc. on this repository, please submit [issues] (https://github.com/ittuann/Awesome-IntelligentCarRace/issues) {:target="\_blank"} in Github.
+For error messages, copyright infringement, etc. on this repository, please submit [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} in Github.
 
 If there is anything else you can email me [ittuann@outlook.com](mailto:ittuann@outlook.com)

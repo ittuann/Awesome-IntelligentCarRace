@@ -14,13 +14,17 @@ Example:
 import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
-from config import cfg
+from scripts.config import cfg
 
 
 def build_docs() -> None:
     """Build Multi-Language Documentation."""
+    # Print information about current environment
+    print(f"sys.path = {sys.path}")
+
     if cfg.SITE_PATH.exists():
         print(f"Removing existing site dir: {cfg.SITE_PATH}")
         shutil.rmtree(cfg.SITE_PATH)

@@ -58,19 +58,14 @@ jobs:
           if [[ -f requirements.txt ]]; then pip install -r requirements.txt; fi
           if [[ -f requirements-dev.txt ]]; then pip install -r requirements-dev.txt; fi
 
-      - name: Generate sub-tables
-        run: python ./scripts/split.py
-
-      - name: Build
-        run: python ./scripts/build.py
+      - name: Generate sub-tables & Build
+        run: make
 
       - name: Lint & Format
         run: make lint
-        continue-on-error: true
 
       - name: pre-commit
-        run: pre-commit run --verbose --all-files
-        continue-on-error: true
+        run: make pre-commit
 
       - name: publish site as artifact
         uses: actions/upload-artifact@v4
@@ -79,7 +74,7 @@ jobs:
           path: site/
 
       - name: Coverage test
-        run: pytest
+        run: make unit-tests
 
       - name: Upload coverage reports to Codecov
         if: github.repository == 'ittuann/Awesome-IntelligentCarRace' && github.ref == 'refs/heads/main'
