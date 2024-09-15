@@ -16,7 +16,7 @@
 
 ## 1. 向表格中增加信息
 
-首先，请登录您的 Github 账号。打开本项目的仓库链接: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"} ，然后在页面的右上角点击 `Fork` 按钮，以便将本仓库分支到您的个人账号。
+首先，请登录您的 Github 账号。打开本项目的仓库链接: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"} ，然后在页面的右上角点击 `Fork` 按钮，以将本仓库分支到您的个人账号。
 
 确保您已经克隆了最新版本的仓库，并且在正确的 [`main`](https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main){:target="\_blank"} 分支上进行操作。
 
@@ -25,6 +25,20 @@
 在 [`table.csv`](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/table.csv){:target="\_blank"} 表格的最后一行后，追加您想要添加的一行新条目。请确保您提交的数据格式正确，并与表单内现有条目保持一致。信息的添加即可完成。
 
 如果您已增加了信息但没有执行下一步在本地测试添加后的效果，请在 Pull Request 内**明确注明**。
+
+## 1. 添加 badges
+
+如果您是开源项目的维护者，希望您你能够在您的项目中添加一个徽章，以表示您的开源项目被收录在 Awesome Intelligent Car Race 合集中。
+
+在您的项目的 README.md 文件顶部添加：
+
+```markdown
+[![Awesome Intelligent Car Race](https://awesome.re/badge.svg)](https://github.com/ittuann/Awesome-IntelligentCarRace)
+```
+
+添加的徽章显示效果为：
+
+[![Awesome Intelligent Car Race](https://awesome.re/badge.svg)](https://github.com/ittuann/Awesome-IntelligentCarRace)
 
 ## 2. 测试添加后的效果
 
@@ -48,31 +62,13 @@ make
 make serve
 ```
 
-最后即可运行以下命令来进行代码风格检查和单元测试，即可完成提交 PR 前的全部测试：
+最后添加git pre-commit hook，然后运行以下命令来进行代码风格检查和单元测试，即可完成提交 PR 前的全部测试：
 
 ```shell
+pre-commit install
+
 make lint
 make unit-tests
-```
-
-如果您无法使用 make 命令，也可以依次手动运行以下命令实现相近的效果：
-
-安装必要的依赖：
-
-```shell
-pip install -r requirements.txt
-```
-
-然后运行脚本，生成筛选后的各个分表：
-
-```shell
-python scripts/split.py
-```
-
-执行以下命令来在本地查看修改后的运行效果：
-
-```shell
-mkdocs serve -f docs/mkdocs.yml
 ```
 
 如果在运行项目过程中没有出现任何报错，那就代表您成功地完成了增加信息后的测试。您也可以在本地浏览打开`http://127.0.0.1:8000/Awesome-IntelligentCarRace/`查看效果。

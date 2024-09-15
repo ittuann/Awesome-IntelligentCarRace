@@ -16,13 +16,13 @@ live-serve:
 	mkdocs serve -f ./docs/mkdocs.yml
 
 install:
-	pip install -r requirements.txt
-	pip install -r requirements-dev.txt
+	python -m pip install -r requirements.txt
+	python -m pip install -r requirements-dev.txt
+	pre-commit install
 
 lint:
-	black --color --diff ./scripts
-	autoflake --remove-all-unused-imports --remove-unused-variables --recursive ./scripts
 	ruff check --fix .
+	black --color --diff ./scripts
 	mypy ./scripts
 	pyupgrade --py311-plus ./scripts/build.py
 

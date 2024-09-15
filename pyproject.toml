@@ -1,9 +1,6 @@
 [tool.black]
 line-length = 120
 
-[tool.autoflake]
-check-diff = true
-
 [tool.mypy]
 pretty = true
 warn_redundant_casts = true
@@ -30,7 +27,7 @@ extend-select = [
   # pydocstyle
   "D",
 ]
-ignore = ["F401", "UP009", "D415"]
+ignore = ["UP009", "D415"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
