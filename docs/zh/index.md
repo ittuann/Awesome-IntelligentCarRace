@@ -2,15 +2,9 @@
 
 ## 这是什么项目
 
-本仓库意在汇集，历年参加[全国大学生智能车竞赛（恩智浦杯/飞思卡尔杯）](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B){:target="\_blank"}的全部开源项目。
+本仓库意在汇集，历年参加 [全国大学生智能车竞赛（恩智浦杯/飞思卡尔杯）](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B){:target="\_blank"} 的全部开源项目。
 
-特此向选择开源的车友们表示深深的感谢。
-
-同时也期望本仓库不只作为一个项目列表，更希望它能够成为大家开源学习、交流和分享的平台。让我们一起维护和推进智能车竞赛的开源社区与文化，欢迎各位的交流和参与！
-
-> **Star 🌟** 这个仓库，您将能在第一时间收到所有的更新和动态~
->
-> 同时，如果您觉得这个项目对您有所帮助，想要支持我们，或是在本合集中发现一些仓库对您有参考价值，也希望您能为其点上免费的 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
+> **[Star 🌟 这个GitHub仓库](https://github.com/ittuann/Awesome-IntelligentCarRace)**，您将能在第一时间收到所有的更新和动态~
 
 ---
 
@@ -30,19 +24,15 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"}
 [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_shield&issueType=license){:target="\_blank"}
 
-项目 GitHub 仓库: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
+这个项目项目完全开源并托管至 GitHub 仓库: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-项目 GitHub Pages 主站链接: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
+项目 GitHub Pages 主站网页链接: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:target="\_blank"}
 
-这个项目项目完全开源并托管于 [GitHub](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 服务，主网站通过 [GitHub Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"} 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。
+???+ question "FAQ: 访问 GitHub 不稳定?"
 
-???+ question "FAQ: 访问 GitHub 存在问题?"
+    如果您的网络环境在访问主站 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的问题，可以尝试配置 [GitHub Hosts 文件](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 等方式以缓解本地网络情况。若您依然无法访问主站请转向 [GitHub 仓库](https://github.com/ittuann/Awesome-IntelligentCarRace) 说明内的最新镜像站点。
 
-    当您的环境在访问 GitHub 时存在网络不稳定等受限情况，可以尝试配置 [GitHub Hosts](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 或其他方式以加速访问。
-
-    此外，我也在 [Cloudflare Pages](https://awesome-intelligentcarrace.pages.dev/) 以及 [Netlify](https://awesome-intelligentcarrace.netlify.app){:target="\_blank"} 和 [Vercel](https://awesome-intelligentcarrace.vercel.app){:target="\_blank"} 平台上配置了内容完全相同的镜像站点服务以供备用访问。
-
-> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.pages.dev/en>{:target="\_blank"}
+> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project can be accessed via: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"}
 
 ## 参与贡献 ❤️
 
@@ -58,13 +48,13 @@ Pull Requests Wellcome! 一个丰富的平台需要车友们一起建设，也�
 
 !!! abstract "筛选"
 
-    您也可以在侧边栏中，查看按照年份/组别/获奖进行分类筛选的表格。
+    您可以在侧边栏中，查看按照年份/组别/获奖进行分类筛选的表格。
 
 {{ read_csv('../table-url.csv') }}
 
 ???+ example "下载表格"
 
-    如果您想要下载当前版本的汇总表格，请前往 [GitHub Releases 页面](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 进行下载。
+    如果您想要下载当前版本的汇总表，请前往 [GitHub 仓库](https://github.com/ittuann/Awesome-IntelligentCarRace/){:target="_blank"} 的 [Releases](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 页面进行下载。
 
 ## 参与讨论 💬
 

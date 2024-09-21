@@ -19,9 +19,9 @@
 > [!NOTE]
 > 请访问 GitHub Pages 链接以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
-如果您的网络环境在访问主站 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可以尝试配置 [GitHub hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 或其他方式以缓解网络问题。
+如果您的网络环境在访问主站 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可以尝试配置 [GitHub hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 或其他方式以缓解本地网络问题。
 
-若您依然无法访问主站，您还可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的镜像: [Cloudflare Pages 镜像](https://awesome-intelligentcarrace.pages.dev)、[Netlify 镜像](https://awesome-intelligentcarrace.netlify.app)、[Vercel 镜像](https://awesome-intelligentcarrace.vercel.app)。
+若您依然无法访问主站，您还可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的主站镜像: [Cloudflare Pages 镜像](https://awesome-intelligentcarrace.pages.dev)、[Netlify 镜像](https://awesome-intelligentcarrace.netlify.app)、[Vercel 镜像](https://awesome-intelligentcarrace.vercel.app)。
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or <https://awesome-intelligentcarrace.pages.dev/en>
 
