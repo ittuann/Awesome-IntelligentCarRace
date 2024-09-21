@@ -44,18 +44,17 @@
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"} or <https://awesome-intelligentcarrace.pages.dev/en>{:target="\_blank"}
 
-## 参与讨论
+## 参与贡献 ❤️
 
-推荐您直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 进行交流和讨论。这里汇集了仓库所有相关的问题和讨论，并且公开可见的讨论内容也能被搜索引擎收录，从而帮助到更多有着相似疑问或需求的人。
+Pull Requests Wellcome! 一个丰富的平台需要车友们一起建设，也热烈欢迎大家加入并成为仓库的 Contributor ~
 
-您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
+如果您也想为这个项目添加一条新的内容，可以参考项目网页侧边栏内中完整的[🔭提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="\_blank"}以了解如何开始。
 
-[![GitHub Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
-[![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
-[![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
-[![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
+您还可以通过直接新建 [Issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 的方式，直接在 GitHub 网页界面中进行无需 Git 操作的快速提交。过程中的每一个步骤都可以在[🔭提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_3){:target="\_blank"}内找到。
 
-## 开源项目合集总表
+如果您对参与本项目的开发感兴趣，请参考[提交指南-项目代码文档](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_2){:target="\_blank"}以了解项目的完整流程。欢迎并感谢社区的任何贡献！
+
+## 开源项目合集总表 ✨
 
 !!! abstract "筛选"
 
@@ -67,23 +66,28 @@
 
     如果您想要下载当前版本的汇总表格，请前往 [GitHub Releases 页面](https://github.com/ittuann/Awesome-IntelligentCarRace/releases/latest){:target="_blank"} 进行下载。
 
+## 参与讨论 💬
+
+推荐您直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions){:target="\_blank"} 进行交流和讨论。这里汇集了仓库所有相关的问题和讨论，同时在这里公开可见的讨论内容会被搜索引擎收录，从而帮助到更多有着相似问题或需求的人。
+
+您还可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
+
+[![GitHub Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
+[![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
+[![Discord](https://img.shields.io/badge/chat-on_discord-brightgreen?logo=discord&labelColor=7289da&style=flat-square)](https://discord.gg/Wsk6vfjZXw)
+[![QQ Group:921573748](https://img.shields.io/badge/chat-on_qq_group-brightgreen?logo=tencent-qq&labelColor=1ebafc&style=flat-square)](https://qm.qq.com/cgi-bin/qm/qr?k=I1WBVAG2KYNjmXqZ1vFEqHEwQYJ47UAF&jump_from=webapi&authKey=JOKtfW49rAJ0q29SUpWG7QrqFbnG15QQK3kQLefCDAmdfpoDupfol1RhZutRBdez)
+
 ## 为何发起这个项目
 
 智能车竞赛虽然历史悠久，但开源文化仍稍显薄弱。在少部分传统强校，会持续使用仅供校内的祖传代码，维护学校自身的优势。我尊重各校的选择和传统，但也希望能借助我这个开源项目，逐渐形成并壮大智能车竞赛的开源社区，为更多的同学带去参考和学习的机会。
 
 作为来自非传统强校的学生，也曾是一名在机械自动化专业自学编程和嵌入式开发的同学，我深知开源的重要性和意义。两年前，我选择将自己国一的代码开源，目的就是希望能帮助到更多的同学。而现如今，我创建这个开源仓库，也是希望延续这份初衷，为参加智能车竞赛的同学们搭建一个共享、学习和交流的地方。
 
-## 参与协作
-
-如果您也想要为这个项目增加一条内容，欢迎查看侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/){:target="\_blank"}以了解如何开始。便捷的提交方式，您也可以直接查看[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="\_blank"}。
-
-如果您对参与本项目的开发感兴趣，请参考[提交指南-项目代码文档](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5){:target="\_blank"}以了解项目的完整流程。欢迎并感谢社区的任何贡献！
-
 ## 致谢
 
-感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
+感谢所有选择开源他们项目的车友，各位的无私分享为智能车竞赛带来了宝贵的资源。
 
-同时感谢所有在 GitHub 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
+同时感谢所有在 GitHub 上提交问题、提出建议和帮助改进这个项目的人。也感谢大家对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
 

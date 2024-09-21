@@ -38,11 +38,21 @@
 >
 > 同时，如果您觉得这个项目对您有所帮助，想要支持我们，或是在本合集中发现一些仓库对您有参考价值，也希望您能为其点上免费的 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
 
-## 参与讨论
+## 参与贡献 ❤️
 
-您可以直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions) 进行交流和讨论。这里集中了仓库所有的问题和讨论，同时公开的讨论内容有可能被搜索引擎收录，从而帮助到更多有相似问题或需求的人。
+Pull Requests Wellcome! 一个丰富的平台需要车友们一起建设，也热烈欢迎大家加入并成为仓库的 Contributor ~
 
-您也可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
+如果您也想为这个项目添加一条新的内容，可以参考项目网页侧边栏内中完整的[🔭提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/)以了解如何开始。
+
+您还可以通过直接新建 [Issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues) 的方式，直接在 GitHub 网页界面中进行无需 Git 操作的快速提交。过程中的每一个步骤都可以在[🔭提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_3)内找到。
+
+如果您对参与本项目的开发感兴趣，请参考[提交指南-项目代码文档](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_2)以了解项目的完整流程。欢迎并感谢社区的任何贡献！
+
+## 参与讨论 💬
+
+推荐您直接使用本仓库的 [GitHub Discussions](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions) 进行交流和讨论。这里集中了仓库所有的问题和讨论，同时在这里公开可见的讨论内容会被搜索引擎收录，从而帮助到更多有着相似问题或需求的人。
+
+您还可以选择以下任意方式参与到本项目的讨论中。无论选择哪种方式参与本项目的讨论，或是提问、提出意见和建议等，我们都热烈欢迎并期待您的参与。
 
 [![GitHub Discussions](https://img.shields.io/badge/chat-on_github_discussions-brightgreen?logo=github&labelColor=171515&style=flat-square)](https://github.com/ittuann/NEFU-CMEE-DebateTeam/discussions)
 [![Gitter](https://img.shields.io/gitter/room/:ittuann/:Awesome-IntelligentCarRace-red?logo=gitter&style=flat-square)](https://app.gitter.im/#/room/#Awesome-IntelligentCarRace:gitter.im)
@@ -55,15 +65,11 @@
 
 作为来自非传统强校的学生，也曾是一名在机械自动化专业自学编程和嵌入式开发的同学，我深知开源的重要性和意义。两年前，我选择将自己国一的代码开源，目的就是希望能帮助到更多的同学。而现如今，我创建这个开源仓库，也是希望延续这份初衷与期望，为参加智能车竞赛的同学们搭建一个共享、学习和交流的地方。
 
-## 参与协作
-
-若您也想要为这个项目增加一条内容，请参考[本项目网页](https://ittuann.github.io/Awesome-IntelligentCarRace)侧边栏内完整的[提交指南](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/)，便捷的提交方式请参考[提交指南-帮助通道](https://ittuann.github.io/Awesome-IntelligentCarRace/contribution/contribution/#_5)。
-
 ## 致谢
 
-感谢所有选择开源他们项目的车友，您们的无私分享为智能车竞赛带来了宝贵的资源。
+感谢所有选择开源他们项目的车友，各位的无私分享为智能车竞赛带来了宝贵的资源。
 
-同时感谢所有在 GitHub 上提交问题、提出建议和帮助改进这个项目的人。也感谢各位对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
+同时感谢所有在 GitHub 上提交问题、提出建议和帮助改进这个项目的人。也感谢大家对于本仓库的贡献，您的参与和付出将帮助更多人接触和受益于这些宝贵的开源项目。
 
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
 

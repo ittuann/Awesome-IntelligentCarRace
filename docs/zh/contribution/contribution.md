@@ -89,9 +89,9 @@ make unit-tests
 
 此外，项目也提供了 RSS 订阅的方式，分别是默认以内容更新日期排序的[RSS](https://ittuann.github.io/Awesome-IntelligentCarRace/feed_rss_created.xml){:target="\_blank"}，和以文档创建日期排序的 [feed_rss_created](https://ittuann.github.io/Awesome-IntelligentCarRace/feed_rss_created.xml){:target="\_blank"}。您可以通过订阅 [RSS](https://ittuann.github.io/Awesome-IntelligentCarRace/feed_rss_created.xml){:target="\_blank"} 来获取项目的最新动态。
 
-## 帮助通道
+## 帮助通道 & 快速提交
 
-如果您不熟悉上述 Git 等操作，但依然希望为项目补充或修改信息，不用担心，我们为您提供了另外一个途径，即直接在 GitHub 网页界面中提交。
+如果您不熟悉上述 Git 等操作，但依然希望为项目补充或修改信息，不用担心，我们为您提供了另外一个便捷的途径，即直接在 GitHub 网页界面中提交。
 
 a. 提交 Issue:
 
