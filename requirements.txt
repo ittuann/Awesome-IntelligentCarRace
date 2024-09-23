@@ -1,4 +1,4 @@
-mkdocs-material[recommended]==9.5.2
+mkdocs-material[recommended]==9.5.34
 jieba
 mkdocs-git-committers-plugin-2==2.2.2
 mkdocs-rss-plugin==1.8.0

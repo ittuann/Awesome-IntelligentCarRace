@@ -12,7 +12,7 @@ theme:
   name: material
   custom_dir: overrides
   font:
-    text: Helvetica
+    text: Roboto
     code: Roboto Mono
   features:
     - navigation.top
@@ -20,6 +20,7 @@ theme:
     - navigation.expand
     - navigation.tracking
     - navigation.indexes
+    - navigation.instant.progress
     - navigation.instant
     - content.action.edit
     - content.code.copy
@@ -95,6 +96,7 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:<ittuann@outlook.com>
   robots: robots.txt
+  generator: false
   analytics:
     provider: google
     property: G-8SY1RE8KQW
