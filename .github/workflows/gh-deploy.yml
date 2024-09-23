@@ -42,21 +42,45 @@ jobs:
         run: make
 
       - name: Prepare github pages
+        id: prepare_pages
         run: |
           mkdocs --version
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          MAIN_LATEST_HASH=$(git rev-parse --short=7 HEAD)
+
+          echo "--- Clone gh-pages branch to pages directory. ---"
           git clone https://github.com/ittuann/Awesome-IntelligentCarRace.git pages
-          LATEST_HASH=$(git rev-parse --short=7 HEAD)
           cd pages
           git checkout gh-pages
-          if [[ "$(git ls-files)" ]]; then git rm -rf .; fi
+
+          echo "--- Clean old files. ---"
+          echo "--- Delete all tracked files ---"
+          git rm -rf . || echo "No tracked files to remove."
+          echo "--- Delete all untracked files ---"
           git clean -fxd
+
+          echo "--- Copy new files. ---"
           cp -r ../site/* .
           git add .
-          git commit -a -s -m "Deployed GitHub Pages - $LATEST_HASH"
+
+          echo "--- Attempts to commit changes. If there are no changes the new commit will not be created. ---"
+          git commit -s -m "Deployed GitHub Pages - $MAIN_LATEST_HASH" || echo "No changes to commit."
+
+          echo "--- Check if there has been a new commit. ---"
+          LOCAL_HASH=$(git rev-parse HEAD)
+          REMOTE_HASH=$(git rev-parse @{u})
+          if [ "$LOCAL_HASH" != "$REMOTE_HASH" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "has_changes=false"
+          fi
 
       - name: Push changes
+        if: steps.prepare_pages.outputs.has_changes == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
