@@ -35,7 +35,7 @@ jobs:
             DATA_FILE_SHA256=$(sha256sum table.csv | awk '{print $1}')
             echo "DATA_FILE_SHA256=$DATA_FILE_SHA256" >> $GITHUB_ENV
             echo "Data file SHA: $DATA_FILE_SHA256"
-            echo "COMMIT_TIME=$(git log -1 --format=%cd --date=format:%Y%m%dT%H%M%S)" >> $GITHUB_ENV
+            echo "COMMIT_TIME=$(git log -1 --format=%cI)" >> $GITHUB_ENV
           fi
 
       - name: Upload new date artifact
@@ -53,7 +53,7 @@ jobs:
           tag_name: ${{ env.COMMIT_TIME }}
           name: Auto Release ${{ env.COMMIT_TIME }}
           body: |
-            Automatically release the data table in `${{ env.COMMIT_TIME }}`, UTC+08:00, Time Zone: Asia/Shanghai
+            Automatically release the data table in `${{ env.COMMIT_TIME }}`.
 
             Commit SHA: ${{ github.sha }}
 
