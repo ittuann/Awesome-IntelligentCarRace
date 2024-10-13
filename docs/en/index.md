@@ -46,7 +46,7 @@ Thank you to all the car enthusiasts who chose to open source their projects, yo
 
 Thanks also to all of you who have submitted issues, made suggestions, and helped improve the project on Github. Thank you also for contributing to this repository, your participation and dedication will help more people access and benefit from these valuable open source projects.
 
-[![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome- IntelligentCarRace/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
 
 [GitHub: ittuann/Awesome-IntelligentCarRace](https://github.com/ittuann/Awesome-IntelligentCarRace){ .md-button }
 

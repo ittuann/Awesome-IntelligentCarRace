@@ -5,15 +5,18 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-      - id: check-yaml
       - id: check-toml
       - id: check-xml
+      - id: check-yaml
       - id: trailing-whitespace
+      - id: check-merge-conflict
+      - id: check-symlinks
       - id: end-of-file-fixer
       - id: mixed-line-ending
-      - id: check-merge-conflict
-      - id: check-added-large-files
+        args: [--fix=auto]
+      - id: check-case-conflict
       - id: detect-private-key
+      - id: check-added-large-files
       - id: check-docstring-first
 
   - repo: https://github.com/psf/black

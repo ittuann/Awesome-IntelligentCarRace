@@ -4,11 +4,11 @@ Thank you for contributing!
 
 -->
 
-## Source of information
+# Source of information
 
 <!-- 请在此处提供信息的来源。 -->
 
-## Checklist
+# Checklist
 
 - [ ] 我确定信息的正确性。
 - [ ] 我在提交 PR 前已经完整阅读了[提交指南](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/docs/contribution.md)。
