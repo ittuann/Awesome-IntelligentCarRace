@@ -32,7 +32,7 @@
 
 在您的项目的 README.md 文件顶部添加：
 
-```markdown
+```plaintext
 [![Awesome Intelligent Car Race](https://awesome.re/badge.svg)](https://github.com/ittuann/Awesome-IntelligentCarRace)
 ```
 
