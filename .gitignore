@@ -13,3 +13,4 @@ __pycache__/
 /htmlcov
 /coverage.xml
 /.vscode
+/.idea

@@ -1,11 +1,12 @@
 name: Auto Release
 
 on:
-  workflow_run:
-    workflows:
-      - Builds
-    types:
-      - completed
+  workflow_dispatch:
+  # workflow_run:
+  #   workflows:
+  #     - Builds
+  #   types:
+  #     - completed
 
 jobs:
   release:
@@ -13,8 +14,6 @@ jobs:
 
     if: >
       github.ref == 'refs/heads/main' &&
-      github.event.workflow_run.event == 'push' &&
-      github.event.workflow_run.conclusion == 'success' &&
       github.repository == 'ittuann/Awesome-IntelligentCarRace'
 
     steps:

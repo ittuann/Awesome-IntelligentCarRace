@@ -28,14 +28,14 @@ body:
   - type: textarea
     id: open-source-info
     attributes:
-      label: 项目名称、学校
-      description: 填入项目名称、学校信息
+      label: 学校、队伍名
+      description: 填入学校信息、队伍名
     validations:
       required: true
   - type: textarea
     id: open-source-award
     attributes:
-      label: 获奖、年份
+      label: 年份、获奖
       description: 填入项目获奖、年份信息
     validations:
       required: true
