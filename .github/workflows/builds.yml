@@ -23,7 +23,7 @@ jobs:
         continue-on-error: true
 
       - name: Prettify markdown
-        uses: creyD/prettier_action@v4.3
+        uses: creyD/prettier_action@v4.5
         with:
           prettier_options: --write **/*.{yml,md}
           commit_message: "Automatically Prettified Markdown"
