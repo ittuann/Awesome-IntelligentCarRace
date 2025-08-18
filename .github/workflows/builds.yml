@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checking Out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.head_ref }}
           persist-credentials: false
@@ -42,7 +42,7 @@ jobs:
 
     steps:
       - name: Checking Out
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
