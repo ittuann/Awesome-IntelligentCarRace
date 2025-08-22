@@ -2,8 +2,8 @@
 
 Note:
     File   : test_functions.py
-    Author : Baiqi.Lu <ittuann@outlook.com>
-    License: MIT License.
+    Author : Baiqi.Lu <ittuann@outlook.com> (https://github.com/ittuann)
+    License: GNU AGPLv3
 """
 
 from pathlib import Path

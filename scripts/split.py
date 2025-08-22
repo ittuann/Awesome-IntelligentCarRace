@@ -4,8 +4,8 @@ This module provides functionalities to split a table based on the award filter 
 
 Note:
     File   : split.py
-    Author : Baiqi.Lu <ittuann@outlook.com>
-    License: MIT License.
+    Author : Baiqi.Lu <ittuann@outlook.com> (https://github.com/ittuann)
+    License: GNU AGPLv3
 
 Example:
     $ python ./scripts/split.py

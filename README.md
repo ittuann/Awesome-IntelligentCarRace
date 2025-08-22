@@ -83,7 +83,7 @@ Pull Requests Wellcome! 一个丰富的平台需要车友们一起建设，也�
 
 ## License
 
-The project is [MIT Licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE)
+The project is [GNU AGPLv3 licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE)
 
 The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.0 licensed](https://github.com/ittuann/Awesome-IntelligentCarRace/blob/main/LICENSE-docs)
 

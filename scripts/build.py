@@ -4,8 +4,8 @@ Build multi-language documentation site.
 
 Note:
     File   : build.py
-    Author : Baiqi.Lu <ittuann@outlook.com>
-    License: MIT License.
+    Author : Baiqi.Lu <ittuann@outlook.com> (https://github.com/ittuann)
+    License: GNU AGPLv3
 
 Example:
     $ python ./scripts/build.py
