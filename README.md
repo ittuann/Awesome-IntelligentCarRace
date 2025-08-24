@@ -19,24 +19,22 @@
 > [!NOTE]
 > 请访问 GitHub Pages 链接以查看本项目: <https://ittuann.github.io/Awesome-IntelligentCarRace>
 
-如果您的网络环境在访问主站 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的情况，可以尝试配置 [GitHub hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 或其他方式以缓解本地网络问题。
+如果您的网络环境在访问 [主站 GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到网络不稳定的情况，可以尝试配置 [GitHub hosts 文件](https://github.com/ittuann/GitHub-IP-hosts) 或其他方式以缓解本地网络问题。
 
-若您依然无法访问主站，您还可转向以下托管在不同平台的镜像站点，选择任一您能够顺利访问的主站镜像: [Cloudflare Pages 镜像](https://awesome-intelligentcarrace.pages.dev)、[Netlify 镜像](https://awesome-intelligentcarrace.netlify.app)、[Vercel 镜像](https://awesome-intelligentcarrace.vercel.app)。
+若仍无法访问主站，您可转向以下托管在不同平台的镜像站点，选择任意一个您能够顺利访问的主站镜像: [Cloudflare Pages 镜像](https://awesome-intelligentcarrace.pages.dev)、[Vercel 镜像](https://awesome-intelligentcarrace.vercel.app)、[Netlify 镜像](https://awesome-intelligentcarrace.netlify.app)
 
-> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or <https://awesome-intelligentcarrace.pages.dev/en>
+> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or mirror site <https://awesome-intelligentcarrace.pages.dev/en>
 
 ## 这是什么项目
 
 本仓库意在收集并整理，历年参加 [全国大学生智能车竞赛（恩智浦杯/飞思卡尔杯）](https://baike.baidu.com/item/%E5%85%A8%E5%9B%BD%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E6%B1%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B) 的全部开源项目。
 
-特此向选择开源的车友们表示深深的感谢。
-
-同时也期望本仓库不只作为一个项目列表，更希望它能够成为大家开源学习、交流和分享的平台。让我们一起维护和推进智能车竞赛的开源社区与文化，欢迎各位的交流和参与！
-
 > [!TIP]
-> **Star 🌟** 这个仓库，您将能在第一时间收到所有的更新和动态~
+> **Star 🌟 这个仓库**，您将能在第一时间收到所有的更新和动态~
 >
-> 同时，如果您觉得这个项目对您有所帮助，想要支持我们，或是在本合集中发现一些仓库对您有参考价值，也希望您能为其点上免费的 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
+> 此外，如果您觉得这个项目对您有所帮助，想要支持我们，或是在本合集中发现一些仓库对您有参考价值，也希望您能为其点上免费的 Star。您的每一个 Star 都是对我们开源项目的肯定和鼓励，感谢您对开源的支持！
+
+同时我们也希望本仓库不只作为一个项目列表，更希望它能够成为大家学习、交流和分享的开源平台。让我们携手共同维护并推进智能车竞赛的开源社区与文化，欢迎各位的交流和参与！在此也向选择开源的车友们致以衷心的感谢。
 
 ## 参与贡献 ❤️
 

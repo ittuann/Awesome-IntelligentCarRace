@@ -30,7 +30,7 @@
 
 ???+ question "FAQ: 访问 GitHub 不稳定?"
 
-    如果您的网络环境在访问主站 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的问题，可以尝试配置 [GitHub Hosts 文件](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 等方式以缓解本地网络情况。若您依然无法访问主站请转向 [GitHub 仓库](https://github.com/ittuann/Awesome-IntelligentCarRace) 说明内的最新镜像站点。
+    如果您的网络环境在访问 [主站 GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace) 时遇到不稳定的问题，可以尝试配置 [GitHub Hosts 文件](https://github.com/ittuann/GitHub-IP-hosts){:target="\_blank"} 等方式以缓解本地网络情况。若仍无法访问主站请转向 [GitHub 仓库](https://github.com/ittuann/Awesome-IntelligentCarRace) 说明内的最新镜像站点。
 
 > For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition ( NXP Cup ) project can be accessed via: <https://ittuann.github.io/Awesome-IntelligentCarRace/en>{:target="\_blank"}
 
