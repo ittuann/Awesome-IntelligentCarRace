@@ -23,7 +23,7 @@
 
 若仍无法访问主站，您可转向以下托管在不同平台的镜像站点，选择任意一个您能够顺利访问的主站镜像: [Cloudflare Pages 镜像](https://awesome-intelligentcarrace.pages.dev)、[Vercel 镜像](https://awesome-intelligentcarrace.vercel.app)、[Netlify 镜像](https://awesome-intelligentcarrace.netlify.app)
 
-> For English-speaking participants, the English version of the Awesome Intelligent Car Racing Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or mirror site <https://awesome-intelligentcarrace.pages.dev/en>
+> For English-speaking participants, the English version of the Awesome National University Students Intelligent Car Race Competition (NXP Cup) project, can be accessed via the following links: <https://ittuann.github.io/Awesome-IntelligentCarRace/en> or mirror site <https://awesome-intelligentcarrace.pages.dev/en>
 
 ## 这是什么项目
 

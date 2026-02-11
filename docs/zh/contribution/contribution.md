@@ -16,7 +16,7 @@
 
 ## 1. 向表格中增加信息
 
-首先，请登录您的 Github 账号。打开本项目的仓库链接: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"} ，然后在页面的右上角点击 `Fork` 按钮，以将本仓库分支到您的个人账号。
+首先，请登录您的 GitHub 账号。打开本项目的仓库链接: <https://github.com/ittuann/Awesome-IntelligentCarRace>{:target="\_blank"} ，然后在页面的右上角点击 `Fork` 按钮，以将本仓库分支到您的个人账号。
 
 确保您已经克隆了最新版本的仓库，并且在正确的 [`main`](https://github.com/ittuann/Awesome-IntelligentCarRace/tree/main){:target="\_blank"} 分支上进行操作。
 
@@ -81,7 +81,7 @@ make unit-tests
 
 项目采用 CI/CD 流程自动完成构建和部署。主网站通过 [GitHub Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"} 实现 CI/CD 流程进行自动构建和部署至 [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}。
 
-如果您想了解完整的工作流，可以查看本仓库的 [Github Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"}。这里包含了整个自动化流程详细的步骤和运行记录。
+如果您想了解完整的工作流，可以查看本仓库的 [GitHub Action](https://github.com/ittuann/Awesome-IntelligentCarRace/actions){:target="\_blank"}。这里包含了整个自动化流程详细的步骤和运行记录。
 
 项目代码覆盖率测试可在此查看: [Codecov](https://app.codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} [![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} ; 项目代码质量分析请访问: [Codacy](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"} ; 仓库许可证合规性扫描请查看: [FOSSA](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace){:target="\_blank"} [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_small){:target="\_blank"}
 
@@ -97,7 +97,7 @@ make unit-tests
 
 a. 提交 Issue:
 
-- 打开项目的 [Github 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 。
+- 打开项目的 [GitHub 仓库页面](https://github.com/ittuann/Awesome-IntelligentCarRace){:target="\_blank"} 。
 - 转到 [Issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} 栏，点击的 [New issue](https://github.com/ittuann/Awesome-IntelligentCarRace/issues/new/choose){:target="\_blank"} 按钮。
 - 在显示的几个 Issues 模板中，选择 `✨ 提交信息` 。
 - 根据模板的提示完成信息的录入。

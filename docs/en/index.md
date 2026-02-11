@@ -1,8 +1,8 @@
-# Intelligent Car Racing Competition(NXP Cup)
+# National University Students Intelligent Car Race (NXP Cup)
 
-Awesome Intelligent Car Racing Competition ( NXP Cup ) / Autonomous Race Car Challenge
+Awesome Intelligent Car Race Competition ( NXP Cup / Freescale Cup ) / Autonomous Race Car Challenge
 
-Open source project collection website ✨
+Open source project website ✨
 
 ---
 
@@ -30,7 +30,7 @@ Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:ta
 
 ???+ question " FAQ: Network Issues"
 
-    If you encounter instability in your network environment while accessing [Github Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}, you can switch to one of the following mirror sites hosted on different platforms. Choose any mirror that you can access smoothly:
+    If you encounter instability in your network environment while accessing [GitHub Pages](https://ittuann.github.io/Awesome-IntelligentCarRace){:target="\_blank"}, you can switch to one of the following mirror sites hosted on different platforms. Choose any mirror that you can access smoothly:
 
     - Cloudflare Pages mirror site: <https://awesome-intelligentcarrace.pages.dev>{:target="\_blank"}
     - Netlify mirror site: <https://awesome-intelligentcarrace.netlify.app>{:target="\_blank"}
@@ -44,7 +44,7 @@ Project GitHub Pages: <https://ittuann.github.io/Awesome-IntelligentCarRace>{:ta
 
 Thank you to all the car enthusiasts who chose to open source their projects, your selfless sharing has resulted in a valuable resource for smart car racing.
 
-Thanks also to all of you who have submitted issues, made suggestions, and helped improve the project on Github. Thank you also for contributing to this repository, your participation and dedication will help more people access and benefit from these valuable open source projects.
+Thanks also to all of you who have submitted issues, made suggestions, and helped improve the project on GitHub. Thank you also for contributing to this repository, your participation and dedication will help more people access and benefit from these valuable open source projects.
 
 [![Contributors](https://contrib.rocks/image?repo=ittuann/Awesome-IntelligentCarRace)](https://github.com/ittuann/Awesome-IntelligentCarRace/graphs/contributors)
 
@@ -58,6 +58,6 @@ The project documentation (e.g., `.md` files in the `/docs` folder) is [CC-BY-4.
 
 [![FOSSA License Compliance Scan Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_large&issueType=license){:target="\_blank"}
 
-For error messages, copyright infringement, etc. on this repository, please submit [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} in Github.
+For error messages, copyright infringement, etc. on this repository, please submit [issues](https://github.com/ittuann/Awesome-IntelligentCarRace/issues){:target="\_blank"} in GitHub.
 
 If there is anything else you can email me [ittuann@outlook.com](mailto:ittuann@outlook.com)
