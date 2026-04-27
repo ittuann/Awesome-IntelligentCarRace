@@ -69,9 +69,7 @@ if __name__ == "__main__":
     build_docs()
     update_404page_title()
 
-    print(
-        """
+    print("""
         Serve multi-language site at http://localhost:8000 with:
             python -m http.server --directory site 8000 --bind localhost
-        """
-    )
+        """)
