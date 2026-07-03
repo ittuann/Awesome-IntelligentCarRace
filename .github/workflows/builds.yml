@@ -67,7 +67,7 @@ jobs:
         run: make format
 
       - name: pre-commit
-        run: make pre-commit
+        run: pre-commit run --verbose
 
       - name: publish site as artifact
         uses: actions/upload-artifact@v7
