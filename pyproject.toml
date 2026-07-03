@@ -1,42 +1,75 @@
+[project]
+name = "Awesome-IntelligentCarRace"
+version = "1.0"
+description = "Awesome Intelligent Car Race"
+keywords = ["Intelligent Car Race", "NXP Cup", "Freescale Cup", "Smart Car", "Awesome"]
+license = "AGPL-3.0"
+license-files = ["LICENSE"]
+authors = [{name = "ittuann", email = "ittuann@outlook.com"}]
+maintainers = [{name = "ittuann", email = "ittuann@outlook.com"}]
+readme = "README.md"
+
+requires-python = ">=3.10"
+
+dependencies = [
+  "mkdocs-material[recommended]==9.5.34",
+  "jieba",
+  "mkdocs-git-committers-plugin-2==2.2.2",
+  "mkdocs-rss-plugin==1.15.0",
+  "mkdocs-table-reader-plugin==3.1.0",
+  "mkdocs-redirects==1.2.1",
+  "mkdocstrings[python]==0.26.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/ittuann/Awesome-IntelligentCarRace"
+Repository = "https://github.com/ittuann/Awesome-IntelligentCarRace"
+Documentation = "https://github.com/ittuann/Awesome-IntelligentCarRace?tab=readme-ov-file"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "ruff",
+  "mypy",
+  "pandas-stubs",
+  "pytest",
+  "pytest-cov",
+  "pytest-mock",
+  "pytest-timeout",
+  "pytest-rerunfailures",
+  "pre-commit"
+]
+
 [tool.black]
 line-length = 120
-
-[tool.mypy]
-pretty = true
-warn_redundant_casts = true
 
 [tool.ruff]
 line-length = 120
 
 [tool.ruff.lint]
 select = [
-  # pycodestyle
-  "E",
-  # Pyflakes
-  "F",
-  # pyupgrade
-  "UP",
-  # flake8-bugbear
-  "B",
-  # flake8-simplify
-  "SIM",
-  # isort
-  "I",
+  "E",    # pycodestyle errors
+  "F",    # Pyflakes
+  "UP",   # pyupgrade
+  "B",    # Flake8-bugbear
+  "SIM",  # Flake8-simplify
+  "I",    # isort
+  "D",    # pydocstyle
 ]
-extend-select = [
-  # pydocstyle
-  "D",
-]
-ignore = ["UP009", "D415"]
+ignore = ["D415"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.mypy]
+pretty = true
+warn_redundant_casts = true
+
+[tool.pytest.ini_options]
+addopts = "-ra --cov=./scripts --cov-report=term --cov-report=xml --cov-report=html --timeout=15 --reruns 2 --reruns-delay 1"
 
 [tool.coverage.report]
 exclude_lines = [
   "if 0:",
   "if __name__ == .__main__.:",
 ]
-
-[tool.pytest.ini_options]
-addopts = "-ra --cov=./scripts --cov-report=term --cov-report=xml --cov-report=html --timeout=15 --reruns 2 --reruns-delay 1"

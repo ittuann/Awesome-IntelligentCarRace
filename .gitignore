@@ -1,16 +1,61 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[codz]
+*$py.class
+
 /.venv
 
+# Project directories
 /site
 /table-url.csv
 /docs/**/*.csv
 
-/.cache
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
 /.pytest_cache
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+.pytest_cache/
+cover/
+
+/.cache
 /.ruff_cache
 /.mypy_cache
-/.coverage
-/htmlcov
-/coverage.xml
+
 /.vscode
 /.idea
