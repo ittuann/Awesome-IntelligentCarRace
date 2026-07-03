@@ -8,19 +8,21 @@
 
 ---
 
-[![GitHub Pages Status][github-image]][github-url]
-[![Netlify Status][netlify-image]][netlify-url]
-[![Vercel Status][vercel-image]][vercel-url]
+[![GitHub Pages Status][github-image]][github-url]{:target="\_blank"}
+[![Cloudflare Mirror Status][cloudflare-image]][cloudflare-url]{:target="\_blank"}
+[![Netlify Mirror Status][netlify-image]][netlify-url]{:target="\_blank"}
+[![Vercel Mirror Status][vercel-image]][vercel-url]{:target="\_blank"}
 
 [github-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/github-pages?label=GitHub%20Pages&logo=github
 [github-url]: https://ittuann.github.io/Awesome-IntelligentCarRace
-[netlify-image]: https://api.netlify.com/api/v1/badges/a417caa8-be38-4fa6-8426-0d97ff68151b/deploy-status
+[cloudflare-image]: https://img.shields.io/badge/Cloudflare%20Mirror-success-green?logo=cloudflare
+[cloudflare-url]: https://awesome-intelligentcarrace.pages.dev
+[netlify-image]: https://img.shields.io/badge/Netlify%20Mirror-success-green?logo=netlify
 [netlify-url]: https://awesome-intelligentcarrace.netlify.app
-[vercel-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/Production?label=Vercel&logo=vercel
+[vercel-image]: https://img.shields.io/badge/Vercel%20Mirror-success-green?logo=vercel
 [vercel-url]: https://awesome-intelligent-car-race.vercel.app
 
 [![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace){:target="\_blank"}
-[![pre-commit.ci Status](https://results.pre-commit.ci/badge/github/ittuann/Awesome-IntelligentCarRace/main.svg)](https://results.pre-commit.ci/latest/github/ittuann/Awesome-IntelligentCarRace/main){:target="\_blank"}
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/35d02f5299284eefadd465b0d01a8fce)](https://app.codacy.com/gh/ittuann/Awesome-IntelligentCarRace/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade){:target="\_blank"}
 [![FOSSA License Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fittuann%2FAwesome-IntelligentCarRace?ref=badge_shield&issueType=license){:target="\_blank"}
 

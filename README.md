@@ -1,14 +1,17 @@
 # 全国大学生智能汽车竞赛 开源项目收集
 
 [![GitHub Pages Status][github-image]][github-url]
-[![Netlify Status][netlify-image]][netlify-url]
-[![Vercel Status][vercel-image]][vercel-url]
+[![Cloudflare Mirror Status][cloudflare-image]][cloudflare-url]
+[![Netlify Mirror Status][netlify-image]][netlify-url]
+[![Vercel Mirror Status][vercel-image]][vercel-url]
 
 [github-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/github-pages?label=GitHub%20Pages&logo=github
 [github-url]: https://ittuann.github.io/Awesome-IntelligentCarRace
-[netlify-image]: https://api.netlify.com/api/v1/badges/a417caa8-be38-4fa6-8426-0d97ff68151b/deploy-status
+[cloudflare-image]: https://img.shields.io/badge/Cloudflare%20Mirror-success-green?logo=cloudflare
+[cloudflare-url]: https://awesome-intelligentcarrace.pages.dev/
+[netlify-image]: https://img.shields.io/badge/Netlify%20Mirror-success-green?logo=netlify
 [netlify-url]: https://awesome-intelligentcarrace.netlify.app
-[vercel-image]: https://img.shields.io/github/deployments/ittuann/Awesome-IntelligentCarRace/Production?label=Vercel&logo=vercel
+[vercel-image]: https://img.shields.io/badge/Vercel%20Mirror-success-green?logo=vercel
 [vercel-url]: https://awesome-intelligentcarrace.vercel.app
 
 [![Codecov Coverage](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace/graph/badge.svg?token=UZT4S22K06)](https://codecov.io/gh/ittuann/Awesome-IntelligentCarRace)
