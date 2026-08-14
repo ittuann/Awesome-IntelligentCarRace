@@ -76,8 +76,8 @@ Pull Requests Wellcome! 一个丰富的平台需要车友们一起建设，也�
 <details>
   <summary><kbd>Star History</kbd></summary>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&theme=dark&type=Date">
-    <img src="https://api.star-history.com/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date" alt="Star History">
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ittuann/Awesome-IntelligentCarRace&theme=dark&type=Date">
+    <img src="https://star-history.dera.page/svg?repos=ittuann/Awesome-IntelligentCarRace&type=Date" alt="Star History">
   </picture>
 </details>
 
